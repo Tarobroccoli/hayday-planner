@@ -34,6 +34,12 @@ python scripts/export_web.py fandom_api raw/hayday_info_production-data.json ver
     farm_profile.json icons/icon_manifest.csv web/planner_template.html hayday_planner.html
 ```
 
+Flat-colour icon set (`scripts/xkcd_icons.py` also draws xkcd-style wobbly outlines without `--no-lines`):
+
+```bash
+python scripts/xkcd_icons.py icons icons_flat --color flat --ncolors 6 --no-lines
+```
+
 Edit `farm_profile.json` for your own farm. `verified_in_game.csv` holds values checked in the game;
 they win over every other source.
 
@@ -48,6 +54,7 @@ they win over every other source.
 | `raw/` | cached API responses |
 | `hayday_merged_v2.xlsx` | merged product table with sources, conflicts and notes |
 | `icons/` | product icons (256 px) with `icon_manifest.csv` |
+| `icons_flat/` | the same icons redrawn as flat colour art (6 colours, no outlines) |
 | `plans/` | example planner outputs |
 
 ## Model assumptions

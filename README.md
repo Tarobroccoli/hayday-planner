@@ -2,6 +2,8 @@
 
 Personal, fan-made production planner for Hay Day. One HTML file, works offline and on a phone.
 
+*Unofficial fan content, not endorsed by Supercell. See [Sources and credits](#sources-and-credits).*
+
 - **Money mode**: linear program for the most coins per hour from your farm (fields, machines, slots,
   animals, trees, roadside shop, barn/silo) at your check-in interval. Shows a whole-number plan per
   check-in as a repeating cycle, what to sell, and which upgrade pays most (LP shadow prices).
@@ -66,5 +68,8 @@ checks what one visit brings in; mine, fishing and other tool-based items are le
 
 - Prices and XP: [hayday.info](https://hayday.info) (checked against the live site, 2026-10).
 - Recipes, times, levels: [Hay Day Wiki](https://hayday.fandom.com) via the MediaWiki API, content under CC BY-SA.
-- Hay Day, its names and all icon artwork are © Supercell. This is an unofficial fan project, not
-  affiliated with or endorsed by Supercell.
+- Hay Day, its names and all icon artwork (including the restyled sets in `icons_flat/`) are © Supercell.
+  This is a free, non-commercial fan project made under Supercell's Fan Content Policy.
+
+> This material is unofficial and is not endorsed by Supercell. For more information see Supercell's
+> Fan Content Policy: [www.supercell.com/fan-content-policy](https://supercell.com/fan-content-policy).

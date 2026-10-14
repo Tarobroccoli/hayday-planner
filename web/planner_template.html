@@ -579,7 +579,9 @@ function saveFarm() {
 function footer() {
   $("#foot").innerHTML = `${t("ข้อมูล ")}${DATA.items.length} ${t("สินค้า · ")}${esc(DATA.sources)} · ${t("สร้าง ")}${esc(DATA.built)}<br>
   ${t("สมมติ: ต้นไม้ให้ ")}${DATA.treeFruit} ${t("ผลต่อการเก็บ · เมล็ดฟรี (ปลูก 1 ได้สุทธิ 1) · barn/silo คิดแค่ของที่เก็บต่อรอบ · ไม่รวมของจากเหมือง/ตกปลา")}<br>
-  ${t("เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell")}`;
+  ${t("เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell")}<br>
+  This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy:
+  <a href="https://supercell.com/fan-content-policy" target="_blank" rel="noopener">www.supercell.com/fan-content-policy</a>.`;
 }
 function applyLang() {
   HD.setLang(lang, EN);

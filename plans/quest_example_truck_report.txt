@@ -1,0 +1,65 @@
+=== Quest 'example_truck': 3 Bread, 2 Butter, 2 Carrot Pie, 1 Sweater, 4 Bacon | check-in every 240 min ===
+
+-- What it takes (BOM) --
+     Product     Where  Needed  From stock  Start units            Unit  Spare after quest
+       Bacon       Pig     4.0         0.0            4        feedings                0.0
+    Pig Feed Feed Mill     4.0         0.0            2         batches                2.0
+     Sweater      Loom     1.0         0.0            1         batches                0.0
+        Wool     Sheep     2.0         0.0            2        feedings                0.0
+  Sheep Feed Feed Mill     2.0         0.0            1         batches                1.0
+  Carrot Pie  Pie Oven     2.0         0.0            2         batches                0.0
+         Egg   Chicken     2.0         0.0            2        feedings                0.0
+Chicken Feed Feed Mill     2.0         0.0            1         batches                1.0
+      Carrot     Field    10.0         0.0           10 fields to plant                0.0
+      Butter     Dairy     2.0         0.0            2         batches                0.0
+        Milk       Cow     4.0         0.0            4        feedings                0.0
+    Cow Feed Feed Mill     4.0         0.0            2         batches                2.0
+        Corn     Field     3.0         0.0            3 fields to plant                0.0
+     Soybean     Field     7.0         0.0            7 fields to plant                0.0
+       Bread    Bakery     3.0         0.0            3         batches                0.0
+       Wheat     Field    18.0         6.0           12 fields to plant                0.0
+
+-- Food web (per order, before stock) --
+- Bread x3  [machine: Bakery]
+  - Wheat x9  [field: Farm]
+- Butter x2  [machine: Dairy]
+  - Milk x4  [animal: Cow]
+    - Cow Feed x4  [machine: Feed Mill]
+      - Soybean x2.66667  [field: Farm]
+      - Corn x1.33333  [field: Farm]
+- Carrot Pie x2  [machine: Pie Oven]
+  - Carrot x6  [field: Farm]
+  - Wheat x4  [field: Farm]
+  - Egg x2  [animal: Chicken]
+    - Chicken Feed x2  [machine: Feed Mill]
+      - Wheat x1.33333  [field: Farm]
+      - Corn x0.666667  [field: Farm]
+- Sweater x1  [machine: Loom]
+  - Wool x2  [animal: Sheep]
+    - Sheep Feed x2  [machine: Feed Mill]
+      - Wheat x2  [field: Farm]
+      - Soybean x0.666667  [field: Farm]
+- Bacon x4  [animal: Pig]
+  - Pig Feed x4  [machine: Feed Mill]
+    - Carrot x2.66667  [field: Farm]
+    - Soybean x1.33333  [field: Farm]
+
+-- Timing --
+longest chain (no waiting): 8.8 h
+checking every 5 min: ready in 8.8 h
+checking every 240 min: ready at visit 6 = 20.0 h from now (last item finishes at 18.0 h)
+
+-- What to do at each visit --
+visit 1 (+0 h): plant 10 Carrot @Field; plant 3 Corn @Field; plant 7 Soybean @Field; plant 12 Wheat @Field; start 2 Bread @Bakery
+visit 2 (+4 h): start 1 Bread @Bakery; start 3 Chicken Feed @Feed Mill; start 6 Cow Feed @Feed Mill; start 6 Pig Feed @Feed Mill; start 3 Sheep Feed @Feed Mill
+visit 3 (+8 h): feed 2 Egg @Chicken; feed 4 Milk @Cow; feed 4 Bacon @Pig; feed 2 Wool @Sheep
+visit 4 (+12 h): start 2 Butter @Dairy; start 2 Carrot Pie @Pie Oven
+visit 5 (+16 h): start 1 Sweater @Loom
+visit 6 (+20 h): collect, hand in the order
+
+-- Money while doing it (LP over 20.0 h) --
+Mode 1 alone: 1229 coins/hr | with this order: 1163 coins/hr
+order costs you about 1311 coins of lost sales; selling the items instead would give 742
+reward 1500 coins (+120 XP) vs cost 1311 -> WORTH IT
+leftover capacity -> sell: Bacon 178/hr, Chocolate Cake 133/hr, Cherry Juice 86/hr, Vanilla Ice Cream 86/hr, Wooly Chaps 77/hr, Violet Dress 75/hr, Apple 73/hr, Blackberry 66/hr
+plant per visit (order + money): Carrot 13.9, Chili Pepper 0.4, Corn 5.4, Cotton 12, Indigo 0.9, Potato 0.7, Soybean 14.5, Sugarcane 5.8, Wheat 9.5

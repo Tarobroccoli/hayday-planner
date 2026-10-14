@@ -1,0 +1,390 @@
+Page title,Requested as,Kind,Level,Sell price max,Time normal (min),Time mastered (min),XP,Made in / from,Base price,Diamond price,Icon file,Ingredient cost (Fandom text),Max price per 10 (Fandom text),Raw time,Raw time3,Raw price,Fandom page
+Affogato,Affogato,Product,78.0,435,20.0,17.0,56,Ice Cream Maker,121.0,2.0,Affogato.png,420.0,4356.0,20 min,17 min,1 to 435,https://hayday.fandom.com/wiki/Affogato
+Apple,Apple,Crop,15.0,39,960.0,,7,Apple Tree,11.0,7.0,Apple.png,,396.0,16 h,,1 to 39,https://hayday.fandom.com/wiki/Apple
+Apple Ginger Tea,Apple Ginger Tea,Product,88.0,169,30.0,25.0,20,Tea Stand,47.0,3.0,Apple Ginger Tea.png,,,30 min,25 min,1 to 169,https://hayday.fandom.com/wiki/Apple_Ginger_Tea
+Apple Jam,Apple Jam,Product,35.0,219,360.0,306.0,26,Jam Maker,61.0,7.0,Apple Jam.png,117.0,2196.0,6 h,5 h 6 min,1 to 219,https://hayday.fandom.com/wiki/Apple_Jam
+Apple Juice,Apple Juice,Product,28.0,111,120.0,102.0,15,Juice Press,31.0,5.0,Apple Juice.png,78.0,1116.0,2h,1 h 42 min,1 to 111,https://hayday.fandom.com/wiki/Apple_Juice
+Apple Pie,Apple Pie,Product,28.0,270,150.0,127.0,32,Pie Oven,75.0,6.0,Apple Pie.png,231.0,2700.0,2 h 30 m,2 h 7 min,1 to 270,https://hayday.fandom.com/wiki/Apple_Pie
+Asparagus Quiche,Asparagus Quiche,Product,49.0,302,120.0,102.0,36,Pie Oven,102.0,5.0,Asparagus Quiche.png,256.0,3024.0,2 h,1 h 42 min,1 to 302,https://hayday.fandom.com/wiki/Asparagus_Quiche
+Asparagus Soup,Asparagus Soup,Product,51.0,255,60.0,51.0,30,Soup Kitchen,71.0,4.0,Asparagus Soup.png,229.0,2556.0,1 h,51 min,1 to 255,https://hayday.fandom.com/wiki/Asparagus_Soup
+BLT Salad,BLT Salad,Product,62.0,723,105.0,89.0,86,Salad Bar,201.0,5.0,BLT_Salad.png,681.0,7236.0,1 h 45 min,1 h 29 min,1 to 723,https://hayday.fandom.com/wiki/BLT_Salad
+Bacon,Bacon,Animal good,10.0,50,240.0,,5,Pig,14.0,7.0,Bacon.png,,504.0,4 h,,1 to 50,https://hayday.fandom.com/wiki/Bacon
+Bacon Donut,Bacon Donut,Product,88.0,388,30.0,25.0,46,Donut Maker,108.0,3.0,Bacon Donut.png,369.0,3888.0,30 min,25 min,1 to 388,https://hayday.fandom.com/wiki/Bacon_Donut
+Bacon Fondue,Bacon Fondue,product,86.0,507,30.0,25.0,60,Fondue Pot,141.0,3.0,Bacon Fondue.png,484.0,5076.0,30 min,25 min,1 to 507,https://hayday.fandom.com/wiki/Bacon_Fondue
+Bacon Fries,Bacon Fries,Product,87.0,302,25.0,21.0,36,Deep Fryer,84.0,3.0,Bacon Fries.png,294.0,3024.0,25 min,21 min,1 to 302,https://hayday.fandom.com/wiki/Bacon_Fries
+Bacon Pie,Bacon Pie,Product,18.0,219,180.0,153.0,26,Pie Oven,61.0,6.0,Bacon Pie.png,174.0,2196.0,3 h,2 hr 33 min,1 to 219,https://hayday.fandom.com/wiki/Bacon_Pie
+Bacon Toast,Bacon Toast,Product,65.0,648,100.0,85.0,77,Sandwich Bar,180.0,5.0,Bacon_Toast.png,605.0,6480.0,1 h 40 min,1 h 25 min,1 to 648,https://hayday.fandom.com/wiki/Bacon_Toast
+Bacon and Eggs,Bacon and Eggs,Product,11.0,201,60.0,51.0,24,BBQ Grill,56.0,4.0,Bacon_and_Eggs.png,172.0,2016.0,1 h,51 minutes,1 to 201,https://hayday.fandom.com/wiki/Bacon_and_Eggs
+Baked Potato,Baked Potato,Product,35.0,298,35.0,29.0,36,BBQ Grill,83.0,3.0,Baked Potato.png,280.0,2988.0,35 minutes,29 minutes,1 to 298,https://hayday.fandom.com/wiki/Baked_Potato
+Banana,Banana,Crop,88.0,104,1680.0,,20,Banana Tree,29.0,17.0,Banana.png,,,1 d 4 h,,1 to 104,https://hayday.fandom.com/wiki/Banana
+Banana Bread,Banana Bread,Product,91.0,424,30.0,25.0,50,Bakery,118.0,3.0,Banana Bread.png,403.0,4248.0,30 min,25 min,1 to 424,https://hayday.fandom.com/wiki/Banana_Bread
+Banana Pancakes,Banana Pancakes,Product,94.0,352,60.0,51.0,42,BBQ Grill,98.0,4.0,Banana Pancakes.png,327.0,3528.0,1 h,51 min,1 to 352,https://hayday.fandom.com/wiki/Banana_Pancakes
+Banana Split,Banana Split,Product,96.0,403,210.0,178.0,48,Ice Cream Maker,112.0,6.0,Banana Split.png,358.0,4032.0,3 h 30 min,2 h 58 min,1 to 403,https://hayday.fandom.com/wiki/Banana_Split
+Bean Dip,Bean Dip,Product,54.0,126,40.0,34.0,15,Sauce Maker,35.0,3.0,Bean Dip.png,100.0,1260.0,40 min,34 min,1 to 126,https://hayday.fandom.com/wiki/Bean_Dip
+Bean Salad,Bean Salad,Product,58.0,169,60.0,51.0,20,Salad Bar,47.0,4.0,Bean Salad.png,135.0,1692.0,1 h,51 min,1 to 169,https://hayday.fandom.com/wiki/Bean_Salad
+Beeswax,Beeswax,Product,48.0,234,45.0,38.0,28,Honey Extractor,65.0,3.0,Beeswax.png,204.0,2340.0,45 min,38 min,1 to 234,https://hayday.fandom.com/wiki/Beeswax
+Beetroot,Beetroot,Crop,72.0,14,40.0,,3,Farm,4.0,3.0,Beetroot.png,,144.0,40 min,,1 to 14,https://hayday.fandom.com/wiki/Beetroot
+Beetroot Salad,Beetroot Salad,product,76.0,234,45.0,38.0,28,Salad Bar,65.0,3.0,Beetroot Salad.png,204.0,2340.0,45 min,38 min,1 to 234,https://hayday.fandom.com/wiki/Beetroot_Salad
+Bell Pepper,Bell Pepper,Crop,74.0,36,270.0,,7,Farm,10.0,7.0,Bell Pepper.png,,360.0,4 h 30m,,1 to 36,https://hayday.fandom.com/wiki/Bell_Pepper
+Bell Pepper Soup,Bell Pepper Soup,Product,81.0,439,60.0,51.0,52,Soup Kitchen,122.0,4.0,Bell Pepper Soup.png,406.0,4392.0,1 h,51 min,1 to 439,https://hayday.fandom.com/wiki/Bell_Pepper_Soup
+Berry Juice,Berry Juice,Product,31.0,205,180.0,153.0,24,Juice Press,57.0,6.0,Berry Juice.png,128.0,,3 h,2 h 33 min,1 to 205,https://hayday.fandom.com/wiki/Berry_Juice
+Berry Smoothie,Berry Smoothie,Product,64.0,547,75.0,63.0,65,Smoothie Mixer,152.0,4.0,Berry Smoothie.png,534.0,5472.0,1 h 15 min,1 h 3 min,1 to 547,https://hayday.fandom.com/wiki/Berry_Smoothie
+Big Sushi Roll,Big Sushi Roll,Product,76.0,648,90.0,76.0,77,Sushi Bar,180.0,5.0,Big Sushi Roll.png,628.0,,1 h 30 min,1 h 16 min,1 to 648,https://hayday.fandom.com/wiki/Big_Sushi_Roll
+Birthday Bouquet,Birthday Bouquet,Product,92.0,349,20.0,17.0,42,Flower Shop,97.0,2.0,Birthday Bouquet.png,370.0,3492.0,20 min,17 min,1 to 349,https://hayday.fandom.com/wiki/Birthday_Bouquet
+Black Sesame Smoothie,Black Sesame Smoothie,Product,93.0,313,45.0,38.0,37,Smoothie Mixer,87.0,3.0,Black Sesame Smoothie.png,,,45 min,38 min,1 to 313,https://hayday.fandom.com/wiki/Black_Sesame_Smoothie
+Blackberry,Blackberry,Crop,26.0,82,1920.0,,16,Blackberry Bush,23.0,16.0,Blackberry.png,,,1 d 8 h,,1 to 82,https://hayday.fandom.com/wiki/Blackberry
+Blackberry Jam,Blackberry Jam,Product,37.0,388,480.0,408.0,46,Jam Maker,107.0,9.0,Blackberry Jam.png,246.0,3888.0,8 h,6 h 48 min,1 to 388,https://hayday.fandom.com/wiki/Blackberry_Jam
+Blackberry Muffin,Blackberry Muffin,Product,26.0,226,45.0,38.0,27,Bakery,63.0,3.0,Blackberry_Muffin.png,203.0,2268.0,45 min,38 min,1 to 226,https://hayday.fandom.com/wiki/Blackberry_Muffin
+Blanket,Blanket,Product,59.0,1098,210.0,178.0,131,Sewing Machine,305.0,6.0,Blanket.png,1056.0,10980.0,3 h 30 min,2 h 58 min,1 to 1098,https://hayday.fandom.com/wiki/Blanket
+Blue Sweater,Blue Sweater,Product,20.0,208,180.0,153.0,25,Loom,58.0,6.0,Blue_Sweater.png,158.0,2088.0,3 h,2 hr 33 min,1 to 208,https://hayday.fandom.com/wiki/Blue_Sweater
+Blue Woolly Hat,Blue Woolly Hat,Product,19.0,111,60.0,51.0,13,Loom,31.0,4.0,Blue_Woolly_Hat.png,79.0,1116.0,1 h,51 min,1 to 111,https://hayday.fandom.com/wiki/Blue_Woolly_Hat
+Blueberry Cheesecake,Blueberry Cheesecake,Product,31.0,500,240.0,204.0,60,Cake Oven,139.0,6.0,Blueberry Cheesecake.png,448.0,5004.0,4 h,3 h 24 min,1 to 500,https://hayday.fandom.com/wiki/Blueberry_Cheesecake
+Blueberry Chutney,Blueberry Chutney,Product,70.0,579,240.0,204.0,69,Jam Maker,161.0,3.0,Blueberry Chutney.png,410.0,5796.0,4 h,3 h 24 min,1 to 579,https://hayday.fandom.com/wiki/Blueberry_Chutney
+Blueberry Muffin,Blueberry Muffin,Product,33.0,230,45.0,38.0,28,Bakery,64.0,3.0,Blueberry_Muffin.png,203.0,2304.0,45 min,38 min,1 to 230,https://hayday.fandom.com/wiki/Blueberry_Muffin
+Bracelet,Bracelet,Product,38.0,514,120.0,102.0,61,Jeweler,143.0,5.0,Bracelet.png,474.0,5148.0,2 h,1 h 42 min,1 to 514,https://hayday.fandom.com/wiki/Bracelet
+Bread,Bread,Product,4.0,21,5.0,4.0,3,Bakery,6.0,1.0,Bread.png,9.0,216.0,5 min,4 min,1 to 21,https://hayday.fandom.com/wiki/Bread
+Breakfast Bowl,Breakfast Bowl,product,119.0,604,50.0,42.0,72,Yogurt Maker,168.0,3.0,Breakfast Bowl.png,580.0,6048.0,50 min,42 min,1 to 604,https://hayday.fandom.com/wiki/Breakfast_Bowl
+Bright Bouquet,Bright Bouquet,Product,65.0,338,20.0,17.0,40,Flower Shop,94.0,2.0,Bright Bouquet.png,278.0,3384.0,20 min,17 min,1 to 338,https://hayday.fandom.com/wiki/Bright_Bouquet
+Broccoli,Broccoli,Crop,83.0,21,80.0,,4,Farm,6.0,4.0,Broccoli.png,,216.0,1 h 20 min,,1 to 21,https://hayday.fandom.com/wiki/Broccoli
+Broccoli Pasta,Broccoli Pasta,Product,83.0,345,60.0,51.0,41,Pasta Kitchen,96.0,4.0,Broccoli Pasta.png,314.0,3456.0,1 h,51 min,1 to 345,https://hayday.fandom.com/wiki/Broccoli_Pasta
+Broccoli Soup,Broccoli Soup,Product,87.0,237,90.0,76.0,28,Soup Kitchen,66.0,5.0,Broccoli Soup.png,189.0,2376.0,1 h 30 min,1 h 16 min,1 to 237,https://hayday.fandom.com/wiki/Broccoli_Soup
+Brown Sugar,Brown Sugar,Product,7.0,32,20.0,17.0,4,Sugar Mill,9.0,2.0,Brown Sugar.png,14.0,324.0,20 min,17 min,1 to 32,https://hayday.fandom.com/wiki/Brown_Sugar
+Butter,Butter,Product,9.0,82,30.0,25.0,10,Dairy,23.0,3.0,Butter.png,64.0,828.0,30 min,25 min,1 to 82,https://hayday.fandom.com/wiki/Butter
+Buttered Popcorn,Buttered Popcorn,Product,16.0,126,60.0,51.0,15,Popcorn Pot,35.0,4.0,Buttered_Popcorn.png,96.0,1260.0,1 h,51 min,1 to 126,https://hayday.fandom.com/wiki/Buttered_Popcorn
+Cabbage,Cabbage,Crop,65.0,18,45.0,,3,Farm,5.0,3.0,Cabbage.png,,180.0,45 min,,1 to 18,https://hayday.fandom.com/wiki/Cabbage
+Cabbage Soup,Cabbage Soup,Product,65.0,270,90.0,76.0,32,Soup Kitchen,75.0,5.0,Cabbage Soup.png,240.0,2700.0,1 h 30 m,1 h 16 min,1 to 270,https://hayday.fandom.com/wiki/Cabbage_Soup
+Cacao,Cacao,Crop,36.0,86,2100.0,,16,Cacao Tree,24.0,16.0,Cacao.png,,864.0,1 d 11 h,,1 to 86,https://hayday.fandom.com/wiki/Cacao
+Caffè Latte,Caffè Latte,Product,43.0,219,10.0,8.0,26,Coffee Kiosk,61.0,2.0,Caffe Latte.png,210.0,2196.0,10 min,8 min,1 to 219,https://hayday.fandom.com/wiki/Caffè_Latte
+Caffè Mocha,Caffè Mocha,Product,45.0,291,15.0,12.0,35,Coffee Kiosk,81.0,2.0,Caffe Mocha.png,286.0,2916.0,15 min,12 min,1 to 291,https://hayday.fandom.com/wiki/Caffè_Mocha
+Candy Bouquet,Candy Bouquet,Product,90.0,554,20.0,17.0,66,Flower Shop,154.0,2.0,Candy Bouquet.png,539.0,5544.0,20 min,17 min,1 to 554,https://hayday.fandom.com/wiki/Candy_Bouquet
+Canned Fish,Canned Fish,Product,95.0,471,220.0,187.0,56,Preservation Station,131.0,7.0,Canned Fish.png,421.0,4716.0,3 h 40 m,3 h 7 min,1 to 471,https://hayday.fandom.com/wiki/Canned_Fish
+Caramel Apple,Caramel Apple,Product,51.0,255,120.0,102.0,31,Candy Machine,71.0,5.0,Caramel Apple.png,219.0,2556.0,2 h,1 h 42 min,1 to 255,https://hayday.fandom.com/wiki/Caramel_Apple
+Caramel Latte,Caramel Latte,Product,62.0,345,15.0,12.0,41,Coffee Kiosk,96.0,2.0,Caramel Latte.png,336.0,3456.0,15 min,12 min,1 to 345,https://hayday.fandom.com/wiki/Caramel_Latte
+Carrot,Carrot,Crop,9.0,7,10.0,,2,Farm,2.0,2.0,Carrot.png,,72.0,10 min,,1 to 7,https://hayday.fandom.com/wiki/Carrot
+Carrot Cake,Carrot Cake,Product,21.0,165,90.0,76.0,20,Cake Oven,46.0,5.0,Carrot Cake.png,128.0,1656.0,1 h 30 min,1 h 16 min,1 to 165,https://hayday.fandom.com/wiki/Carrot_Cake
+Carrot Juice,Carrot Juice,Product,26.0,46,30.0,25.0,6,Juice Press,13.0,3.0,Carrot Juice.png,21.0,,30 min,25 min,1 to 46,https://hayday.fandom.com/wiki/Carrot_Juice
+Carrot Pie,Carrot Pie,Product,14.0,82,60.0,51.0,10,Pie Oven,23.0,4.0,Carrot Pie.png,45.0,828.0,1 h,51 min,1 to 82,https://hayday.fandom.com/wiki/Carrot_Pie
+Casserole,Casserole,Product,36.0,367,120.0,102.0,44,Pie Oven,102.0,5.0,Casserole.png,330.0,3672.0,2 h,1 h 42 min,1 to 367,https://hayday.fandom.com/wiki/Casserole
+Chamomile Tea,Chamomile Tea,Product,100.0,144,20.0,17.0,17,Tea Stand,40.0,2.0,Chamomile Tea.png,118.0,1440.0,20 min,17 min,1 to 144,https://hayday.fandom.com/wiki/Chamomile_Tea
+Cheese,Cheese,Product,12.0,122,60.0,51.0,15,Dairy,34.0,4.0,Cheese.png,96.0,1224.0,1 h,51 min,1 to 122,https://hayday.fandom.com/wiki/Cheese
+Cheese Fondue,Cheese Fondue,product,91.0,493,20.0,17.0,59,Fondue Pot,137.0,2.0,Cheese Fondue.png,469.0,4932.0,20 min,17 min,1 to 493,https://hayday.fandom.com/wiki/Cheese_Fondue
+Cheesecake,Cheesecake,Product,24.0,284,240.0,204.0,34,Cake Oven,79.0,6.0,Cheesecake.png,226.0,2844.0,4 h,3 h 24 min,1 to 284,https://hayday.fandom.com/wiki/Cheesecake
+Cherry,Cherry,Crop,22.0,68,1680.0,,13,Cherry Tree,19.0,13.0,Cherry.png,,684.0,1 d 4 h,,1 to 68,https://hayday.fandom.com/wiki/Cherry
+Cherry Jam,Cherry Jam,Product,38.0,334,420.0,357.0,40,Jam Maker,93.0,8.0,Cherry Jam.png,204.0,3348.0,7 h,5 h 57 min,1 to 334,https://hayday.fandom.com/wiki/Cherry_Jam
+Cherry Juice,Cherry Juice,Product,30.0,216,150.0,127.0,26,Juice Press,60.0,6.0,Cherry Juice.png,136.0,,2 h 30 m,2 h 7 m,1 to 216,https://hayday.fandom.com/wiki/Cherry_Juice
+Cherry Popsicle,Cherry Popsicle,Product,33.0,352,180.0,153.0,42,Ice Cream Maker,98.0,6.0,Cherry Popsicle.png,306.0,3528.0,3 h,2 h 33 m,1 to 352,https://hayday.fandom.com/wiki/Cherry_Popsicle
+Chicken Feed,Chicken Feed,Product,2.0,7,5.0,4.0,1,Feed Mill,2.0,1.0,Chicken_Feed.png,13.0,72.0,5 min,4 min,1 to 7,https://hayday.fandom.com/wiki/Chicken_Feed
+Chickpea,Chickpea,Crop,95.0,18,60.0,,4,Farm,5.0,4.0,Chickpea.png,,180.0,1 h,,1 to 18,https://hayday.fandom.com/wiki/Chickpea
+Chickpea Stew,Chickpea Stew,Product,106.0,284,90.0,76.0,34,Stew Pot,79.0,5.0,Chickpea Stew.png,248.0,2844.0,1 hr 30 min,1 hr 16 min,1 to 284,https://hayday.fandom.com/wiki/Chickpea_Stew
+Chili Fudge,Chili Fudge,Product,104.0,540,170.0,144.0,64,Fudge Shop,150.0,6.0,Chili Fudge.png,494.0,5400.0,2 h 50 m,2 h 24 min,1 to 540,https://hayday.fandom.com/wiki/Chili_Fudge
+Chili Pepper,Chili Pepper,Crop,25.0,36,240.0,,7,Farm,10.0,7.0,Chili Pepper.png,,360.0,4 h,,1 to 36,https://hayday.fandom.com/wiki/Chili_Pepper
+Chili Popcorn,Chili Popcorn,Product,25.0,122,120.0,102.0,15,Popcorn Pot,34.0,5.0,Chili_Popcorn.png,86.0,1224.0,2 h,1 h 42 min,1 to 122,https://hayday.fandom.com/wiki/Chili_Popcorn
+Chili Poppers,Chili Poppers,Product,98.0,406,40.0,34.0,48,Deep Fryer,113.0,3.0,Chili Poppers.png,383.0,4068.0,40 min,34 min,1 to 406,https://hayday.fandom.com/wiki/Chili_Poppers
+Chili Stew,Chili Stew,Product,109.0,370,120.0,102.0,44,Stew Pot,103.0,5.0,Chili Stew.png,336.0,3708.0,2 hr,1 hr 42 min,1 to 370,https://hayday.fandom.com/wiki/Chili_Stew
+Chocolate,Chocolate,Product,54.0,460,1200.0,1020.0,55,Candy Machine,128.0,13.0,Chocolate.png,358.0,4608.0,20 h,17 h,1 to 460,https://hayday.fandom.com/wiki/Chocolate
+Chocolate Cake,Chocolate Cake,Product,36.0,320,120.0,102.0,38,Cake Oven,89.0,5.0,Chocolate_Cake.png,286.0,3204.0,2 h,1 h 42 min,1 to 320,https://hayday.fandom.com/wiki/Chocolate_Cake
+Chocolate Fondue,Chocolate Fondue,Product,81.0,626,25.0,21.0,74,Fondue Pot,174.0,3.0,Chocolate Fondue.png,610.0,6264.0,25 min,21 min,1 to 626,https://hayday.fandom.com/wiki/Chocolate_Fondue
+Chocolate Ice Cream,Chocolate Ice Cream,Product,39.0,342,150.0,127.0,41,Ice Cream Maker,95.0,6.0,Chocolate Ice Cream.png,304.0,3420.0,2 h 30 min,2 h 7 min,1 to 342,https://hayday.fandom.com/wiki/Chocolate_Ice_Cream
+Chocolate Pie,Chocolate Pie,Product,65.0,514,75.0,63.0,70,Pie Oven,143.0,4.0,Chocolate Pie.png,433.0,5148.0,1 h 15 min,1 hr 3 min,1 to 514,https://hayday.fandom.com/wiki/Chocolate_Pie
+Chocolate Popcorn,Chocolate Popcorn,Product,44.0,248,150.0,127.0,29,Popcorn Pot,69.0,8.0,Chocolate_Popcorn.png,186.0,2484.0,2 h 30 min,2 h 7 min,1 to 248,https://hayday.fandom.com/wiki/Chocolate_Popcorn
+Chocolate Roll,Chocolate Roll,Product,95.0,604,90.0,76.0,72,Cake Oven,168.0,5.0,Chocolate Roll.png,585.0,6048.0,1 h 30 min,1 h 16 min,1 to 604,https://hayday.fandom.com/wiki/Chocolate_Roll
+Clay,Clay,Crop,94.0,18,110.0,,5,Farm,5.0,5.0,Clay.png,,180.0,1 h 50 m,,1 to 18,https://hayday.fandom.com/wiki/Clay
+Clay Mug,Clay Mug,Product,99.0,212,200.0,170.0,25,Pottery Studio,59.0,1.0,Clay Mug.png,140.0,2124.0,3 h 20 m,2 h 50 m,1 to 212,https://hayday.fandom.com/wiki/Clay_Mug
+Cloche Hat,Cloche Hat,Product,70.0,468,120.0,102.0,56,Hat Maker,130.0,5.0,Cloche Hat.png,424.0,4680.0,2 h,1 h 42 min,1 to 468,https://hayday.fandom.com/wiki/Cloche_Hat
+Cocoa Smoothie,Cocoa Smoothie,Product,100.0,511,40.0,34.0,61,Smoothie Mixer,142.0,3.0,Cocoa Smoothie.png,498.0,5112.0,40 min,34 min,1 to 511,https://hayday.fandom.com/wiki/Cocoa_Smoothie
+Coconut,Coconut,Crop,101.0,108,2160.0,,21,Coconut Tree,30.0,19.0,Coconut.png,,1080.0,1 d 12 h,,1 to 108,https://hayday.fandom.com/wiki/Coconut
+Coconut Ice Cream,Coconut Ice Cream,Product,102.0,320,15.0,12.0,38,Ice Cream Maker,89.0,2.0,Coconut Ice Cream.png,306.0,3204.0,15 min,12 min,1 to 320,https://hayday.fandom.com/wiki/Coconut_Ice_Cream
+Coleslaw,Coleslaw,product,75.0,468,75.0,63.0,56,Salad Bar,130.0,4.0,Coleslaw.png,435.0,4680.0,1 hr 15 min,1 hr 3 min,1 to 468,https://hayday.fandom.com/wiki/Coleslaw
+Colorful Candles,Colorful Candles,Product,84.0,324,110.0,93.0,39,Candle Maker,90.0,5.0,Colorful Candles.png,287.0,3240.0,1 h 50 min,1 h 33 min,1 to 324,https://hayday.fandom.com/wiki/Colorful_Candles
+Cookie,Cookie,Product,10.0,104,60.0,51.0,13,Bakery,29.0,4.0,Cookie.png,74.0,1044.0,1 h,51 min,1 to 104,https://hayday.fandom.com/wiki/Cookie
+Cookie Cupcake,Cookie Cupcake,Product,114.0,712,120.0,102.0,85,Cupcake Maker,198.0,5.0,Cookie Cupcake.png,674.0,7128.0,2 h,1 h 42 min,1 to 712,https://hayday.fandom.com/wiki/Cookie_Cupcake
+Corn,Corn,Crop,2.0,7,5.0,,1,Farm,2.0,1.0,Corn.png,,72.0,5 min,,1 to 7,https://hayday.fandom.com/wiki/Corn
+Corn Bread,Corn Bread,Product,7.0,72,30.0,25.0,8,Bakery,20.0,3.0,Corn_Bread.png,50.0,720.0,30 min,25 min,1 to 72,https://hayday.fandom.com/wiki/Corn_Bread
+Corn Dog,Corn Dog,Product,78.0,529,60.0,51.0,63,Hot Dog Stand,147.0,4.0,Corn Dog.png,505.0,5292.0,1 h,51 min,1 to 529,https://hayday.fandom.com/wiki/Corn_Dog
+Cotton,Cotton,Crop,18.0,28,150.0,,6,Farm,8.0,7.0,Cotton.png,,288.0,2 h 30 min,,1 to 28,https://hayday.fandom.com/wiki/Cotton
+Cotton Candy,Cotton Candy,Product,75.0,226,30.0,25.0,27,Candy Machine,63.0,3.0,Cotton Candy.png,200.0,2268.0,30 min,25 min,1 to 226,https://hayday.fandom.com/wiki/Cotton_Candy
+Cotton Fabric,Cotton Fabric,Product,18.0,108,30.0,25.0,13,Loom,30.0,3.0,Cotton Fabric.png,84.0,1080.0,30 min,25 min,1 to 108,https://hayday.fandom.com/wiki/Cotton_Fabric
+Cotton Shirt,Cotton Shirt,Product,19.0,241,45.0,38.0,29,Sewing Machine,67.0,3.0,Cotton Shirt.png,216.0,2412.0,45 min,38 min,1 to 241,https://hayday.fandom.com/wiki/Cotton_Shirt
+Cow Feed,Cow Feed,Product,6.0,14,10.0,8.0,2,Feed Mill,4.0,2.0,Cow_Feed.png,27.0,144.0,10 min,8 min,1 to 14,https://hayday.fandom.com/wiki/Cow_Feed
+Cream,Cream,Product,6.0,50,20.0,17.0,6,Dairy,14.0,2.0,Cream.png,32.0,504.0,20 min,17 min,1 to 50,https://hayday.fandom.com/wiki/Cream
+Cream Cake,Cream Cake,Product,23.0,219,180.0,153.0,26,Cake Oven,61.0,6.0,Cream Cake.png,115.0,2196.0,3 h,2 h 33 min,1 to 219,https://hayday.fandom.com/wiki/Cream_Cake
+Cream Donut,Cream Donut,Product,86.0,230,25.0,21.0,27,Donut Maker,64.0,3.0,Cream Donut.png,211.0,2304.0,25 min,21 min,1 to 230,https://hayday.fandom.com/wiki/Cream_Donut
+Crunchy Donut,Crunchy Donut,Product,82.0,594,30.0,25.0,71,Donut Maker,165.0,3.0,Crunchy Donut.png,449.0,5940.0,30 min,25 min,1 to 594,https://hayday.fandom.com/wiki/Crunchy_Donut
+Cucumber,Cucumber,Crop,70.0,14,35.0,,3,Farm,4.0,3.0,Cucumber.png,,144.0,35 min,,1 to 14,https://hayday.fandom.com/wiki/Cucumber
+Cucumber Sandwich,Cucumber Sandwich,Product,79.0,464,35.0,29.0,55,Sandwich Bar,129.0,2.0,Cucumber Sandwich.png,437.0,4644.0,35 min,29 min,1 to 464,https://hayday.fandom.com/wiki/Cucumber_Sandwich
+Cucumber Smoothie,Cucumber Smoothie,Product,70.0,266,40.0,34.0,32,Smoothie Mixer,74.0,3.0,Cucumber Smoothie.png,238.0,2664.0,40 min,34 min,1 to 266,https://hayday.fandom.com/wiki/Cucumber_Smoothie
+Diamond Ring,Diamond Ring,Product,40.0,824,240.0,204.0,98,Jeweler,229.0,6.0,Diamond Ring.png,770.0,8244.0,4 h,3 h 24 min,1 to 824,https://hayday.fandom.com/wiki/Diamond_Ring
+Dried Fruit,Dried Fruit,Product,102.0,266,180.0,153.0,32,Preservation Station,74.0,6.0,Dried Fruits.png,225.0,2664.0,3 h,2 h 33 min,1 to 266,https://hayday.fandom.com/wiki/Dried_Fruit
+Duck Feather,Duck Feather,Animal good,50.0,140,180.0,,17,Duck,39.0,5.0,Duck Feather.png,,1404.0,3 h,,1 to 140,https://hayday.fandom.com/wiki/Duck_Feather
+Egg,Egg,Animal good,1.0,18,20.0,,2,Chicken,5.0,2.0,Egg.png,,180.0,20 min,,1 to 18,https://hayday.fandom.com/wiki/Egg
+Egg Sandwich,Egg Sandwich,Product,66.0,583,80.0,68.0,69,Sandwich Bar,162.0,5.0,Egg Sandwich.png,541.0,5832.0,1 h 20 min,1 h 8 min,1 to 583,https://hayday.fandom.com/wiki/Egg_Sandwich
+Egg Sushi,Egg Sushi,Product,63.0,550,120.0,102.0,66,Sushi Bar,153.0,5.0,Egg Sushi.png,528.0,5508.0,2 h,1 h 42 min,1 to 550,https://hayday.fandom.com/wiki/Egg_Sushi
+Eggplant,Eggplant,Crop,90.0,14,40.0,,3,Farm,4.0,3.0,Eggplant.png,,144.0,40 min,,1 to 14,https://hayday.fandom.com/wiki/Eggplant
+Eggplant Parmesan,Eggplant Parmesan,Product,99.0,442,45.0,38.0,53,Pie Oven,123.0,3.0,Eggplant Parmesan.png,408.0,4428.0,45 min,38 min,1 to 442,https://hayday.fandom.com/wiki/Eggplant_Parmesan
+Espresso,Espresso,Product,42.0,248,5.0,4.0,29,Coffee Kiosk,69.0,1.0,Espresso.png,242.0,2484.0,5 min,4 min,1 to 248,https://hayday.fandom.com/wiki/Espresso
+Exfoliating Soap,Exfoliating Soap,Product,93.0,363,60.0,51.0,43,Bath Kiosk,101.0,4.0,Exfoliating Soap.png,346.0,3636.0,1 hr,51 min,1 to 363,https://hayday.fandom.com/wiki/Exfoliating_Soap
+Falafel,Falafel,Product,98.0,226,55.0,46.0,27,Deep Fryer,63.0,4.0,Falafel.png,196.0,2268.0,55 min,46 min,1 to 226,https://hayday.fandom.com/wiki/Falafel
+Fancy Cake,Fancy Cake,product,54.0,450,15.0,12.0,49,Cake Oven,125.0,2.0,Fancy Cake.png,450.0,4500.0,15 min,12 min,1 to 450,https://hayday.fandom.com/wiki/Fancy_Cake
+Feta Pie,Feta Pie,Product,34.0,223,90.0,76.0,26,Pie Oven,62.0,5.0,Feta Pie.png,183.0,2232.0,1 h 30 m,1 h 16 min,1 to 223,https://hayday.fandom.com/wiki/Feta_Pie
+Feta Salad,Feta Salad,Product,58.0,745,90.0,76.0,89,Salad Bar,207.0,5.0,Feta Salad.png,702.0,7452.0,1 h 30 min,1 h 16 min,1 to 745,https://hayday.fandom.com/wiki/Feta_Salad
+Filled Donut,Filled Donut,Product,93.0,403,35.0,29.0,48,Donut Maker,112.0,3.0,Filled Donut.png,381.0,4032.0,35 min,29 min,1 to 403,https://hayday.fandom.com/wiki/Filled_Donut
+Fish Burger,Fish Burger,Product,27.0,226,120.0,102.0,27,BBQ Grill,63.0,5.0,Fish Burger.png,186.0,2268.0,2 h,1 h 42 minutes,1 to 226,https://hayday.fandom.com/wiki/Fish_Burger
+Fish Pie,Fish Pie,Product,28.0,226,120.0,102.0,27,Pie Oven,63.0,5.0,Fish Pie.png,186.0,2268.0,2 h,1 h 42 min,1 to 226,https://hayday.fandom.com/wiki/Fish_Pie
+Fish Skewer,Fish Skewer,Product,96.0,176,30.0,25.0,21,BBQ Grill,49.0,3.0,Fish Skewer.png,,,30 min,25 min,1 to 176,https://hayday.fandom.com/wiki/Fish_Skewer
+Fish Soup,Fish Soup,Product,53.0,298,180.0,153.0,35,Soup Kitchen,83.0,6.0,Fish Soup.png,255.0,2988.0,3 h,2 h 33 min,1 to 298,https://hayday.fandom.com/wiki/Fish_Soup
+Fish Taco,Fish Taco,Product,79.0,392,90.0,76.0,47,Taco Kitchen,109.0,5.0,Fish Taco.png,363.0,3924.0,1 h 30 min,1 h 16 min,1 to 392,https://hayday.fandom.com/wiki/Fish_Taco
+Fish and Chips,Fish and Chips,Product,41.0,244,90.0,76.0,29,BBQ Grill,68.0,5.0,Fish and Chips.png,216.0,2448.0,1 h 30 m,1 h 16 m,1 to 244,https://hayday.fandom.com/wiki/Fish_and_Chips
+Floral Candle,Floral Candle,Product,95.0,442,120.0,102.0,53,Candle Maker,123.0,5.0,Floral Candle.png,398.0,4428.0,2 h,1 h 42 min,1 to 442,https://hayday.fandom.com/wiki/Floral_Candle
+Flower Crown,Flower Crown,Product,86.0,331,120.0,102.0,40,Hat Maker,92.0,5.0,Flower Crown.png,292.0,3312.0,2 h,1 h 42 min,1 to 331,https://hayday.fandom.com/wiki/Flower_Crown
+Flower Pendant,Flower Pendant,Product,98.0,698,60.0,51.0,83,Jeweler,194.0,4.0,Flower Pendant.png,673.0,6984.0,1 h,51 min,1 to 698,https://hayday.fandom.com/wiki/Flower_Pendant
+Flower Shawl,Flower Shawl,Product,71.0,295,90.0,76.0,35,Loom,82.0,5.0,Flower Shawl.png,253.0,2952.0,1 h 30 min,1 h 16 min,1 to 295,https://hayday.fandom.com/wiki/Flower_Shawl
+Fresh Pasta,Fresh Pasta,Product,67.0,43,15.0,12.0,5,Pasta Maker,12.0,2.0,Fresh Pasta.png,24.0,432.0,15 min,12 min,1 to 43,https://hayday.fandom.com/wiki/Fresh_Pasta
+Fried Candy Bar,Fried Candy Bar,Product,100.0,658,15.0,12.0,87,Deep Fryer,183.0,2.0,Fried Candy Bar.png,596.0,6588.0,15 min,12 min,1 to 658,https://hayday.fandom.com/wiki/Fried_Candy_Bar
+Fried Rice,Fried Rice,Product,69.0,205,60.0,51.0,24,Wok Kitchen,57.0,4.0,Fried Rice.png,180.0,2052.0,1 h,51 min,1 to 205,https://hayday.fandom.com/wiki/Fried_Rice
+Fruit Cake,Fruit Cake,Product,89.0,450,180.0,153.0,54,Cake Oven,125.0,6.0,Fruit Cake.png,403.0,4500.0,3 h,2 h 33 min,1 to 450,https://hayday.fandom.com/wiki/Fruit_Cake
+Fruit Salad,Fruit Salad,Product,82.0,597,120.0,102.0,71,Salad Bar,166.0,5.0,Fruit Salad.png,565.0,5976.0,2 h,1 h 42 min,1 to 597,https://hayday.fandom.com/wiki/Fruit_Salad
+Fruit Sorbet,Fruit Sorbet,Product,106.0,518,60.0,51.0,62,Ice Cream Maker,144.0,4.0,Fruit Sorbet.png,379.0,5184.0,1 h,51 min,1 to 518,https://hayday.fandom.com/wiki/Fruit_Sorbet
+Frutti di Mare Pizza,Frutti di Mare Pizza,Product,45.0,403,15.0,12.0,48,Bakery,112.0,2.0,Frutti_di_Mare_Pizza.png,383.0,4032.0,15 min,12 min,1 to 403,https://hayday.fandom.com/wiki/Frutti_di_Mare_Pizza
+Garlic,Garlic,Crop,60.0,14,30.0,,3,Farm,4.0,3.0,Garlic.png,,144.0,30 min,,1 to 14,https://hayday.fandom.com/wiki/Garlic
+Garlic Bread,Garlic Bread,product,60.0,198,15.0,12.0,24,BBQ Grill,55.0,2.0,Garlic Bread.png,180.0,1980.0,15 min,12 min,1 to 198,https://hayday.fandom.com/wiki/Garlic_Bread
+Ginger,Ginger,Crop,78.0,28,150.0,,6,Farm,8.0,6.0,Ginger.png,,288.0,2 h 30 min,,1 to 28,https://hayday.fandom.com/wiki/Ginger
+Gingerbread Cookie,Gingerbread Cookie,Product,86.0,273,30.0,25.0,33,Bakery,76.0,3.0,Gingerbread Cookie.png,243.0,2736.0,30 min,25 min,1 to 273,https://hayday.fandom.com/wiki/Gingerbread_Cookie
+Gnocchi,Gnocchi,Product,72.0,475,80.0,68.0,57,Pasta Kitchen,132.0,4.0,Gnocchi.png,400.0,4752.0,1 h 20 min,1 h 8 min,1 to 475,https://hayday.fandom.com/wiki/Gnocchi
+Goat Cheese,Goat Cheese,Product,33.0,162,90.0,76.0,19,Dairy,45.0,5.0,Goat Cheese.png,128.0,1620.0,1 h 30 min,1 h 16 min,1 to 162,https://hayday.fandom.com/wiki/Goat_Cheese
+Goat Cheese Toast,Goat Cheese Toast,Product,92.0,302,50.0,42.0,36,Sandwich Bar,84.0,3.0,Goat Cheese Toast.png,279.0,3024.0,50 min,42 min,1 to 302,https://hayday.fandom.com/wiki/Goat_Cheese_Toast
+Goat Feed,Goat Feed,Product,32.0,14,40.0,34.0,3,Feed Mill,4.0,3.0,Goat Feed.png,24.0,144.0,40 min,34 min,1 to 14,https://hayday.fandom.com/wiki/Goat_Feed
+Goat Milk,Goat Milk,Animal good,32.0,64,480.0,,6,Goat,18.0,10.0,Goat Milk.png,,648.0,8 h,,1 to 64,https://hayday.fandom.com/wiki/Goat_Milk
+Gold Bar,Gold Bar,Product,25.0,180,720.0,612.0,21,Smelter,50.0,11.0,Gold Bar.png,63.0,1800.0,12 h,10 h 12 min,1 to 180,https://hayday.fandom.com/wiki/Gold_Bar
+Gracious Bouquet,Gracious Bouquet,product,73.0,500,40.0,34.0,60,Flower Shop,139.0,3.0,Gracious Bouquet.png,234.0,5004.0,40 min,34 min,1 to 500,https://hayday.fandom.com/wiki/Gracious_Bouquet
+Grape Jam,Grape Jam,Product,85.0,162,390.0,331.0,19,Jam Maker,45.0,8.0,Grape Jam.png,96.0,1620.0,6 h 30 min,5 h 31 min,1 to 162,https://hayday.fandom.com/wiki/Grape_Jam
+Grape Juice,Grape Juice,Product,84.0,104,150.0,127.0,13,Juice Press,29.0,6.0,Grape Juice.png,64.0,1044.0,2 h 30 min,2 h 7 min,1 to 104,https://hayday.fandom.com/wiki/Grape_Juice
+Grapes,Grapes,Crop,84.0,32,180.0,,6,Farm,9.0,6.0,Grapes.png,,324.0,3 h,,1 to 32,https://hayday.fandom.com/wiki/Grapes
+Green Smoothie,Green Smoothie,Product,66.0,320,45.0,38.0,38,Smoothie Mixer,89.0,3.0,Green Smoothie.png,292.0,3204.0,45 min,38 min,1 to 320,https://hayday.fandom.com/wiki/Green_Smoothie
+Green Tea,Green Tea,Product,80.0,241,30.0,25.0,29,Tea Stand,67.0,3.0,Green Tea.png,215.0,2412.0,30 min,25 min,1 to 241,https://hayday.fandom.com/wiki/Green_Tea
+Grilled Asparagus,Grilled Asparagus,Product,67.0,486,75.0,63.0,58,BBQ Grill,135.0,3.0,Grilled Asparagus.png,460.0,4860.0,1 h 15 m,1 h 3 m,1 to 486,https://hayday.fandom.com/wiki/Grilled_Asparagus
+Grilled Eggplant,Grilled Eggplant,Product,90.0,324,40.0,34.0,39,BBQ Grill,90.0,3.0,Grilled Eggplant.png,294.0,3240.0,40 min,34 min,1 to 324,https://hayday.fandom.com/wiki/Grilled_Eggplant
+Grilled Lamb Skewer,Grilled Lamb Skewer,Product,25.0,90,20.0,17.0,11,BBQ Grill,25.0,2.0,Grilled Lamb Skewer.png,72.0,,20 min,17 min,1 to 90,https://hayday.fandom.com/wiki/Grilled_Lamb_Skewer
+Grilled Mussels,Grilled Mussels,Product,32.0,370,80.0,68.0,44,BBQ Grill,103.0,4.0,Grilled Mussels.png,346.0,3.0,1 h 20 mins,1 h 8 mins,1 to 370,https://hayday.fandom.com/wiki/Grilled_Mussels
+Grilled Onion,Grilled Onion,Product,68.0,190,60.0,51.0,23,BBQ Grill,53.0,4.0,Grilled Onion.png,160.0,1908.0,1 h,51 min,1 to 190,https://hayday.fandom.com/wiki/Grilled_Onion
+Guava,Guava,Crop,104.0,111,2040.0,,22,Guava Tree,31.0,19.0,Guava.png,,1116.0,1 d 10 h,,1 to 111,https://hayday.fandom.com/wiki/Guava
+Guava Compote,Guava Compote,Product,104.0,421,260.0,221.0,50,Preservation Station,117.0,7.0,Guava Compote.png,365.0,4212.0,4 h 20 m,3 h 41 min,1 to 421,https://hayday.fandom.com/wiki/Guava_Compote
+Guava Cupcake,Guava Cupcake,Product,109.0,583,70.0,59.0,70,Cupcake Maker,162.0,3.0,Guava Cupcake.png,552.0,5832.0,1 h 10 min,59 min,1 to 583,https://hayday.fandom.com/wiki/Guava_Cupcake
+Guava Juice,Guava Juice,Product,104.0,252,55.0,46.0,30,Juice Press,70.0,3.0,Guava Juice.png,222.0,2520.0,55 min,46 min,1 to 252,https://hayday.fandom.com/wiki/Guava_Juice
+Hamburger,Hamburger,Product,18.0,180,120.0,102.0,22,BBQ Grill,50.0,5.0,Hamburger.png,143.0,1800.0,2 h,1 h 42 m,1 to 180,https://hayday.fandom.com/wiki/Hamburger
+Hand Pies,Hand Pies,Product,91.0,295,20.0,17.0,35,Deep Fryer,82.0,2.0,Hand Pies.png,270.0,2952.0,20 min,17 min,1 to 295,https://hayday.fandom.com/wiki/Hand_Pies
+Honey,Honey,Product,39.0,154,20.0,17.0,19,Honey Extractor,43.0,2.0,Honey.png,136.0,1548.0,20 min,17 min,1 to 154,https://hayday.fandom.com/wiki/Honey
+Honey Apple Cake,Honey Apple Cake,Product,42.0,482,200.0,170.0,57,Cake Oven,134.0,6.0,Honey Apple Cake.png,428.0,4824.0,3 h 20 min,2 h 50 min,1 to 482,https://hayday.fandom.com/wiki/Honey_Apple_Cake
+Honey Face Mask,Honey Face Mask,Product,99.0,320,90.0,77.0,38,Bath Kiosk,89.0,5.0,Honey Face Mask.png,283.0,3204.0,1 hr 30 min,1 hr 17 min,1 to 320,https://hayday.fandom.com/wiki/Honey_Face_Mask
+Honey Peanuts,Honey Peanuts,Product,63.0,468,40.0,34.0,64,Candy Machine,130.0,3.0,Honey Peanuts.png,388.0,4680.0,40 min,34 min,1 to 468,https://hayday.fandom.com/wiki/Honey_Peanuts
+Honey Popcorn,Honey Popcorn,Product,40.0,360,90.0,76.0,43,Popcorn Pot,100.0,5.0,Honey Popcorn.png,322.0,3600.0,1 h 30 min,1 h 16 min,1 to 360,https://hayday.fandom.com/wiki/Honey_Popcorn
+Honey Soap,Honey Soap,Product,84.0,327,60.0,51.0,39,Bath Kiosk,91.0,4.0,Honey Soap.png,304.0,3276.0,1 hr,51 min,1 to 327,https://hayday.fandom.com/wiki/Honey_Soap
+Honey Tea,Honey Tea,Product,83.0,313,40.0,34.0,37,Tea Stand,87.0,3.0,Honey Tea.png,283.0,3132.0,40 min,34 min,1 to 313,https://hayday.fandom.com/wiki/Honey_Tea
+Honey Toast,Honey Toast,Product,69.0,255,60.0,51.0,31,Sandwich Bar,71.0,4.0,Honey Toast.png,225.0,2556.0,1 h,51 min,1 to 255,https://hayday.fandom.com/wiki/Honey_Toast
+Honeycomb,Honeycomb,Animal good,39.0,68,35.0,,8,Honey Bee,19.0,3.0,Honeycomb.png,,684.0,35 min,,1 to 68,https://hayday.fandom.com/wiki/Honeycomb
+Hot Chocolate,Hot Chocolate,Product,47.0,316,25.0,21.0,38,Coffee Kiosk,88.0,3.0,Hot Chocolate.png,304.0,3168.0,25 min,21 min,1 to 316,https://hayday.fandom.com/wiki/Hot_Chocolate
+Hot Dog,Hot Dog,Product,75.0,370,30.0,25.0,44,Hot Dog Stand,103.0,3.0,Hot Dog.png,336.0,3708.0,30 min,25 min,1 to 370,https://hayday.fandom.com/wiki/Hot_Dog
+Hummus,Hummus,Product,95.0,277,30.0,25.0,33,Sauce Maker,77.0,3.0,Hummus.png,254.0,2772.0,30 min,25 min,1 to 277,https://hayday.fandom.com/wiki/Hummus
+Hummus Wrap,Hummus Wrap,Product,109.0,374,30.0,25.0,45,Sandwich Bar,104.0,3.0,Hummus Wrap.png,351.0,3744.0,30 min,25 min,1 to 374,https://hayday.fandom.com/wiki/Hummus_Wrap
+Iced Banana Latte,Iced Banana Latte,Product,88.0,277,20.0,17.0,33,Coffee Kiosk,77.0,2.0,Iced Banana Latte.png,264.0,2772.0,20m,17 min,1 to 277,https://hayday.fandom.com/wiki/Iced_Banana_Latte
+Iced Tea,Iced Tea,Product,92.0,252,30.0,25.0,30,Tea Stand,70.0,3.0,Iced Tea.png,229.0,2520.0,30 min,25 min,1 to 252,https://hayday.fandom.com/wiki/Iced_Tea
+Indigo,Indigo,Crop,13.0,25,120.0,,5,Farm,7.0,5.0,Indigo.png,,252.0,2 h,,1 to 25,https://hayday.fandom.com/wiki/Indigo
+Iron Bar,Iron Bar,Product,34.0,129,420.0,357.0,15,Smelter,36.0,8.0,Iron Bar.png,42.0,1296.0,7 h,5 h 57 min,1 to 129,https://hayday.fandom.com/wiki/Iron_Bar
+Iron Bracelet,Iron Bracelet,Product,41.0,658,90.0,76.0,79,Jeweler,183.0,5.0,Iron Bracelet.png,621.0,6588.0,1 h 30 min,1 h 16 min,1 to 658,https://hayday.fandom.com/wiki/Iron_Bracelet
+Jelly Beans,Jelly Beans,Product,60.0,684,1440.0,1224.0,81,Candy Machine,190.0,14.0,Jelly Beans.png,690.0,6840.0,1 d,20 h 24 min,1 to 684,https://hayday.fandom.com/wiki/Jelly_Beans
+Kimchi,Kimchi,Product,98.0,219,300.0,255.0,26,Preservation Station,61.0,8.0,Kimchi.png,168.0,2196.0,5 h,4 h 15 min,1 to 219,https://hayday.fandom.com/wiki/Kimchi
+Lamb Feed,Lamb Feed,Product,25.0,18,10.0,8.0,4,Feed Mill,5.0,2.0,Lamb Feed.png,48.0,180.0,10 min,8 min,1 to 18,https://hayday.fandom.com/wiki/Lamb_Feed
+Lamb Soup,Lamb Soup,Product,46.0,180,120.0,102.0,21,Soup Kitchen,50.0,5.0,Lamb Soup.png,140.0,1800.0,2 h,1 h 42 min,1 to 180,https://hayday.fandom.com/wiki/Lamb_Soup
+Lamb Stir Fry,Lamb Stir Fry,Product,69.0,270,120.0,102.0,32,Wok Kitchen,75.0,5.0,Lamb Stir Fry.png,234.0,2700.0,2 h,1 h 42 min,1 to 270,https://hayday.fandom.com/wiki/Lamb_Stir_Fry
+Lemon,Lemon,Crop,66.0,93,1800.0,,18,Lemon Tree,26.0,18.0,Lemon.png,,936.0,1 d 6 h,,1 to 93,https://hayday.fandom.com/wiki/Lemon
+Lemon Cake,Lemon Cake,Product,68.0,896,150.0,127.0,107,Cake Oven,249.0,6.0,Lemon Cake.png,851.0,8964.0,2 h 30 min,2 h 7 min,1 to 896,https://hayday.fandom.com/wiki/Lemon_Cake
+Lemon Candle,Lemon Candle,Product,72.0,457,135.0,114.0,55,Candle Maker,127.0,5.0,Lemon Candle.png,420.0,4572.0,2 h 15 min,1 h 54 min,1 to 457,https://hayday.fandom.com/wiki/Lemon_Candle
+Lemon Curd,Lemon Curd,Product,66.0,378,25.0,21.0,45,Sauce Maker,105.0,3.0,Lemon Curd.png,354.0,3780.0,25 min,21 min,1 to 378,https://hayday.fandom.com/wiki/Lemon_Curd
+Lemon Fudge,Lemon Fudge,Product,108.0,590,110.0,93.0,70,Fudge Shop,164.0,5.0,Lemon Fudge.png,546.0,5904.0,1 h 50 m,1 h 33 min,1 to 590,https://hayday.fandom.com/wiki/Lemon_Fudge
+Lemon Lotion,Lemon Lotion,Product,84.0,403,75.0,63.0,48,Bath Kiosk,112.0,4.0,Lemon Lotion.png,370.0,4032.0,1 hr 15 min,1 hr 3 min,1 to 403,https://hayday.fandom.com/wiki/Lemon_Lotion
+Lemon Pie,Lemon Pie,Product,67.0,446,135.0,114.0,53,Pie Oven,124.0,6.0,Lemon Pie.png,399.0,4464.0,2 h 15 m,1 h 54 min,1 to 446,https://hayday.fandom.com/wiki/Lemon_Pie
+Lemon Tea,Lemon Tea,Product,86.0,241,20.0,17.0,29,Tea Stand,67.0,2.0,Lemon Tea.png,222.0,2412.0,20 min,17 min,1 to 241,https://hayday.fandom.com/wiki/Lemon_Tea
+Lettuce,Lettuce,Crop,58.0,32,210.0,,7,Farm,9.0,7.0,Lettuce.png,,324.0,3 h 30 min,,1 to 32,https://hayday.fandom.com/wiki/Lettuce
+Lily,Lily,Crop,53.0,21,90.0,,5,Farm,6.0,5.0,Lily.png,,216.0,1 h 30 min,,1 to 21,https://hayday.fandom.com/wiki/Lily
+Lobster Pasta,Lobster Pasta,Product,79.0,637,120.0,102.0,76,Pasta Kitchen,177.0,5.0,Lobster Pasta.png,602.0,6372.0,2 h,1 h 42 min,1 to 637,https://hayday.fandom.com/wiki/Lobster_Pasta
+Lobster Skewer,Lobster Skewer,Product,48.0,417,40.0,34.0,50,BBQ Grill,116.0,3.0,Lobster Skewer.png,391.0,4176.0,40 minutes,34 minutes,1 to 417,https://hayday.fandom.com/wiki/Lobster_Skewer
+Lobster Soup,Lobster Soup,Product,46.0,612,150.0,127.0,73,Soup Kitchen,170.0,6.0,Lobster Soup.png,567.0,6120.0,2 h 30 min,2 h 7 min,1 to 612,https://hayday.fandom.com/wiki/Lobster_Soup
+Lobster Sushi,Lobster Sushi,Product,59.0,637,60.0,51.0,76,Sushi Bar,177.0,4.0,Lobster Sushi.png,625.0,,1 h,51 min,1 to 637,https://hayday.fandom.com/wiki/Lobster_Sushi
+Lobster Tail,Lobster Tail,Animal good,44.0,201,360.0,,24,Lobster,56.0,8.0,Lobster Tail.png,,2016.0,6 h,,1 to 201,https://hayday.fandom.com/wiki/Lobster_Tail
+Lollipop,Lollipop,Product,57.0,342,720.0,612.0,41,Candy Machine,95.0,11.0,Lollipop.png,258.0,3420.0,12 h,10 h 12 min,1 to 342,https://hayday.fandom.com/wiki/Lollipop
+Macaroon,Macaroon,Product,101.0,421,30.0,25.0,50,Bakery,117.0,3.0,Macaroon.png,402.0,4212.0,30 min,25 min,1 to 421,https://hayday.fandom.com/wiki/Macaroon
+Mango,Mango,Crop,97.0,100,1920.0,,20,Mango Tree,28.0,18.0,Mango.png,,1008.0,1 d 8 h,,1 to 100,https://hayday.fandom.com/wiki/Mango
+Mango Juice,Mango Juice,Product,97.0,230,50.0,42.0,27,Juice Press,64.0,3.0,Mango Juice.png,200.0,2304.0,50 min,42 min,1 to 230,https://hayday.fandom.com/wiki/Mango_Juice
+Marmalade,Marmalade,Product,74.0,457,510.0,433.0,54,Jam Maker,124.0,9.0,Marmalade.png,291.0,4572.0,8 h 30 min,7 h 13 min,1 to 457,https://hayday.fandom.com/wiki/Marmalade
+Mayonnaise,Mayonnaise,Product,62.0,367,15.0,12.0,44,Sauce Maker,102.0,2.0,Mayonnaise.png,349.0,3672.0,15 min,12 min,1 to 367,https://hayday.fandom.com/wiki/Mayonnaise
+Meat Bucket,Meat Bucket,Product,,72,45.0,38.0,15,Feed Mill,20.0,,Meat Bucket.png,197.0,720.0,45 min,38 min,1 to 72,https://hayday.fandom.com/wiki/Meat_Bucket
+Milk,Milk,Animal good,6.0,32,60.0,,3,Cow,9.0,4.0,Milk.png,,324.0,1 h,,1 to 32,https://hayday.fandom.com/wiki/Milk
+Milk Tea,Milk Tea,Product,81.0,190,45.0,38.0,23,Tea Stand,53.0,3.0,Milk Tea.png,161.0,1908.0,45 min,38 min,1 to 190,https://hayday.fandom.com/wiki/Milk_Tea
+Mint,Mint,Crop,85.0,32,180.0,,6,Farm,9.0,6.0,Mint.png,,324.0,3 h,,1 to 32,https://hayday.fandom.com/wiki/Mint
+Mint Fudge,Mint Fudge,Product,102.0,522,150.0,127.0,62,Fudge Shop,145.0,6.0,Mint Fudge.png,482.0,5220.0,2 h 30 m,2 h 7 min,1 to 522,https://hayday.fandom.com/wiki/Mint_Fudge
+Mint Ice Cream,Mint Ice Cream,Product,85.0,288,135.0,114.0,34,Ice Cream Maker,80.0,5.0,Mint Ice Cream.png,250.0,2880.0,2 h 15 min,1 h 54 min,1 to 288,https://hayday.fandom.com/wiki/Mint_Ice_Cream
+Mint Tea,Mint Tea,Product,97.0,255,35.0,29.0,31,Tea Stand,71.0,3.0,Mint Tea.png,232.0,2556.0,35 min,29 min,1 to 255,https://hayday.fandom.com/wiki/Mint_Tea
+Mixed Smoothie,Mixed Smoothie,Product,88.0,504,30.0,25.0,60,Smoothie Mixer,140.0,3.0,Mixed Smoothie.png,487.0,5040.0,30 min,25 min,1 to 504,https://hayday.fandom.com/wiki/Mixed_Smoothie
+Mushroom,Mushroom,Crop,89.0,10,20.0,,2,Farm,3.0,2.0,Mushroom.png,,108.0,20 min,,1 to 10,https://hayday.fandom.com/wiki/Mushroom
+Mushroom Pasta,Mushroom Pasta,Product,101.0,280,75.0,63.0,33,Pasta Kitchen,78.0,4.0,Mushroom Pasta.png,,,1 h 15 min,1 h 3 min,1 to 280,https://hayday.fandom.com/wiki/Mushroom_Pasta
+Mushroom Pot Pie,Mushroom Pot Pie,Product,97.0,162,60.0,51.0,19,Pie Oven,45.0,4.0,Mushroom Pot Pie.png,129.0,1620.0,1 h,51 min,1 to 162,https://hayday.fandom.com/wiki/Mushroom_Pot_Pie
+Mushroom Salad,Mushroom Salad,Product,89.0,216,60.0,51.0,26,Salad Bar,60.0,4.0,Mushroom Salad.png,,,1 h,51 min,1 to 216,https://hayday.fandom.com/wiki/Mushroom_Salad
+Mushroom Soup,Mushroom Soup,Product,104.0,176,80.0,68.0,21,Soup Kitchen,49.0,4.0,Mushroom Soup.png,,,1 h 20 min,1 h 8 min,1 to 176,https://hayday.fandom.com/wiki/Mushroom_Soup
+Mussel Chowder,Mussel Chowder,Product,47.0,626,180.0,153.0,75,Soup Kitchen,174.0,6.0,Mussel Chowder.png,592.0,6264.0,3 h,2 h 33 min,1 to 626,https://hayday.fandom.com/wiki/Mussel_Chowder
+Mussel Linguine,Mussel Linguine,Product,73.0,583,90.0,76.0,69,Pasta Kitchen,162.0,5.0,Mussel Linguine.png,560.0,5832.0,1 h 30 min,1 h 16 min,1 to 583,https://hayday.fandom.com/wiki/Mussel_Linguine
+Mussel Nigiri,Mussel Nigiri,Product,56.0,543,90.0,76.0,65,Sushi Bar,151.0,5.0,Mussel Nigiri.png,536.0,,1 h 30 min,1 h 16 min,1 to 543,https://hayday.fandom.com/wiki/Mussel_Nigiri
+Nachos,Nachos,Product,87.0,432,75.0,63.0,52,Taco Kitchen,120.0,4.0,Nachos.png,402.0,4320.0,1 h 15 min,1 h 3 min,1 to 432,https://hayday.fandom.com/wiki/Nachos
+Necklace,Necklace,Product,39.0,727,180.0,153.0,87,Jeweler,202.0,6.0,Necklace.png,679.0,7272.0,3 h,2 h 33 min,1 to 727,https://hayday.fandom.com/wiki/Necklace
+Noodle Soup,Noodle Soup,Product,73.0,432,120.0,102.0,52,Soup Kitchen,120.0,5.0,Noodle Soup.png,422.0,4320.0,2 h,1 h 42 min,1 to 432,https://hayday.fandom.com/wiki/Noodle_Soup
+Olive,Olive,Crop,57.0,82,1440.0,,17,Olive Tree,23.0,17.0,Olive.png,,828.0,1 d,,1 to 82,https://hayday.fandom.com/wiki/Olive
+Olive Dip,Olive Dip,Product,66.0,468,45.0,38.0,56,Sauce Maker,130.0,3.0,Olive Dip.png,414.0,4680.0,45 min,38 min,1 to 468,https://hayday.fandom.com/wiki/Olive_Dip
+Olive Oil,Olive Oil,Product,60.0,277,45.0,38.0,33,Sauce Maker,77.0,3.0,Olive Oil.png,246.0,2772.0,45 min,38 min,1 to 277,https://hayday.fandom.com/wiki/Olive_Oil
+Onion,Onion,Crop,68.0,39,300.0,,8,Farm,11.0,8.0,Onion.png,,396.0,5 h,,1 to 39,https://hayday.fandom.com/wiki/Onion
+Onion Dog,Onion Dog,Product,80.0,306,75.0,63.0,36,Hot Dog Stand,85.0,4.0,Onion Dog.png,259.0,3060.0,1 h 15 min,1 h 3 min,1 to 306,https://hayday.fandom.com/wiki/Onion_Dog
+Onion Melt,Onion Melt,Product,84.0,417,90.0,76.0,50,Sandwich Bar,116.0,5.0,Onion Melt.png,383.0,4176.0,1 h 30 min,1 h 16 min,1 to 417,https://hayday.fandom.com/wiki/Onion_Melt
+Onion Soup,Onion Soup,Product,72.0,327,150.0,127.0,39,Soup Kitchen,91.0,6.0,Onion Soup.png,282.0,3276.0,2 h 30 min,2 h 7 min,1 to 327,https://hayday.fandom.com/wiki/Onion_Soup
+Orange,Orange,Crop,71.0,97,1860.0,,19,Orange Tree,27.0,18.0,Orange.png,,972.0,1 d 7 h,,1 to 97,https://hayday.fandom.com/wiki/Orange
+Orange Juice,Orange Juice,Product,71.0,234,120.0,102.0,28,Juice Press,65.0,5.0,Orange Juice.png,194.0,2340.0,2 h,1 h 42 min,1 to 234,https://hayday.fandom.com/wiki/Orange_Juice
+Orange Salad,Orange Salad,Product,117.0,558,45.0,38.0,66,Salad Bar,155.0,3.0,Orange Salad.png,523.0,5580.0,45 min,38 min,1 to 558,https://hayday.fandom.com/wiki/Orange_Salad
+Orange Sorbet,Orange Sorbet,Product,78.0,399,210.0,178.0,48,Ice Cream Maker,111.0,6.0,Orange Sorbet.png,348.0,3996.0,3 h 30 min,2 h 58 min,1 to 399,https://hayday.fandom.com/wiki/Orange_Sorbet
+Orange Tea,Orange Tea,Product,89.0,255,40.0,34.0,30,Tea Stand,71.0,3.0,Orange Tea.png,226.0,2556.0,40 min,34 min,1 to 255,https://hayday.fandom.com/wiki/Orange_Tea
+Pancake,Pancake,Product,9.0,108,30.0,25.0,13,BBQ Grill,30.0,3.0,Pancake.png,86.0,1080.0,30 m,25 m,1 to 108,https://hayday.fandom.com/wiki/Pancake
+Passion Fruit,Passion Fruit,Crop,88.0,18,60.0,,4,Farm,5.0,4.0,Passion Fruit.png,,180.0,1 h,,1 to 18,https://hayday.fandom.com/wiki/Passion_Fruit
+Passion Fruit Jam,Passion Fruit Jam,Product,96.0,118,320.0,272.0,14,Jam Maker,33.0,7.0,Passion Fruit Jam.png,54.0,1188.0,5 h 20 m,4h 32min,1 to 118,https://hayday.fandom.com/wiki/Passion_Fruit_Jam
+Passion Fruit Juice,Passion Fruit Juice,Product,88.0,64,45.0,38.0,8,Juice Press,18.0,3.0,Passion Fruit Juice.png,36.0,648.0,45 m,38 min,1 to 64,https://hayday.fandom.com/wiki/Passion_Fruit_Juice
+Passion Fruit Pie,Passion Fruit Pie,Product,92.0,111,50.0,42.0,13,Pie Oven,31.0,3.0,Passion Fruit Pie.png,78.0,1116.0,50 m,42 min,1 to 111,https://hayday.fandom.com/wiki/Passion_Fruit_Pie
+Pasta Carbonara,Pasta Carbonara,Product,83.0,410,150.0,127.0,49,Pasta Kitchen,114.0,6.0,Pasta Carbonara.png,369.0,4104.0,2 h 30 min,2 h 7 min,1 to 410,https://hayday.fandom.com/wiki/Pasta_Carbonara
+Pasta Salad,Pasta Salad,Product,67.0,759,150.0,127.0,90,Salad Bar,211.0,6.0,Pasta Salad.png,721.0,7596.0,2 h 30 min,2 h 7 min,1 to 759,https://hayday.fandom.com/wiki/Pasta_Salad
+Peach,Peach,Crop,76.0,100,1800.0,,20,Peach Tree,28.0,17.0,Peach.png,,1008.0,1 d 6 h,,1 to 100,https://hayday.fandom.com/wiki/Peach
+Peach Ice Cream,Peach Ice Cream,Product,83.0,450,180.0,153.0,54,Ice Cream Maker,125.0,6.0,Peach Ice Cream.png,404.0,4500.0,3 h,2 h 33 min,1 to 450,https://hayday.fandom.com/wiki/Peach_Ice_Cream
+Peach Jam,Peach Jam,Product,79.0,464,480.0,408.0,55,Jam Maker,129.0,9.0,Peach Jam.png,302.0,4644.0,8 h,6 h 48 min,1 to 464,https://hayday.fandom.com/wiki/Peach_Jam
+Peach Tart,Peach Tart,Product,76.0,435,150.0,127.0,52,Pie Oven,121.0,6.0,Peach Tart.png,393.0,4356.0,2 h 30 min,2 h 7 min,1 to 435,https://hayday.fandom.com/wiki/Peach_Tart
+Peanut Butter Milkshake,Peanut Butter Milkshake,Product,68.0,619,100.0,85.0,86,Ice Cream Maker,172.0,5.0,Peanut Butter Milkshake.png,574.0,6192.0,1 h 40 min,1 h 25 min,1 to 619,https://hayday.fandom.com/wiki/Peanut_Butter_Milkshake
+Peanut Butter and Jelly Sandwich,Peanut Butter and Jelly Sandwich,Product,71.0,601,25.0,21.0,80,Sandwich Bar,167.0,3.0,Peanut Butter and Jelly Sandwich.png,528.0,6012.0,25 min,21 min,1 to 601,https://hayday.fandom.com/wiki/Peanut_Butter_and_Jelly_Sandwich
+Peanut Fudge,Peanut Fudge,Product,111.0,1141,90.0,76.0,136,Fudge Shop,317.0,5.0,Peanut Fudge.png,854.0,11412.0,1 h 30 m,1 h 16 min,"1 to 1,141",https://hayday.fandom.com/wiki/Peanut_Fudge
+Peanut Noodles,Peanut Noodles,Product,86.0,597,45.0,38.0,80,Wok Kitchen,166.0,3.0,Peanut Noodles.png,516.0,5976.0,45 min,38 min,1 to 597,https://hayday.fandom.com/wiki/Peanut_Noodles
+Peony,Peony,Crop,82.0,36,240.0,,7,Farm,10.0,7.0,Peony.png,,360.0,4 h,,1 to 36,https://hayday.fandom.com/wiki/Peony
+Pickles,Pickles,Product,91.0,270,240.0,204.0,32,Preservation Station,75.0,7.0,Pickles.png,213.0,2700.0,4 h,3 h 24 min,1 to 270,https://hayday.fandom.com/wiki/Pickles
+Pig Feed,Pig Feed,Product,10.0,14,20.0,17.0,2,Feed Mill,4.0,2.0,Pig_Feed.png,24.0,144.0,20 min,17 min,1 to 14,https://hayday.fandom.com/wiki/Pig_Feed
+Pillow,Pillow,Product,51.0,676,180.0,153.0,81,Sewing Machine,188.0,6.0,Pillow.png,636.0,6768.0,3 h,2 h 33 min,1 to 676,https://hayday.fandom.com/wiki/Pillow
+Pineapple,Pineapple,Crop,52.0,14,30.0,,3,Farm,4.0,3.0,Pineapple.png,,144.0,30 min,,1 to 14,https://hayday.fandom.com/wiki/Pineapple
+Pineapple Cake,Pineapple Cake,Product,65.0,259,75.0,63.0,31,Cake Oven,72.0,4.0,Pineapple Cake.png,226.0,2592.0,1 h 15 min,1 h 3 min,1 to 259,https://hayday.fandom.com/wiki/Pineapple_Cake
+Pineapple Coconut Bars,Pineapple Coconut Bars,Product,120.0,284,40.0,34.0,34,Bakery,79.0,3.0,Pineapple Coconut Bars.png,257.0,2844.0,40 min,34 min,1 to 284,https://hayday.fandom.com/wiki/Pineapple_Coconut_Bars
+Pineapple Juice,Pineapple Juice,Product,52.0,68,45.0,38.0,8,Juice Press,19.0,3.0,Pineapple Juice Blue.png,42.0,684.0,45 min,38 min,1 to 68,https://hayday.fandom.com/wiki/Pineapple_Juice
+Pizza,Pizza,Product,33.0,190,15.0,12.0,23,Bakery,53.0,2.0,Pizza.png,171.0,1908.0,15 min,12 min,1 to 190,https://hayday.fandom.com/wiki/Pizza
+Plain Cupcake,Plain Cupcake,Product,109.0,280,40.0,34.0,34,Cupcake Maker,78.0,3.0,Plain Cupcake.png,251.0,2808.0,40 min,34 min,1 to 280,https://hayday.fandom.com/wiki/Plain_Cupcake
+Plain Donut,Plain Donut,Product,76.0,129,15.0,12.0,15,Donut Maker,36.0,2.0,Plain Donut.png,109.0,1296.0,15 min,12 min,1 to 129,https://hayday.fandom.com/wiki/Plain_Donut
+Plain Yogurt,Plain Yogurt,Product,103.0,234,120.0,102.0,28,Yogurt Maker,65.0,5.0,Plain Yogurt.png,197.0,2340.0,2 h,1 h 42 min,1 to 234,https://hayday.fandom.com/wiki/Plain_Yogurt
+Platinum Bar,Platinum Bar,Product,25.0,205,960.0,816.0,24,Smelter,57.0,12.0,Platinum Bar.png,96.0,2052.0,16 h,13 h 36 min,1 to 205,https://hayday.fandom.com/wiki/Platinum_Bar
+Plum,Plum,Crop,94.0,82,1500.0,,16,Plum Tree,23.0,16.0,Plum.png,,828.0,1 d 1 h,,1 to 82,https://hayday.fandom.com/wiki/Plum
+Plum Jam,Plum Jam,Product,94.0,385,300.0,255.0,46,Jam Maker,107.0,7.0,Plum Jam.png,246.0,3852.0,5 h,4 h 15 m,1 to 385,https://hayday.fandom.com/wiki/Plum_Jam
+Plum Smoothie,Plum Smoothie,Product,102.0,522,35.0,29.0,62,Smoothie Mixer,145.0,3.0,Plum Smoothie.png,496.0,5220.0,35 min,29 min,1 to 522,https://hayday.fandom.com/wiki/Plum_Smoothie
+Pomegranate,Pomegranate,Crop,107.0,111,1620.0,,22,Pomegranate Tree,31.0,17.0,Pomegranate.png,,1116.0,1 d 3 h,,1 to 111,https://hayday.fandom.com/wiki/Pomegranate
+Pomegranate Cake,Pomegranate Cake,Product,108.0,316,160.0,136.0,38,Cake Oven,88.0,6.0,Pomegranate Cake.png,265.0,3168.0,2 h 40 min,2 h 16 min,1 to 316,https://hayday.fandom.com/wiki/Pomegranate_Cake
+Pomegranate Tea,Pomegranate Tea,Product,107.0,313,34.0,29.0,37,Tea Stand,87.0,3.0,Pomegranate Tea.png,283.0,3132.0,34 min,29 min,1 to 313,https://hayday.fandom.com/wiki/Pomegranate_Tea
+Popcorn,Popcorn,Product,8.0,32,30.0,25.0,4,Popcorn Pot,9.0,3.0,Popcorn.png,14.0,324.0,30 min,25 min,1 to 32,https://hayday.fandom.com/wiki/Popcorn
+Potato,Potato,Crop,35.0,36,220.0,,7,Farm,10.0,7.0,Potato.png,,360.0,3 h 40 min,,1 to 36,https://hayday.fandom.com/wiki/Potato
+Potato Bread,Potato Bread,Product,39.0,284,45.0,38.0,34,Bakery,79.0,3.0,Potato Bread.png,258.0,2844.0,45 min,38 min,1 to 284,https://hayday.fandom.com/wiki/Potato_Bread
+Potato Feta Cake,Potato Feta Cake,Product,38.0,309,120.0,102.0,37,Cake Oven,86.0,5.0,Potato_Feta_Cake.png,270.0,3096.0,2 h,1 h 42 min,1 to 309,https://hayday.fandom.com/wiki/Potato_Feta_Cake
+Potato Soup,Potato Soup,Product,78.0,255,150.0,127.0,31,Soup Kitchen,71.0,6.0,Potato Soup.png,218.0,2556.0,2 h 30 m,2 h 7 min,1 to 255,https://hayday.fandom.com/wiki/Potato_Soup
+Potted Plant,Potted Plant,Product,96.0,151,220.0,187.0,26,Pottery Studio,42.0,1.0,Potted Plant.png,75.0,1512.0,3h 40m,3h 7m,1 to 151,https://hayday.fandom.com/wiki/Potted_Plant
+Pumpkin,Pumpkin,Crop,15.0,32,180.0,,6,Farm,9.0,6.0,Pumpkin.png,,324.0,3 h,,1 to 32,https://hayday.fandom.com/wiki/Pumpkin
+Pumpkin Pie,Pumpkin Pie,Product,15.0,158,120.0,102.0,19,Pie Oven,44.0,5.0,Pumpkin Pie.png,120.0,1584.0,2h,1 h 42 min,1 to 158,https://hayday.fandom.com/wiki/Pumpkin_Pie
+Pumpkin Soup,Pumpkin Soup,Product,49.0,392,120.0,102.0,47,Soup Kitchen,109.0,5.0,Pumpkin Soup.png,346.0,3924.0,2 h,1 h 42 min,1 to 392,https://hayday.fandom.com/wiki/Pumpkin_Soup
+Quesadilla,Quesadilla,Product,82.0,241,60.0,51.0,29,Taco Kitchen,67.0,4.0,Quesadilla.png,206.0,2412.0,1 h,51 min,1 to 241,https://hayday.fandom.com/wiki/Quesadilla
+Raspberry,Raspberry,Crop,19.0,46,1080.0,,9,Raspberry Bush,13.0,9.0,Raspberry.png,,,18 h,,1 to 46,https://hayday.fandom.com/wiki/Raspberry
+Raspberry Candle,Raspberry Candle,Product,52.0,360,105.0,89.0,43,Candle Maker,100.0,5.0,Raspberry Candle.png,326.0,3600.0,1 h 45 min,1 h 29 min,1 to 360,https://hayday.fandom.com/wiki/Raspberry_Candle
+Raspberry Jam,Raspberry Jam,Product,36.0,252,420.0,357.0,30,Jam Maker,70.0,8.0,Raspberry Jam.png,138.0,2520.0,7 h,5 h 57 min,1 to 252,https://hayday.fandom.com/wiki/Raspberry_Jam
+Raspberry Mocha,Raspberry Mocha,Product,46.0,259,30.0,25.0,31,Coffee Kiosk,72.0,3.0,Raspberry Mocha.png,246.0,2592.0,30 min,25 min,1 to 259,https://hayday.fandom.com/wiki/Raspberry_Mocha
+Raspberry Muffin,Raspberry Muffin,Product,19.0,140,45.0,38.0,17,Bakery,39.0,3.0,Raspberry_Muffin.png,114.0,1404.0,45 min,38 min,1 to 140,https://hayday.fandom.com/wiki/Raspberry_Muffin
+Red Berry Cake,Red Berry Cake,Product,23.0,255,60.0,51.0,31,Cake Oven,71.0,4.0,Red Berry Cake.png,232.0,2556.0,1 h,51 min,1 to 255,https://hayday.fandom.com/wiki/Red_Berry_Cake
+Red Scarf,Red Scarf,Product,48.0,288,150.0,127.0,34,Loom,80.0,6.0,Red Scarf.png,208.0,2880.0,2 h 30 min,2 h 7 min,1 to 288,https://hayday.fandom.com/wiki/Red_Scarf
+Refined Coal,Refined Coal,Product,33.0,108,360.0,306.0,13,Smelter,30.0,7.0,Refined Coal.png,30.0,1080.0,6 h,5 h 6 min,1 to 108,https://hayday.fandom.com/wiki/Refined_Coal
+Rice,Rice,Crop,56.0,18,45.0,,3,Farm,5.0,3.0,Rice.png,,180.0,45 min,,1 to 18,https://hayday.fandom.com/wiki/Rice
+Rice Ball,Rice Ball,Product,110.0,464,45.0,38.0,55,Sushi Bar,129.0,3.0,Rice Ball.png,460.0,4644.0,45 min,38 min,1 to 464,https://hayday.fandom.com/wiki/Rice_Ball
+Rice Noodles,Rice Noodles,Product,73.0,100,20.0,17.0,12,Pasta Maker,28.0,2.0,Rice Noodles.png,90.0,1008.0,20 min,17 min,1 to 100,https://hayday.fandom.com/wiki/Rice_Noodles
+Rich Fudge,Rich Fudge,Product,99.0,644,120.0,102.0,77,Fudge Shop,179.0,5.0,Rich Fudge.png,604.0,6444.0,2 h,1 h 42 min,1 to 644,https://hayday.fandom.com/wiki/Rich_Fudge
+Rich Soap,Rich Soap,Product,121.0,266,70.0,59.0,32,Bath Kiosk,101.0,4.0,Rich Soap.png,233.0,2664.0,1 hr 10 min,59 min,1 to 266,https://hayday.fandom.com/wiki/Rich_Soap
+Roasted Tomatoes,Roasted Tomatoes,Product,30.0,118,90.0,76.0,14,BBQ Grill,33.0,5.0,Roasted Tomatoes.png,86.0,,1 h 30 min,1 h 16 min,1 to 118,https://hayday.fandom.com/wiki/Roasted_Tomatoes
+Rustic Bouquet,Rustic Bouquet,Product,49.0,208,45.0,38.0,25,Flower Shop,58.0,3.0,Rustic Bouquet.png,168.0,2088.0,45 min,38 min,1 to 208,https://hayday.fandom.com/wiki/Rustic_Bouquet
+Salsa,Salsa,Product,77.0,252,20.0,17.0,30,Sauce Maker,70.0,2.0,Salsa.png,236.0,2520.0,20 min,17 min,1 to 252,https://hayday.fandom.com/wiki/Salsa
+Samosa,Samosa,Product,103.0,223,75.0,63.0,27,Deep Fryer,62.0,4.0,Samosa.png,192.0,2232.0,1 h 15 min,1 h 3 min,1 to 223,https://hayday.fandom.com/wiki/Samosa
+Seafood Salad,Seafood Salad,Product,64.0,763,120.0,102.0,91,Salad Bar,212.0,5.0,Seafood_Salad.png,718.0,7632.0,2 h,1 h 42 min,1 to 763,https://hayday.fandom.com/wiki/Seafood_Salad
+Sesame,Sesame,Crop,50.0,18,60.0,,4,Farm,5.0,4.0,Sesame.png,,180.0,1 h,,1 to 18,https://hayday.fandom.com/wiki/Sesame
+Sesame Brittle,Sesame Brittle,Product,78.0,270,60.0,51.0,32,Candy Machine,75.0,4.0,Sesame_Brittle.png,,,1 h,51 min,1 to 270,https://hayday.fandom.com/wiki/Sesame_Brittle
+Sesame Ice Cream,Sesame Ice Cream,Product,50.0,176,120.0,102.0,21,Ice Cream Maker,49.0,5.0,Sesame Ice Cream.png,,,2 h,1 h 42 min,1 to 176,https://hayday.fandom.com/wiki/Sesame_Ice_Cream
+Sheep Feed,Sheep Feed,Product,16.0,14,30.0,25.0,3,Feed Mill,4.0,3.0,Sheep Feed.png,19.0,144.0,30 min,25 min,1 to 14,https://hayday.fandom.com/wiki/Sheep_Feed
+Shepherd's Pie,Shepherd's Pie,Product,39.0,280,100.0,85.0,34,Pie Oven,78.0,6.0,Shepherd's Pie.png,250.0,2808.0,1 h 40 m,1 h 25 min,1 to 280,https://hayday.fandom.com/wiki/Shepherd's_Pie
+Silver Bar,Silver Bar,Product,24.0,147,480.0,408.0,18,Smelter,41.0,9.0,Silver Bar.png,54.0,1476.0,8 h,6 h 48 min,1 to 147,https://hayday.fandom.com/wiki/Silver_Bar
+Snack Mix,Snack Mix,Product,64.0,309,45.0,38.0,50,Popcorn Pot,86.0,3.0,Snack Mix.png,259.0,3096.0,45 min,38 min,1 to 309,https://hayday.fandom.com/wiki/Snack_Mix
+Soft Bouquet,Soft Bouquet,Product,93.0,298,30.0,25.0,36,Flower Shop,83.0,3.0,Soft Bouquet.png,280.0,2988.0,30 min,25 min,1 to 298,https://hayday.fandom.com/wiki/Soft_Bouquet
+Soothing Pad,Soothing Pad,Product,45.0,324,60.0,51.0,39,Sewing Machine,90.0,4.0,Soothing Pad.png,281.0,3240.0,1 h,51 min,1 to 324,https://hayday.fandom.com/wiki/Soothing_Pad
+Soy Sauce,Soy Sauce,Product,54.0,154,180.0,153.0,19,Sauce Maker,43.0,6.0,Soy Sauce.png,100.0,1548.0,3 h,2 h 33 min,1 to 154,https://hayday.fandom.com/wiki/Soy_Sauce
+Soybean,Soybean,Crop,5.0,10,20.0,,2,Farm,3.0,2.0,Soybean.png,,108.0,20 min,,1 to 10,https://hayday.fandom.com/wiki/Soybean
+Spicy Bean Taco,Spicy Bean Taco,Product,77.0,453,120.0,102.0,54,Taco Kitchen,126.0,5.0,Spicy Bean Taco.png,345.0,4536.0,2 h,1 h 42 min,1 to 453,https://hayday.fandom.com/wiki/Spicy_Bean_Taco
+Spicy Fish,Spicy Fish,Product,79.0,543,90.0,76.0,65,Wok Kitchen,151.0,5.0,Spicy Fish.png,469.0,5436.0,1 h 30 min,1 h 16 min,1 to 543,https://hayday.fandom.com/wiki/Spicy_Fish
+Spicy Pasta,Spicy Pasta,Product,87.0,576,90.0,76.0,69,Pasta Kitchen,160.0,5.0,Spicy Pasta.png,545.0,5760.0,1 h 30 min,1 h 16 min,1 to 576,https://hayday.fandom.com/wiki/Spicy_Pasta
+Spicy Pizza,Spicy Pizza,Product,37.0,226,15.0,12.0,27,Bakery,63.0,2.0,Spicy Pizza.png,207.0,2268.0,15 min,12 min,1 to 226,https://hayday.fandom.com/wiki/Spicy_Pizza
+Sprinkled Donut,Sprinkled Donut,Product,79.0,313,20.0,17.0,37,Donut Maker,87.0,2.0,Sprinkled Donut.png,301.0,3132.0,20 min,17 min,1 to 313,https://hayday.fandom.com/wiki/Sprinkled_Donut
+Steamed Mussels,Steamed Mussels,Product,27.0,284,15.0,12.0,34,BBQ Grill,79.0,2.0,Steamed Mussels.png,276.0,2844.0,15 mins,12 mins,1 to 284,https://hayday.fandom.com/wiki/Steamed_Mussels
+Strawberry,Strawberry,Crop,34.0,50,480.0,,10,Farm,14.0,10.0,Strawberry.png,,504.0,8 h,,1 to 50,https://hayday.fandom.com/wiki/Strawberry
+Strawberry Cake,Strawberry Cake,Product,35.0,316,180.0,153.0,38,Cake Oven,88.0,6.0,Strawberry Cake.png,209.0,3168.0,3 h,2 h 33 min,1 to 316,https://hayday.fandom.com/wiki/Strawberry_Cake
+Strawberry Candle,Strawberry Candle,Product,48.0,370,120.0,102.0,44,Candle Maker,103.0,5.0,Strawberry Candle.png,334.0,3708.0,2 h,1 h 42 min,1 to 370,https://hayday.fandom.com/wiki/Strawberry_Candle
+Strawberry Ice Cream,Strawberry Ice Cream,Product,34.0,331,240.0,204.0,40,Ice Cream Maker,92.0,6.0,Strawberry Ice Cream.png,282.0,3312.0,4 h,3 h 24 min,1 to 331,https://hayday.fandom.com/wiki/Strawberry_Ice_Cream
+Strawberry Jam,Strawberry Jam,Product,50.0,270,450.0,382.0,32,Jam Maker,75.0,8.0,Strawberry Jam.png,150.0,2700.0,7 h 30 min,6 h 22 min,1 to 270,https://hayday.fandom.com/wiki/Strawberry_Jam
+Strawberry Yogurt,Strawberry Yogurt,product,105.0,529,40.0,34.0,63,Yogurt Maker,147.0,3.0,Strawberry Yogurt.png,504.0,5292.0,40 min,34 min,1 to 529,https://hayday.fandom.com/wiki/Strawberry_Yogurt
+Stuffed Peppers,Stuffed Peppers,product,80.0,352,20.0,17.0,42,BBQ Grill,98.0,2.0,Stuffed Peppers.png,334.0,3528.0,20 min,17 min,1 to 352,https://hayday.fandom.com/wiki/Stuffed_Peppers
+Sugarcane,Sugarcane,Crop,7.0,14,30.0,,3,Farm,4.0,3.0,Sugarcane.png,,144.0,30 min,,1 to 14,https://hayday.fandom.com/wiki/Sugarcane
+Summer Rolls,Summer Rolls,Product,78.0,316,60.0,51.0,38,Salad Bar,88.0,4.0,Summer Rolls.png,282.0,3168.0,1 h,51 min,1 to 316,https://hayday.fandom.com/wiki/Summer_Rolls
+Summer Salad,Summer Salad,Product,84.0,554,180.0,153.0,66,Salad Bar,154.0,6.0,Summer Salad.png,508.0,5544.0,3 h,2 h 33 min,1 to 554,https://hayday.fandom.com/wiki/Summer_Salad
+Sun Hat,Sun Hat,Product,74.0,558,150.0,127.0,66,Hat Maker,155.0,6.0,Sun Hat.png,513.0,5580.0,2 h 30 min,2 h 7 min,1 to 558,https://hayday.fandom.com/wiki/Sun_Hat
+Sunflower,Sunflower,Crop,63.0,21,90.0,,5,Farm,6.0,5.0,Sunflower.png,,216.0,1 h 30 min,,1 to 21,https://hayday.fandom.com/wiki/Sunflower
+Sushi Roll,Sushi Roll,Product,56.0,489,60.0,51.0,58,Sushi Bar,136.0,4.0,Sushi Roll.png,478.0,,1 h,51 min,1 to 489,https://hayday.fandom.com/wiki/Sushi_Roll
+Sweater,Sweater,Product,17.0,151,120.0,102.0,18,Loom,42.0,5.0,Sweater.png,108.0,1512.0,2 h,1 h 42 min,1 to 151,https://hayday.fandom.com/wiki/Sweater
+Syrup,Syrup,Product,18.0,90,90.0,76.0,11,Sugar Mill,25.0,5.0,Syrup.png,56.0,900.0,1 h 30 min,1 h 16 min,1 to 90,https://hayday.fandom.com/wiki/Syrup
+Taco,Taco,Product,77.0,396,45.0,38.0,47,Taco Kitchen,92.0,3.0,Taco.png,374.0,3960.0,45 min,38 min,1 to 396,https://hayday.fandom.com/wiki/Taco
+Tart Dressing,Tart Dressing,Product,100.0,288,30.0,25.0,34,Sauce Maker,80.0,3.0,Tart Dressing.png,262.0,2880.0,30 min,25 min,1 to 288,https://hayday.fandom.com/wiki/Tart_Dressing
+Tea Leaf,Tea Leaf,Crop,80.0,43,390.0,,9,Farm,12.0,9.0,Tea Leaf.png,,432.0,6 h 30 min,,1 to 43,https://hayday.fandom.com/wiki/Tea_Leaf
+Tea Pot,Tea Pot,Product,94.0,219,220.0,187.0,26,Pottery Studio,61.0,1.0,Tea Pot.png,139.0,2196.0,3 h 40 m,3 h 7 m,1 to 219,https://hayday.fandom.com/wiki/Tea_Pot
+Toffee,Toffee,Product,52.0,176,90.0,76.0,21,Candy Machine,49.0,5.0,Toffee.png,135.0,1764.0,1 h 30 min,1 h 16 min,1 to 176,https://hayday.fandom.com/wiki/Toffee
+Tofu Dog,Tofu Dog,Product,76.0,367,45.0,38.0,44,Hot Dog Stand,102.0,3.0,Tofu Dog.png,328.0,3672.0,45 min,38 min,1 to 367,https://hayday.fandom.com/wiki/Tofu_Dog
+Tofu Stir Fry,Tofu Stir Fry,Product,89.0,306,75.0,63.0,37,Wok Kitchen,85.0,4.0,Tofu Stir Fry.png,264.0,3060.0,1 h 15 min,1 h 3 min,1 to 306,https://hayday.fandom.com/wiki/Tofu_Stir_Fry
+Tomato,Tomato,Crop,30.0,43,360.0,,8,Farm,12.0,8.0,Tomato.png,,432.0,6 h,,1 to 43,https://hayday.fandom.com/wiki/Tomato
+Tomato Juice,Tomato Juice,Product,31.0,162,90.0,76.0,19,Juice Press,45.0,5.0,Tomato Juice.png,129.0,,1 h 30 min,1 h 16 min,1 to 162,https://hayday.fandom.com/wiki/Tomato_Juice
+Tomato Sauce,Tomato Sauce,Product,69.0,230,30.0,25.0,27,Sauce Maker,70.0,3.0,Tomato Sauce.png,211.0,2304.0,30 min,25 min,1 to 230,https://hayday.fandom.com/wiki/Tomato_Sauce
+Tomato Soup,Tomato Soup,Product,47.0,478,90.0,76.0,57,Soup Kitchen,133.0,5.0,Tomato Soup.png,446.0,4788.0,1 h 30 min,1 h 16 min,1 to 478,https://hayday.fandom.com/wiki/Tomato_Soup
+Top Hat,Top Hat,Product,72.0,619,210.0,178.0,74,Hat Maker,172.0,6.0,Top Hat.png,572.0,6192.0,3 h 30 min,2 h 58 min,1 to 619,https://hayday.fandom.com/wiki/Top_Hat
+Tropical Cupcake,Tropical Cupcake,Product,112.0,572,90.0,76.0,68,Cupcake Maker,159.0,5.0,Tropical Cupcake.png,538.0,5724.0,1 h 30 min,1 h 16 min,1 to 572,https://hayday.fandom.com/wiki/Tropical_Cupcake
+Tropical Fondue,Tropical Fondue,product,100.0,417,35.0,29.0,50,Fondue Pot,116.0,3.0,Tropical Fondue.png,392.0,4176.0,35 min,29 min,1 to 417,https://hayday.fandom.com/wiki/Tropical_Fondue
+Tropical Smoothie,Tropical Smoothie,Product,104.0,475,40.0,34.0,57,Smoothie Mixer,132.0,3.0,Tropical Smoothie.png,448.0,4752.0,40 min,34 min,1 to 475,https://hayday.fandom.com/wiki/Tropical_Smoothie
+Tropical Yogurt,Tropical Yogurt,product,109.0,457,60.0,51.0,54,Yogurt Maker,127.0,4.0,Tropical Yogurt.png,636.0,4572.0,1 h,51 min,1 to 457,https://hayday.fandom.com/wiki/Tropical_Yogurt
+Vanilla Ice Cream,Vanilla Ice Cream,Product,29.0,172,120.0,102.0,20,Ice Cream Maker,48.0,5.0,Vanilla Ice Cream.png,132.0,1728.0,2 h,1 h 42 min,1 to 172,https://hayday.fandom.com/wiki/Vanilla_Ice_Cream
+Veggie Bagel,Veggie Bagel,Product,61.0,532,40.0,34.0,63,Sandwich Bar,148.0,3.0,Veggie Bagel.png,501.0,5328.0,40 min,34 min,1 to 532,https://hayday.fandom.com/wiki/Veggie_Bagel
+Veggie Bouquet,Veggie Bouquet,Product,106.0,352,15.0,12.0,42,Flower Shop,98.0,2.0,Veggie Bouquet.png,330.0,3528.0,15 min,12 min,1 to 352,https://hayday.fandom.com/wiki/Veggie_Bouquet
+Veggie Lasagna,Veggie Lasagna,Product,74.0,532,100.0,85.0,63,Pasta Kitchen,148.0,5.0,Veggie Lasagna.png,488.0,5328.0,1 h 40 min,1 h 25 min,1 to 532,https://hayday.fandom.com/wiki/Veggie_Lasagna
+Veggie Platter,Veggie Platter,Product,74.0,266,120.0,102.0,32,Salad Bar,74.0,5.0,Veggie Platter.png,222.0,2664.0,2 h,1 h 42 min,1 to 266,https://hayday.fandom.com/wiki/Veggie_Platter
+Violet Dress,Violet Dress,Product,25.0,327,135.0,114.0,39,Sewing Machine,91.0,5.0,Violet Dress.png,287.0,3276.0,2 h 15 min,1 h 54 min,1 to 327,https://hayday.fandom.com/wiki/Violet_Dress
+Watermelon,Watermelon,Crop,92.0,39,300.0,,8,Farm,11.0,8.0,Watermelon.png,,396.0,5 h,,1 to 39,https://hayday.fandom.com/wiki/Watermelon
+Watermelon Juice,Watermelon Juice,Product,92.0,108,60.0,51.0,13,Juice Press,30.0,4.0,Watermelon Juice.png,78.0,1080.0,1 h,51 min,1 to 108,https://hayday.fandom.com/wiki/Watermelon_Juice
+Wheat,Wheat,Crop,1.0,3,2.0,,1,Farm,1.0,1.0,Wheat.png,,36.0,2 min,,1 to 3,https://hayday.fandom.com/wiki/Wheat
+Wheat Bundle,Wheat Bundle,Product,,50,90.0,76.0,10,Feed Mill,14.0,6.0,Wheat Bundle.png,225.0,504.0,1 h 30 min,1 h 16 min,1 to 50,https://hayday.fandom.com/wiki/Wheat_Bundle
+White Sugar,White Sugar,Product,13.0,50,40.0,34.0,6,Sugar Mill,14.0,3.0,White Sugar.png,28.0,504.0,40 min,34 min,1 to 50,https://hayday.fandom.com/wiki/White_Sugar
+Winter Stew,Winter Stew,Product,112.0,295,140.0,119.0,35,Stew Pot,103.0,6.0,Winter Stew.png,256.0,2952.0,2 h 20 min,1 h 59 min,1 to 295,https://hayday.fandom.com/wiki/Winter_Stew
+Winter Veggies,Winter Veggies,product,72.0,198,25.0,21.0,24,BBQ Grill,55.0,3.0,Winter Veggies.png,178.0,1980.0,25 min,21 min,1 to 198,https://hayday.fandom.com/wiki/Winter_Veggies
+Wool,Wool,Animal good,16.0,54,360.0,,5,Sheep,15.0,8.0,Wool.png,,540.0,6 h,,1 to 54,https://hayday.fandom.com/wiki/Wool
+Wooly Chaps,Wooly Chaps,Product,21.0,309,90.0,76.0,37,Sewing Machine,86.0,5.0,Wooly Chaps.png,270.0,3096.0,1h 30 min,1h 16 min,1 to 309,https://hayday.fandom.com/wiki/Wooly_Chaps
+Yogurt Smoothie,Yogurt Smoothie,Product,70.0,349,60.0,51.0,42,Smoothie Mixer,97.0,4.0,Yogurt Smoothie.png,260.0,3492.0,1 h,51 min,1 to 349,https://hayday.fandom.com/wiki/Yogurt_Smoothie
+Asparagus,Asparagus,Crop,49.0,43,360.0,,8,Farm,12.0,8.0,Asparagus.png,,432.0,6 h,,1 to 43,https://hayday.fandom.com/wiki/Asparagus
+Black Bean,Black Bean,Crop,25.0,7,10.0,,2,Farm,2.0,1.0,Black Bean.png,,72.0,10 min,,1 to 7,https://hayday.fandom.com/wiki/Black_Bean
+Blueberries,Blueberries,Crop,30.0,82,2100.0,,16,Blueberry Bush,23.0,19.0,Blueberries.png,,,1 d 11 h,,1 to 82,https://hayday.fandom.com/wiki/Blueberries
+Chamomile,Chamomile,Crop,45.0,10,20.0,,2,Farm,3.0,2.0,Chamomile.png,,108.0,20 min,,1 to 10,https://hayday.fandom.com/wiki/Chamomile
+Coal,Coal,Product,33.0,10,,,3,Mine,3.0,,Coal.png,,108.0,Instant,,1 to 10,https://hayday.fandom.com/wiki/Coal
+Coffee Bean,Coffee Bean,Crop,42.0,64,1500.0,,12,Coffee Bush,18.0,16.0,Coffee Bean.png,,648.0,1 d 1 h,,1 to 64,https://hayday.fandom.com/wiki/Coffee_Bean
+Fish Fillet,Fish Fillet,Animal good,27.0,54,,,4,Fish,15.0,,Fish Fillet.png,,540.0,Instant,,1 to 54,https://hayday.fandom.com/wiki/Fish_Fillet
+Gold Ore,Gold Ore,Product,24.0,21,,,6,Mine,6.0,,Gold Ore.png,,216.0,Instant,,1 to 21,https://hayday.fandom.com/wiki/Gold_Ore
+Iron Ore,Iron Ore,Product,34.0,14,,,4,Mine,4.0,,Iron Ore.png,,144.0,Instant,,1 to 14,https://hayday.fandom.com/wiki/Iron_Ore
+Lamb Chop,Lamb Chop,Animal good,25.0,36,30.0,,4,Lamb,10.0,3.0,Lamb Chop.png,,360.0,30 min,,1 to 36,https://hayday.fandom.com/wiki/Lamb_Chop
+Mussel Meat,Mussel Meat,Animal good,27.0,28,360.0,,8,Closed Mussel,,,Mussel Meat.png,,288.0,6 h,,1 to 28,https://hayday.fandom.com/wiki/Mussel_Meat
+Oats,Oats,Crop,119.0,7,7.0,,1,Farm,2.0,1.0,Oats.png,,72.0,7 min,,1 to 7,https://hayday.fandom.com/wiki/Oats
+Peanuts,Peanuts,Animal good,62.0,234,300.0,,43,Squirrel,65.0,6.0,Peanuts.png,,2340.0,5 h,,1 to 234,https://hayday.fandom.com/wiki/Peanuts
+Platinum Ore,Platinum Ore,Product,24.0,32,,,7,Mine,9.0,,Platinum Ore.png,,324.0,Instant,,1 to 32,https://hayday.fandom.com/wiki/Platinum_Ore
+Silver Ore,Silver Ore,Product,24.0,18,,,5,Mine,5.0,,Silver Ore.png,,180.0,Instant,,1 to 18,https://hayday.fandom.com/wiki/Silver_Ore

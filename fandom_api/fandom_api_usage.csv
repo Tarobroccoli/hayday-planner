@@ -1,0 +1,958 @@
+Ingredient,Product,Qty,Product level
+Apple,Green Gift,3,25
+Apple,Apple Pie,3,28
+Apple,Apple Juice,2,28
+Apple,Apple Jam,3,35
+Apple,Honey Apple Cake,2,42
+Apple,Caramel Apple,1,51
+Apple,Green Smoothie,1,66
+Apple,Apple Ginger Tea,2,88
+Apple,Apple Porridge,1,119
+Apple Jam,Hand Pies,1,91
+Apple Jam,Apple Porridge,2,119
+Bacon,Bacon and Eggs,2,11
+Bacon,Bacon Pie,3,18
+Bacon,Hamburger,2,18
+Bacon,Casserole,2,36
+Bacon,Shepherd's Pie,2,38
+Bacon,Mussel Chowder,3,47
+Bacon,BLT Salad,2,62
+Bacon,Bacon Toast,2,65
+Bacon,Cabbage Soup,2,65
+Bacon,Grilled Asparagus,3,67
+Bacon,Hot Dog,2,75
+Bacon,Taco,1,77
+Bacon,Corn Dog,4,78
+Bacon,Onion Dog,2,80
+Bacon,Stuffed Peppers,1,80
+Bacon,Pasta Carbonara,2,83
+Bacon,Bacon Fondue,3,86
+Bacon,Bacon Fries,2,87
+Bacon,Potato Omelet,3,87
+Bacon,Bacon Donut,3,88
+Bacon,Mushroom Salad,1,89
+Bacon,Chili Poppers,3,98
+Bacon,Chili Stew,2,109
+Bacon,Winter Stew,1,112
+Bacon,Breakfast Waffles,2,119
+Baked Potato,Mussel Chowder,1,47
+Beeswax,Strawberry Candle,1,48
+Beeswax,Raspberry Candle,1,52
+Beeswax,Lemon Candle,1,72
+Beeswax,Colorful Candles,1,84
+Beeswax,Floral Candle,1,95
+Beetroot,Winter Veggies,2,72
+Beetroot,Beetroot Salad,3,76
+Bell Pepper,Veggie Platter,2,74
+Bell Pepper,Colourful Omelet,1,77
+Bell Pepper,Stuffed Peppers,3,80
+Bell Pepper,Bell Pepper Soup,2,81
+Bell Pepper,Bacon Fondue,1,86
+Blackberry,Blackberry Muffin,2,26
+Blackberry,Berry Juice,1,31
+Blackberry,Blackberry Jam,3,37
+Blackberry,Berry Smoothie,3,64
+Blackberry,Flower Shawl,1,71
+Blackberry,Fruit Salad,2,82
+Blackberry,Banana Pancakes,2,94
+Blackberry,Berry Waffles,2,114
+Blackberry,Breakfast Bowl,2,119
+Blackberry Jam,Jelly Beans,1,60
+Bread,Hamburger,2,18
+Bread,Fish Burger,2,27
+Bread,Lamb Doner Wrap,1,32
+Bread,Garlic Bread,2,60
+Bread,Veggie Bagel,2,61
+Bread,Bacon Toast,2,65
+Bread,Olive Dip,2,66
+Bread,Egg Sandwich,2,66
+Bread,Honey Toast,1,69
+Bread,Peanut Butter and Jelly Sandwich,2,71
+Bread,Onion Soup,2,72
+Bread,Hot Dog,1,75
+Bread,Cucumber Sandwich,2,79
+Bread,Onion Dog,1,80
+Bread,Bell Pepper Soup,1,81
+Bread,Goat Cheese Toast,1,92
+Bread,Hummus Wrap,2,109
+Broccoli,Broccoli Pasta,3,83
+Broccoli,Bacon Fondue,1,86
+Broccoli,Broccoli Soup,3,87
+Broccoli,Tofu Stir Fry,3,89
+Broccoli,Veggie Bouquet,3,106
+Butter,Buttered Popcorn,1,16
+Butter,Carrot Cake,1,21
+Butter,Steamed Mussels,2,27
+Butter,Grilled Mussels,1,32
+Butter,Chocolate Cake,1,36
+Butter,Potato Bread,1,39
+Butter,Pumpkin Soup,1,49
+Butter,Toffee,1,52
+Butter,Garlic Bread,1,60
+Butter,Lemon Curd,1,66
+Butter,Grilled Onion,1,68
+Butter,Gnocchi,2,72
+Butter,Spring Omelet,1,77
+Butter,Gingerbread Cookie,1,86
+Butter,Rich Fudge,3,99
+Butter,Mint Fudge,2,102
+Butter,Chili Fudge,2,104
+Butter,Lemon Fudge,2,108
+Butter,Peanut Fudge,2,111
+Cabbage,Cabbage Soup,3,65
+Cabbage,Coleslaw,3,75
+Cabbage,Colourful Omelet,1,77
+Cabbage,Mushroom Pot Pie,3,97
+Cabbage,Kimchi,5,98
+Cacao,Chocolate Cake,2,36
+Cacao,Chocolate Ice Cream,2,39
+Cacao,Chocolate Popcorn,2,44
+Cacao,Caffè Mocha,2,45
+Cacao,Raspberry Mocha,1,46
+Cacao,Hot Chocolate,2,47
+Cacao,Chocolate,3,54
+Cacao,Chocolate Pie,2,65
+Cacao,Peanut Butter Milkshake,3,68
+Cacao,Sprinkled Donut,2,79
+Cacao,Crunchy Donut,1,82
+Cacao,Honey Soap,2,84
+Cacao,Mint Ice Cream,1,85
+Cacao,Exfoliating Soap,2,93
+Cacao,Chocolate Roll,5,95
+Cacao,Rich Fudge,3,99
+Cacao,Cocoa Smoothie,3,100
+Cacao,Fried Candy Bar,3,100
+Cacao,Macaroon,1,101
+Cacao,Mint Fudge,2,102
+Cacao,Chili Fudge,2,104
+Cacao,Peanut Fudge,2,111
+Cacao,Cookie Cupcake,1,114
+Cacao,Chocolate Waffles,2,117
+Cacao,Blueberry Waffles,2,118
+Caramel Apple,Candy Bouquet,1,90
+Carrot,Pig Feed,2,10
+Carrot,Carrot Pie,3,14
+Carrot,Carrot Cake,2,21
+Carrot,Carrot Juice,3,26
+Carrot,Goat Feed,2,32
+Carrot,Meat Bucket,5,34
+Carrot,Shepherd's Pie,2,39
+Carrot,Lamb Soup,2,46
+Carrot,Pumpkin Soup,2,49
+Carrot,Fish Soup,1,53
+Carrot,Cabbage Soup,2,65
+Carrot,Winter Veggies,2,72
+Carrot,Noodle Soup,2,73
+Carrot,Veggie Lasagna,1,74
+Carrot,Veggie Platter,2,74
+Carrot,Coleslaw,2,75
+Carrot,Colourful Omelet,2,77
+Carrot,Summer Rolls,2,78
+Carrot,Colorful Candles,1,84
+Cheese,Cheesecake,1,24
+Cheese,Spicy Bean Doner,2,32
+Cheese,Pizza,1,33
+Cheese,Baked Potato,1,35
+Cheese,Casserole,1,36
+Cheese,Spicy Pizza,1,37
+Cheese,Frutti di Mare Pizza,1,45
+Cheese,Asparagus Quiche,1,49
+Cheese,Onion Soup,1,72
+Cheese,Veggie Lasagna,1,74
+Cheese,Cheese Omelet,2,79
+Cheese,Stuffed Peppers,1,80
+Cheese,Quesadilla,1,82
+Cheese,Pasta Carbonara,1,83
+Cheese,Broccoli Pasta,1,83
+Cheese,Onion Melt,1,84
+Cheese,Nachos,1,87
+Cheese,Cheese Fondue,1,91
+Cheese,Chili Poppers,1,98
+Cheese,Eggplant Parmesan,1,99
+Cheese,Orange Salad,1,117
+Cheesecake,Blueberry Cheesecake,1,31
+Cherry,Red Berry Cake,2,23
+Cherry,Cherry Juice,2,30
+Cherry,Cherry Jam,3,38
+Cherry,Lollipop,1,57
+Cherry,Pineapple Cake,2,65
+Cherry,Yogurt Smoothie,1,70
+Cherry,Fruit Cake,2,89
+Cherry,Banana Split,3,96
+Cherry Juice,Cherry Popsicle,1,33
+Cherry Juice,Birthday Bouquet,1,92
+Chickpea,Hummus,3,95
+Chickpea,Falafel,3,98
+Chickpea,Samosa,2,103
+Chickpea,Chickpea Stew,3,106
+Chili Pepper,Chili Popcorn,2,25
+Chili Pepper,Green Gift,3,25
+Chili Pepper,Fish Burger,1,27
+Chili Pepper,Spicy Bean Doner,3,32
+Chili Pepper,Grilled Mussels,3,32
+Chili Pepper,Baked Potato,1,35
+Chili Pepper,Spicy Pizza,1,37
+Chili Pepper,Lobster Soup,2,46
+Chili Pepper,Tomato Soup,1,47
+Chili Pepper,Lobster Skewer,1,48
+Chili Pepper,Bean Dip,1,54
+Chili Pepper,Lamb Stir Fry,2,69
+Chili Pepper,Noodle Soup,1,73
+Chili Pepper,Salsa,2,77
+Chili Pepper,Summer Rolls,1,78
+Chili Pepper,Fish Taco,2,79
+Chili Pepper,Spicy Fish,3,79
+Chili Pepper,Onion Dog,1,80
+Chili Pepper,Bell Pepper Soup,1,81
+Chili Pepper,Quesadilla,2,82
+Chili Pepper,Spicy Pasta,3,87
+Chili Pepper,Bacon Fries,1,87
+Chili Pepper,Canned Fish,1,95
+Chili Pepper,Chili Poppers,3,98
+Chili Pepper,Kimchi,1,98
+Chili Pepper,Falafel,1,98
+Chili Pepper,Tart Dressing,2,100
+Chili Pepper,Samosa,1,103
+Chili Pepper,Chili Fudge,3,104
+Chili Pepper,Chili Stew,3,109
+Chocolate,Chocolate Fondue,1,81
+Chocolate Ice Cream,Mocha Milkshake,1,125
+Clay,Tea Pot,3,94
+Clay,Potted Plant,3,96
+Clay,Clay Mug,3,99
+Coconut,Macaroon,2,101
+Coconut,Coconut Ice Cream,2,102
+Coconut,Tropical Smoothie,1,104
+Coconut,Chickpea Stew,1,106
+Coconut,Tropical Cupcake,2,112
+Coconut,Pineapple Coconut Bars,1,120
+Coconut,Rich Soap,1,121
+Coconut,Fresh Porridge,2,122
+Cookie,Snowflake Gift,1,17
+Cookie,Cheesecake,1,24
+Cookie,Fried Candy Bar,1,100
+Cookie,Cookie Cupcake,2,114
+Cookie,Vanilla Milkshake,2,124
+Corn,Chicken Feed,1,3
+Corn,Cow Feed,1,6
+Corn,Corn Bread,2,7
+Corn,Popcorn,2,8
+Corn,Buttered Popcorn,2,16
+Corn,Chili Popcorn,2,25
+Corn,Goat Feed,1,32
+Corn,Honey Popcorn,2,40
+Corn,Chocolate Popcorn,2,44
+Corn,Bean Salad,1,58
+Corn,Snack Mix,2,64
+Corn,Corn Dog,4,78
+Corn,Nachos,4,87
+Corn Bread,Spicy Bean Doner,1,32
+Corn Bread,Grilled Mussels,1,32
+Corn Bread,Tower Doner Supreme,1,58
+Corn Bread,Taco,1,77
+Corn Bread,Fish Taco,2,79
+Corn Bread,Onion Melt,2,84
+Cotton,Cotton Fabric,3,18
+Cotton,Rustic Bouquet,3,49
+Cotton,Bright Bouquet,1,65
+Cotton,Flower Crown,4,86
+Cotton,Soft Bouquet,1,93
+Cotton Fabric,Cotton Shirt,2,19
+Cotton Fabric,Wooly Chaps,1,21
+Cotton Fabric,Violet Dress,2,25
+Cotton Fabric,Soothing Pad,2,45
+Cotton Fabric,Pillow,2,51
+Cotton Fabric,Blanket,3,59
+Cotton Fabric,Top Hat,3,72
+Cotton Fabric,Gracious Bouquet,1,73
+Cotton Fabric,Soft Bouquet,1,93
+Cotton Fabric,Veggie Bouquet,1,106
+Cream,Cream Cake,1,23
+Cream,Vanilla Ice Cream,1,29
+Cream,Strawberry Ice Cream,1,34
+Cream,Baked Potato,1,35
+Cream,Strawberry Cake,1,35
+Cream,Chocolate Ice Cream,1,39
+Cream,Caffè Mocha,1,45
+Cream,Raspberry Mocha,1,46
+Cream,Lobster Soup,1,46
+Cream,Hot Chocolate,1,47
+Cream,Sesame Ice Cream,1,50
+Cream,Asparagus Soup,2,51
+Cream,Chocolate,1,54
+Cream,Lemon Cake,1,68
+Cream,Peanut Butter Milkshake,1,68
+Cream,Yogurt Smoothie,1,70
+Cream,Veggie Platter,1,74
+Cream,Peach Tart,1,76
+Cream,Lobster Pasta,2,79
+Cream,Peach Ice Cream,1,83
+Cream,Mint Ice Cream,1,85
+Cream,Cream Donut,1,86
+Cream,Banana Pancakes,1,94
+Cream,Chocolate Roll,1,95
+Cream,Banana Split,1,96
+Cream,Tropical Fondue,2,100
+Cream,Plain Yogurt,2,103
+Cream,Pomegranate Cake,2,108
+Cream,Chili Stew,1,109
+Cream,Guava Cupcake,1,109
+Cream,Cookie Cupcake,2,114
+Cream Cake,Fancy Cake,1,54
+Cucumber,Cucumber Smoothie,3,70
+Cucumber,Cucumber Sandwich,2,79
+Cucumber,Pickles,3,91
+Duck Feather,Pillow,3,51
+Duck Feather,Blanket,5,59
+Duck Feather,Top Hat,1,72
+Duck Feather,Sun Hat,2,74
+Egg,Corn Bread,2,7
+Egg,Pancake,3,9
+Egg,Cookie,2,10
+Egg,Bacon and Eggs,4,11
+Egg,Carrot Pie,1,14
+Egg,Pumpkin Pie,1,15
+Egg,Bacon Pie,1,18
+Egg,Raspberry Muffin,1,19
+Egg,Red Berry Cake,1,23
+Egg,Blackberry Muffin,2,26
+Egg,Apple Pie,1,28
+Egg,Fish Pie,1,28
+Egg,Blueberry Muffin,2,33
+Egg,Feta Pie,1,34
+Egg,Casserole,2,36
+Egg,Potato Feta Cake,4,38
+Egg,Potato Bread,3,39
+Egg,Honey Apple Cake,2,42
+Egg,Asparagus Quiche,2,49
+Egg,Mayonnaise,4,62
+Egg,Egg Sushi,4,63
+Egg,Pineapple Cake,2,65
+Egg,Chocolate Pie,1,65
+Egg,Lemon Curd,2,66
+Egg,Egg Sandwich,2,66
+Egg,Lemon Pie,1,67
+Egg,Fresh Pasta,1,67
+Egg,Lemon Cake,2,68
+Egg,Honey Toast,1,69
+Egg,Fried Rice,5,69
+Egg,Noodle Soup,2,73
+Egg,Peach Tart,2,76
+Egg,Big Sushi Roll,3,76
+Egg,Plain Donut,1,76
+Egg,Colourful Omelet,2,77
+Egg,Spring Omelet,2,77
+Egg,Cheese Omelet,3,79
+Egg,Pasta Carbonara,1,83
+Egg,Rice Omelet,3,83
+Egg,Potato Omelet,3,87
+Egg,Banana Bread,1,91
+Egg,Hand Pies,2,91
+Egg,Passion Fruit Pie,1,92
+Egg,Mushroom Pot Pie,2,97
+Egg,Honey Face Mask,2,99
+Egg,Pomegranate Cake,2,108
+Egg,Plain Cupcake,1,109
+Egg,Plain Waffles,3,114
+Egg,Breakfast Waffles,1,119
+Eggplant,Grilled Eggplant,3,90
+Eggplant,Eggplant Parmesan,4,99
+Espresso,Stacked Gift,1,43
+Espresso,Affogato,1,78
+Espresso,Mocha Milkshake,2,125
+Fresh Pasta,Pasta Salad,4,67
+Fresh Pasta,Mussel Linguine,3,73
+Fresh Pasta,Veggie Lasagna,3,74
+Fresh Pasta,Lobster Pasta,3,79
+Fresh Pasta,Pasta Carbonara,3,83
+Fresh Pasta,Broccoli Pasta,3,83
+Fresh Pasta,Spicy Pasta,3,87
+Fresh Pasta,Mushroom Pasta,3,101
+Garlic,Garlic Bread,4,60
+Garlic,Mussel Linguine,3,73
+Garlic,Spicy Fish,5,79
+Garlic,Bacon Fries,1,87
+Garlic,Hummus,1,95
+Garlic,Kimchi,1,98
+Garlic,Falafel,2,98
+Ginger,Sesame Brittle,1,78
+Ginger,Ginger Essential Oil,5,80
+Ginger,Peanut Noodles,1,86
+Ginger,Gingerbread Cookie,2,86
+Ginger,Apple Ginger Tea,1,88
+Ginger,Fish Skewer,1,96
+Ginger,Kimchi,1,98
+Ginger,Zesty Perfume,3,113
+Goat Cheese,Feta Pie,1,34
+Goat Cheese,Potato Feta Cake,1,39
+Goat Cheese,Tomato Soup,1,47
+Goat Cheese,Feta Salad,2,58
+Goat Cheese,Tower Doner Supreme,1,58
+Goat Cheese,Beetroot Salad,1,76
+Goat Cheese,Summer Salad,1,84
+Goat Cheese,Goat Cheese Toast,1,92
+Goat Milk,Goat Cheese,2,33
+Goat Milk,Honey Soap,1,84
+Goat Milk,Black Sesame Smoothie,2,93
+Goat Milk,Mushroom Pasta,1,101
+Gold Bar,Bracelet,1,38
+Gold Bar,Necklace,1,39
+Gold Bar,Diamond Ring,2,40
+Gold Bar,Flower Pendant,2,98
+Grapes,Grape Juice,2,84
+Grapes,Grape Jam,3,85
+Grapes,Fruit Cake,2,89
+Grapes,Banana Bread,2,91
+Grapes,Goat Cheese Toast,3,92
+Grapes,Plum Smoothie,2,102
+Grapes,Dried Fruit,1,102
+Grilled Lamb Skewer,Lamb Doner Wrap,1,32
+Grilled Lamb Skewer,Lamb Soup,1,46
+Grilled Lamb Skewer,Lamb Stir Fry,1,69
+Guava,Guava Compote,2,104
+Guava,Guava Juice,2,104
+Guava,Fruit Sorbet,1,106
+Guava,Guava Cupcake,2,109
+Honey,Honey Popcorn,2,40
+Honey,Honey Apple Cake,2,42
+Honey,Lobster Skewer,1,48
+Honey,Pumpkin Soup,1,49
+Honey,Honey Peanuts,1,63
+Honey,Honey Toast,1,69
+Honey,Cucumber Smoothie,1,70
+Honey,Orange Sorbet,1,78
+Honey,Sesame Brittle,1,78
+Honey,Fruit Salad,1,82
+Honey,Honey Tea,1,83
+Honey,Peach Ice Cream,1,83
+Honey,Honey Face Mask,1,99
+Honey,Tart Dressing,1,100
+Honey,Plum Smoothie,1,102
+Honey,Breakfast Bowl,1,119
+Honey,Sweet Porridge,2,120
+Honeycomb,Honey,2,39
+Honeycomb,Beeswax,3,48
+Honeycomb,Honey Soap,1,84
+Honeycomb,Chamomile Tea,1,100
+Hummus,Hummus Wrap,1,109
+Indigo,Snowflake Gift,1,17
+Indigo,Blue Woolly Hat,1,19
+Indigo,Blue Sweater,2,20
+Indigo,Violet Dress,1,25
+Indigo,Rustic Bouquet,3,49
+Indigo,Bright Bouquet,3,65
+Indigo,Sun Hat,1,74
+Indigo,Birthday Bouquet,1,92
+Indigo,Floral Candle,2,95
+Indigo,Clay Mug,2,99
+Indigo,Calming Diffuser,3,116
+Iron Bar,Iron Bracelet,2,41
+Lemon,Olive Dip,1,66
+Lemon,Lemon Curd,2,66
+Lemon,Green Smoothie,1,66
+Lemon,Pasta Salad,2,67
+Lemon,Grilled Asparagus,1,67
+Lemon,Lemon Essential Oil,3,68
+Lemon,Tomato Sauce,1,69
+Lemon,Blueberry Chutney,1,70
+Lemon,Lemon Candle,2,72
+Lemon,Fish Taco,1,79
+Lemon,Lemon Lotion,1,84
+Lemon,Lemon Tea,1,86
+Lemon,Mixed Smoothie,1,88
+Lemon,Pickles,1,91
+Lemon,Hummus,2,95
+Lemon,Honey Face Mask,1,99
+Lemon,Guava Compote,1,104
+Lemon,Lemon Fudge,2,108
+Lemon,Fruity Milkshake,2,126
+Lemon Curd,Lemon Pie,1,67
+Lemon Curd,Lemon Cake,2,68
+Lettuce,Feta Salad,3,58
+Lettuce,Bean Salad,2,58
+Lettuce,Tower Doner Supreme,3,58
+Lettuce,Veggie Bagel,3,61
+Lettuce,BLT Salad,3,62
+Lettuce,Seafood Salad,3,64
+Lettuce,Bacon Toast,3,65
+Lettuce,Egg Sandwich,3,66
+Lettuce,Green Smoothie,5,66
+Lettuce,Tofu Dog,3,76
+Lettuce,Big Sushi Roll,5,76
+Lettuce,Summer Rolls,1,78
+Lettuce,Mushroom Salad,1,89
+Lettuce,Hummus Wrap,1,109
+Lettuce,Orange Salad,3,117
+Lily,Fancy Cake,3,54
+Lily,Gracious Bouquet,5,73
+Lily,Birthday Bouquet,1,92
+Lobster Tail,Frutti di Mare Pizza,1,45
+Lobster Tail,Lobster Soup,2,46
+Lobster Tail,Lobster Skewer,1,48
+Lobster Tail,Lobster Sushi,1,59
+Lobster Tail,Seafood Salad,1,64
+Lobster Tail,Lobster Pasta,1,79
+Mango,Mango Juice,2,97
+Mango,Tropical Fondue,2,100
+Mango,Tropical Smoothie,2,104
+Mango,Fruit Sorbet,2,106
+Mango,Tropical Yogurt,2,109
+Mayonnaise,BLT Salad,1,62
+Mayonnaise,Seafood Salad,1,64
+Mayonnaise,Bacon Toast,1,65
+Mayonnaise,Egg Sandwich,1,66
+Mayonnaise,Long Gift,1,70
+Mayonnaise,Coleslaw,1,75
+Mayonnaise,Cucumber Sandwich,1,79
+Milk,Cream,1,6
+Milk,Butter,2,9
+Milk,Cheese,3,12
+Milk,Snowflake Gift,1,17
+Milk,Red Berry Cake,1,23
+Milk,Vanilla Ice Cream,1,29
+Milk,Strawberry Ice Cream,1,34
+Milk,Chocolate Ice Cream,1,39
+Milk,Caffè Latte,1,43
+Milk,Hot Chocolate,1,47
+Milk,Mussel Chowder,1,47
+Milk,Fish Soup,1,53
+Milk,Caramel Latte,1,62
+Milk,Peanut Butter Milkshake,1,68
+Milk,Honey Toast,1,69
+Milk,Plain Donut,1,76
+Milk,Potato Soup,1,78
+Milk,Milk Tea,1,81
+Milk,Iced Banana Latte,1,88
+Milk,Cocoa Smoothie,1,100
+Milk,Plain Yogurt,3,103
+Milk,Mushroom Soup,1,104
+Milk,Lemon Fudge,3,108
+Milk,Plain Cupcake,2,109
+Milk,Blueberry Waffles,1,118
+Mint,Mint Ice Cream,2,85
+Mint,Mint Essential Oil,5,85
+Mint,Chocolate Roll,3,95
+Mint,Mint Tea,2,97
+Mint,Plum Smoothie,1,102
+Mint,Mint Fudge,3,102
+Mint,Fresh Porridge,2,122
+Mushroom,Mushroom Salad,3,89
+Mushroom,Cheese Fondue,2,91
+Mushroom,Fish Skewer,3,96
+Mushroom,Mushroom Pot Pie,3,97
+Mushroom,Mushroom Pasta,5,101
+Mushroom,Mushroom Soup,3,104
+Mushroom,Veggie Bouquet,3,106
+Mushroom,Winter Stew,2,112
+Olive,Feta Salad,2,58
+Olive,Olive Oil,3,60
+Olive,Olive Dip,3,66
+Olive Oil,Veggie Bagel,1,61
+Olive Oil,Mayonnaise,1,62
+Olive Oil,Pasta Salad,1,67
+Olive Oil,Mussel Linguine,1,73
+Olive Oil,Corn Dog,1,78
+Olive Oil,Spicy Fish,1,79
+Olive Oil,Bell Pepper Soup,1,81
+Olive Oil,Lemon Lotion,1,84
+Olive Oil,Bacon Fondue,1,86
+Olive Oil,Canned Fish,1,95
+Onion,Grilled Onion,2,68
+Onion,Long Gift,3,70
+Onion,Blueberry Chutney,1,70
+Onion,Onion Soup,3,72
+Onion,Salsa,2,77
+Onion,Potato Soup,2,78
+Onion,Cheese Omelet,1,79
+Onion,Onion Dog,3,80
+Onion,Summer Salad,3,84
+Onion,Onion Melt,3,84
+Onion,Spicy Pasta,2,87
+Onion,Broccoli Soup,1,87
+Onion,Tofu Stir Fry,3,89
+Onion,Pickles,2,91
+Onion,Falafel,2,98
+Onion,Mushroom Soup,2,104
+Onion,Chili Stew,2,109
+Onion,Winter Stew,2,112
+Orange,Orange Juice,2,71
+Orange,Marmalade,3,74
+Orange,Orange Sorbet,2,78
+Orange,Fruit Salad,1,82
+Orange,Mixed Smoothie,2,88
+Orange,Orange Tea,1,89
+Orange,Fruit Cake,2,89
+Orange,Dried Fruit,1,102
+Orange,Orange Salad,2,117
+Orange,Fruity Milkshake,2,126
+Passion Fruit,Passion Fruit Juice,2,88
+Passion Fruit,Passion Fruit Pie,3,92
+Passion Fruit,Passion Fruit Jam,3,96
+Passion Fruit,Tart Dressing,2,100
+Passion Fruit,Tropical Smoothie,2,104
+Passion Fruit,Fruit Sorbet,1,106
+Passion Fruit,Tropical Yogurt,1,109
+Peach,Peach Tart,3,76
+Peach,Peach Jam,3,79
+Peach,Peach Ice Cream,2,83
+Peach,Summer Salad,1,84
+Peach,Mixed Smoothie,2,88
+Peach,Iced Tea,1,92
+Peach,Sweet Porridge,1,120
+Peach Ice Cream,Fruity Milkshake,1,126
+Peony,Flower Crown,5,86
+Peony,Candy Bouquet,3,90
+Peony,Birthday Bouquet,3,92
+Peony,Soft Bouquet,4,93
+Peony,Floral Candle,2,95
+Peony,Flower Pendant,3,98
+Peony,Clay Mug,1,99
+Pineapple,Pineapple Juice,3,52
+Pineapple,Pineapple Cake,3,65
+Pineapple,Cucumber Smoothie,3,70
+Pineapple,Tropical Fondue,3,100
+Pineapple,Tropical Cupcake,3,112
+Pineapple,Pineapple Coconut Bars,2,120
+Plain Cupcake,Guava Cupcake,1,109
+Plain Cupcake,Tropical Cupcake,1,112
+Plain Cupcake,Cookie Cupcake,1,114
+Plain Donut,Sprinkled Donut,1,79
+Plain Donut,Crunchy Donut,1,82
+Plain Donut,Cream Donut,1,86
+Plain Donut,Bacon Donut,1,88
+Plain Donut,Filled Donut,1,93
+Plain Yogurt,Strawberry Yogurt,1,105
+Plain Yogurt,Tropical Yogurt,1,109
+Plain Yogurt,Breakfast Bowl,1,119
+Platinum Bar,Necklace,1,39
+Platinum Bar,Diamond Ring,2,40
+Platinum Bar,Flower Pendant,1,98
+Plum,Plum Jam,3,94
+Plum,Plum Smoothie,3,102
+Plum,Rice Ball,1,110
+Pomegranate,Pomegranate Tea,1,107
+Pomegranate,Pomegranate Cake,1,108
+Pomegranate,Orange Salad,1,117
+Pomegranate,Rich Soap,1,121
+Pomegranate,Fresh Porridge,1,122
+Potato,Baked Potato,2,35
+Potato,Casserole,2,36
+Potato,Potato Feta Cake,1,38
+Potato,Potato Bread,2,39
+Potato,Shepherd's Pie,2,39
+Potato,Fish and Chips,3,41
+Potato,Lamb Soup,1,46
+Potato,Fish Soup,3,53
+Potato,Cabbage Soup,2,65
+Potato,Winter Veggies,2,72
+Potato,Gnocchi,4,72
+Potato,Potato Soup,3,78
+Potato,Broccoli Soup,3,87
+Potato,Bacon Fries,4,87
+Potato,Potato Omelet,1,87
+Potato,Mushroom Salad,2,89
+Potato,Samosa,3,103
+Potato,Winter Stew,3,112
+Potato Bread,Cheese Fondue,1,91
+Pumpkin,Pumpkin Pie,3,15
+Pumpkin,Shepherd's Pie,2,39
+Pumpkin,Pumpkin Soup,3,49
+Pumpkin,Blanket,1,59
+Pumpkin,Winter Veggies,2,72
+Raspberry,Raspberry Muffin,2,19
+Raspberry,Red Berry Cake,1,23
+Raspberry,Violet Dress,1,25
+Raspberry,Berry Juice,1,31
+Raspberry,Raspberry Jam,3,36
+Raspberry,Raspberry Mocha,1,46
+Raspberry,Raspberry Candle,2,52
+Raspberry,Fancy Cake,3,54
+Raspberry,Berry Smoothie,3,64
+Raspberry,Yogurt Smoothie,2,70
+Raspberry,Sun Hat,1,75
+Raspberry,Colorful Candles,1,84
+Raspberry,Exfoliating Soap,1,93
+Raspberry,Dried Fruit,1,102
+Raspberry,Tropical Yogurt,4,109
+Raspberry,Berry Waffles,3,114
+Raspberry Jam,Jelly Beans,1,60
+Raspberry Jam,Peanut Butter and Jelly Sandwich,1,71
+Raspberry Jam,Filled Donut,1,93
+Refined Coal,Iron Bracelet,2,41
+Refined Coal,Top Hat,1,72
+Rice,Sushi Roll,15,56
+Rice,Mussel Nigiri,15,56
+Rice,Lobster Sushi,15,59
+Rice,Egg Sushi,15,63
+Rice,Fried Rice,5,69
+Rice,Lamb Stir Fry,3,69
+Rice,Rice Noodles,5,73
+Rice,Big Sushi Roll,20,76
+Rice,Stuffed Peppers,3,80
+Rice,Rice Omelet,1,83
+Rice,Rice Ball,20,110
+Rice Noodles,Noodle Soup,3,73
+Rice Noodles,Summer Rolls,2,78
+Rice Noodles,Peanut Noodles,1,86
+Salsa,Taco,1,77
+Salsa,Nachos,1,87
+Salsa,Grilled Eggplant,1,90
+Sesame,Sesame Ice Cream,3,50
+Sesame,Snack Mix,1,64
+Sesame,Lamb Stir Fry,1,69
+Sesame,Sesame Brittle,3,78
+Sesame,Tofu Stir Fry,3,89
+Sesame,Black Sesame Smoothie,3,93
+Sesame,Fish Skewer,2,96
+Sesame,Rice Ball,1,110
+Silver Bar,Bracelet,2,38
+Silver Bar,Necklace,2,39
+Silver Bar,Iron Bracelet,1,41
+Soy Sauce,Sushi Roll,1,56
+Soy Sauce,Mussel Nigiri,1,56
+Soy Sauce,Lobster Sushi,1,59
+Soy Sauce,Egg Sushi,1,63
+Soy Sauce,Peanut Noodles,1,86
+Soybean,Cow Feed,2,6
+Soybean,Pig Feed,1,10
+Soybean,Sheep Feed,1,16
+Soybean,Lamb Feed,2,25
+Soybean,Soy Sauce,9,54
+Soybean,Tofu Dog,6,76
+Soybean,Tofu Stir Fry,3,89
+Strawberry,Strawberry Ice Cream,3,34
+Strawberry,Strawberry Cake,2,35
+Strawberry,Stacked Gift,3,43
+Strawberry,Red Scarf,2,48
+Strawberry,Strawberry Candle,2,48
+Strawberry,Strawberry Jam,3,50
+Strawberry,Lollipop,2,57
+Strawberry,Berry Smoothie,3,64
+Strawberry,Cloche Hat,2,70
+Strawberry,Cotton Candy,1,75
+Strawberry,Chocolate Fondue,3,81
+Strawberry,Fruit Salad,3,82
+Strawberry,Dried Fruit,1,102
+Strawberry,Chocolate Waffles,3,117
+Strawberry Jam,Strawberry Yogurt,1,105
+Sugarcane,Brown Sugar,1,7
+Sugarcane,White Sugar,2,13
+Sugarcane,Syrup,4,18
+Sunflower,Bright Bouquet,5,65
+Sunflower,Long Gift,3,70
+Sunflower,Flower Shawl,3,71
+Sunflower,Floral Candle,2,95
+Sunflower,Potted Plant,1,96
+Syrup,Apple Pie,1,28
+Syrup,Cherry Popsicle,1,33
+Syrup,Caramel Apple,2,51
+Syrup,Lollipop,1,57
+Syrup,Gingerbread Cookie,1,86
+Syrup,Bacon Donut,1,88
+Syrup,Coconut Ice Cream,1,102
+Syrup,Berry Waffles,1,114
+Syrup,Vanilla Milkshake,1,124
+Taco,Spicy Bean Taco,1,77
+Tea Leaf,Green Tea,5,80
+Tea Leaf,Milk Tea,3,81
+Tea Leaf,Honey Tea,3,83
+Tea Leaf,Lemon Tea,3,86
+Tea Leaf,Apple Ginger Tea,1,88
+Tea Leaf,Orange Tea,3,89
+Tea Leaf,Iced Tea,3,92
+Tea Leaf,Mint Tea,3,97
+Tea Leaf,Pomegranate Tea,4,107
+Toffee,Caramel Latte,1,62
+Toffee,Candy Bouquet,1,90
+Toffee,Vanilla Milkshake,1,124
+Tomato,Roasted Tomatoes,2,30
+Tomato,Tomato Juice,3,31
+Tomato,Lamb Doner Wrap,1,32
+Tomato,Pizza,1,33
+Tomato,Spicy Pizza,1,37
+Tomato,Lobster Soup,1,46
+Tomato,Tomato Soup,2,47
+Tomato,Bean Dip,1,54
+Tomato,Bean Salad,1,58
+Tomato,Veggie Bagel,2,61
+Tomato,Pasta Salad,2,67
+Tomato,Tomato Sauce,2,69
+Tomato,Gnocchi,3,72
+Tomato,Veggie Platter,2,74
+Tomato,Tofu Dog,2,76
+Tomato,Salsa,2,77
+Tomato,Lobster Pasta,4,79
+Tomato,Cheese Omelet,2,79
+Tomato,Summer Salad,3,84
+Tomato,Cheese Fondue,1,91
+Tomato,Veggie Bouquet,3,106
+Tomato,Chickpea Stew,2,106
+Tomato Juice,Tomato Soup,1,47
+Tomato Sauce,Veggie Lasagna,1,74
+Tomato Sauce,Hot Dog,1,75
+Tomato Sauce,Rice Omelet,2,83
+Tomato Sauce,Spicy Pasta,1,87
+Tomato Sauce,Eggplant Parmesan,1,99
+Vanilla Ice Cream,Affogato,1,78
+Vanilla Ice Cream,Vanilla Milkshake,1,124
+Violet Dress,Green Gift,1,25
+Watermelon,Watermelon Juice,2,92
+Watermelon,Mint Tea,1,97
+Wheat,Bread,3,2
+Wheat,Chicken Feed,2,3
+Wheat,Cookie,2,10
+Wheat,Carrot Pie,2,14
+Wheat,Pumpkin Pie,2,15
+Wheat,Sheep Feed,3,16
+Wheat,Bacon Pie,2,18
+Wheat,Raspberry Muffin,2,19
+Wheat,Cream Cake,5,23
+Wheat,Blackberry Muffin,1,26
+Wheat,Apple Pie,2,28
+Wheat,Fish Pie,2,28
+Wheat,Goat Feed,1,32
+Wheat,Pizza,2,33
+Wheat,Blueberry Muffin,1,33
+Wheat,Feta Pie,2,34
+Wheat,Wheat Bundle,75,34
+Wheat,Strawberry Cake,3,35
+Wheat,Spicy Pizza,2,37
+Wheat,Honey Apple Cake,2,42
+Wheat,Frutti di Mare Pizza,2,45
+Wheat,Soothing Pad,5,45
+Wheat,Rustic Bouquet,5,49
+Wheat,Asparagus Quiche,4,49
+Wheat,Toffee,1,52
+Wheat,Soy Sauce,1,54
+Wheat,Pineapple Cake,4,65
+Wheat,Chocolate Pie,3,65
+Wheat,Lemon Pie,2,67
+Wheat,Fresh Pasta,2,67
+Wheat,Lemon Cake,3,68
+Wheat,Gnocchi,2,72
+Wheat,Peach Tart,2,76
+Wheat,Plain Donut,3,76
+Wheat,Quesadilla,4,82
+Wheat,Gingerbread Cookie,5,86
+Wheat,Fruit Cake,3,89
+Wheat,Banana Bread,3,91
+Wheat,Hand Pies,5,91
+Wheat,Passion Fruit Pie,2,92
+Wheat,Banana Pancakes,3,94
+Wheat,Chocolate Roll,3,95
+Wheat,Mushroom Pot Pie,3,97
+Wheat,Chili Poppers,1,98
+Wheat,Samosa,4,103
+Wheat,Pomegranate Cake,6,108
+Wheat,Plain Cupcake,5,109
+Wheat,Plain Waffles,5,114
+White Sugar,Cream Cake,1,23
+White Sugar,Vanilla Ice Cream,1,29
+White Sugar,Strawberry Ice Cream,1,34
+White Sugar,Strawberry Cake,1,35
+White Sugar,Potato Bread,1,39
+White Sugar,Chocolate Ice Cream,1,39
+White Sugar,Espresso,1,42
+White Sugar,Caffè Latte,1,43
+White Sugar,Hot Chocolate,1,47
+White Sugar,Toffee,1,52
+White Sugar,Chocolate,1,54
+White Sugar,Jelly Beans,1,60
+White Sugar,Lemon Curd,1,66
+White Sugar,Yogurt Smoothie,1,70
+White Sugar,Cotton Candy,3,75
+White Sugar,Plain Donut,1,76
+White Sugar,Mint Ice Cream,1,85
+White Sugar,Rich Fudge,2,99
+White Sugar,Tropical Fondue,1,100
+White Sugar,Macaroon,2,101
+White Sugar,Mint Fudge,1,102
+White Sugar,Chili Fudge,1,104
+White Sugar,Guava Compote,1,104
+White Sugar,Fruit Sorbet,3,106
+White Sugar,Lemon Fudge,2,108
+White Sugar,Plain Cupcake,3,109
+White Sugar,Peanut Fudge,1,111
+White Sugar,Plain Waffles,2,114
+White Sugar,Pineapple Coconut Bars,2,120
+Wool,Sweater,2,17
+Wool,Blue Woolly Hat,1,19
+Wool,Blue Sweater,2,20
+Wool,Wooly Chaps,3,21
+Wool,Red Scarf,2,48
+Wool,Cloche Hat,6,70
+Wool,Flower Shawl,2,71
+Wool,Sun Hat,3,74
+Asparagus,Asparagus Quiche,2,49
+Asparagus,Asparagus Soup,3,51
+Asparagus,Grilled Asparagus,5,67
+Asparagus,Spring Omelet,2,77
+Asparagus,Breakfast Waffles,2,119
+Black Bean,Lamb Feed,4,25
+Black Bean,Spicy Bean Doner,3,32
+Black Bean,Bean Dip,3,54
+Black Bean,Bean Salad,3,58
+Black Bean,Spicy Bean Taco,2,77
+Blueberries,Blueberry Cheesecake,2,31
+Blueberries,Blueberry Muffin,2,33
+Blueberries,Blueberry Chutney,3,70
+Blueberries,Blueberry Waffles,3,118
+Chamomile,Soothing Pad,5,45
+Chamomile,Chamomile Essential Oil,5,74
+Chamomile,Chamomile Tea,5,100
+Coal,Refined Coal,3,33
+Coffee Bean,Espresso,3,42
+Coffee Bean,Caffè Latte,2,43
+Coffee Bean,Caffè Mocha,1,45
+Coffee Bean,Raspberry Mocha,1,46
+Coffee Bean,Caramel Latte,2,62
+Coffee Bean,Iced Banana Latte,2,88
+Coffee Bean,Exfoliating Soap,2,93
+Coffee Bean,Tea Pot,1,94
+Diamond,Mystery Net,5,30
+Diamond,Diamond Ring,1,40
+Diamond,Gracious Bouquet,1,73
+Fish Fillet,Fish Burger,2,27
+Fish Fillet,Fish Pie,3,28
+Fish Fillet,Meat Bucket,3,34
+Fish Fillet,Fish and Chips,2,41
+Fish Fillet,Frutti di Mare Pizza,1,45
+Fish Fillet,Fish Soup,2,53
+Fish Fillet,Sushi Roll,1,56
+Fish Fillet,Seafood Salad,1,64
+Fish Fillet,Olive Dip,1,66
+Fish Fillet,Big Sushi Roll,1,76
+Fish Fillet,Fish Taco,1,79
+Fish Fillet,Spicy Fish,1,79
+Fish Fillet,Canned Fish,2,95
+Fish Fillet,Fish Skewer,1,96
+Gold Ore,Gold Bar,3,25
+Gold Ore,Fancy Cake,1,54
+Gold Ore,Gracious Bouquet,1,73
+Gold Ore,Tea Pot,1,94
+Iron Ore,Iron Bar,3,34
+Iron Ore,Bright Bouquet,5,65
+Lamb Chop,Grilled Lamb Skewer,2,25
+Lamb Chop,Tower Doner Supreme,3,58
+Mussel Meat,Steamed Mussels,4,27
+Mussel Meat,Grilled Mussels,3,32
+Mussel Meat,Mussel Chowder,4,47
+Mussel Meat,Mussel Nigiri,4,56
+Mussel Meat,Mussel Linguine,4,73
+Oats,Apple Porridge,4,119
+Oats,Breakfast Bowl,4,119
+Oats,Sweet Porridge,3,120
+Oats,Pineapple Coconut Bars,3,120
+Oats,Rich Soap,2,121
+Oats,Fresh Porridge,3,122
+Peanuts,Honey Peanuts,1,63
+Peanuts,Snack Mix,1,64
+Peanuts,Chocolate Pie,1,65
+Peanuts,Peanut Butter Milkshake,1,68
+Peanuts,Peanut Butter and Jelly Sandwich,1,71
+Peanuts,Crunchy Donut,1,82
+Peanuts,Peanut Noodles,1,86
+Peanuts,Fried Candy Bar,1,100
+Peanuts,Peanut Fudge,2,111
+Platinum Ore,Platinum Bar,3,25
+Silver Ore,Silver Bar,3,24

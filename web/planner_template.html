@@ -1,0 +1,597 @@
+<title>Hay Day Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one phone-width column of work cards under a sticky tab bar; widens to two columns on desktop. */
+:root {
+  --bg: #eef2e6; --surface: #fbfcf7; --sunk: #e3e9d8; --line: #cfd8c2;
+  --ink: #1d2a1a; --muted: #5a6853; --field: #2f7a3b; --field-soft: #d8ebd3;
+  --gold: #a86f00; --gold-soft: #f6e6bf; --warn: #b4441f; --warn-soft: #f6dcd0; --orange: #b85409; --orange-soft: #fde3cc;
+  --display: "Mitr", "IBM Plex Sans Thai", system-ui, sans-serif;
+  --body: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131910; --surface: #1b2318; --sunk: #232d1f; --line: #34412f;
+  --ink: #e6ecdc; --muted: #9ba891; --field: #74c681; --field-soft: #24402a;
+  --gold: #e8b443; --gold-soft: #3b3018; --warn: #f08a63; --warn-soft: #43261b; --orange: #f7a25a; --orange-soft: #47290f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131910; --surface: #1b2318; --sunk: #232d1f; --line: #34412f;
+  --ink: #e6ecdc; --muted: #9ba891; --field: #74c681; --field-soft: #24402a;
+  --gold: #e8b443; --gold-soft: #3b3018; --warn: #f08a63; --warn-soft: #43261b; --orange: #f7a25a; --orange-soft: #47290f; color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; padding-block: 0 48px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0; line-height: 1.25; }
+h2 { font-size: 1.05rem; }
+h3 { font-size: .95rem; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.small { font-size: .82rem; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--field); outline-offset: 2px; }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg);
+  border-bottom: 1px solid var(--line); }
+.topin { max-width: 1080px; margin: 0 auto; padding: 10px 16px 0; }
+.brand { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand h1 { font-size: 1.25rem; }
+.brand { align-items: center; }
+.farm { font-size: .82rem; color: var(--muted); }
+#lang button { padding: 3px 10px; font-size: .8rem; }
+nav.tabs { display: flex; gap: 4px; margin-top: 8px; }
+nav.tabs button { border: 0; background: none; padding: 8px 14px 10px; cursor: pointer; font-family: var(--display);
+  color: var(--muted); border-bottom: 3px solid transparent; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--field); }
+
+.grid { display: grid; gap: 14px; margin-top: 16px; }
+@media (min-width: 860px) { .grid.two { grid-template-columns: 1fr 1fr; align-items: start; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0; }
+.card > h2 { margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.card > h2 .small { font-family: var(--body); font-weight: 400; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--field); border-color: var(--field); color: var(--surface); }
+.chip input { width: 4.5em; border: 0; background: none; text-align: right; }
+
+.hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.stat { background: var(--sunk); border-radius: var(--r); padding: 10px 12px; }
+.stat .v { font-family: var(--display); font-size: 1.7rem; font-weight: 500; line-height: 1.1; }
+.stat .v.gold { color: var(--gold); }
+.stat .l { font-size: .8rem; color: var(--muted); }
+
+.list { display: grid; gap: 2px; }
+.li { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 5px 0;
+  border-bottom: 1px dashed var(--line); }
+.li:last-child { border-bottom: 0; }
+.li.dim { opacity: .5; }
+table.rot th.cur, table.rot td.cur { background: var(--gold-soft); color: var(--ink); }
+.li img, .ph { width: 30px; height: 30px; object-fit: contain; }
+.ph { display: inline-grid; place-items: center; background: var(--sunk); border-radius: 6px; font-size: .7rem; color: var(--muted); }
+.li .name { min-width: 0; overflow-wrap: anywhere; }
+.li .name .small { display: block; color: var(--muted); }
+.li .val { text-align: right; white-space: nowrap; }
+.group-h { font-family: var(--display); font-size: .85rem; color: var(--muted); margin: 10px 0 2px; letter-spacing: .02em; }
+.group-h:first-child { margin-top: 0; }
+
+.bar { height: 6px; background: var(--sunk); border-radius: 3px; overflow: hidden; margin-top: 3px; }
+.bar > i { display: block; height: 100%; background: var(--field); }
+.bar.gold > i { background: var(--gold); }
+.bar.full > i { background: var(--warn); }
+
+.chart { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--muted); font: 11px var(--mono); }
+.chart .lbl { fill: var(--ink); }
+
+.verdict { border-radius: var(--r); padding: 12px 14px; font-family: var(--display); }
+.verdict.good { background: var(--field-soft); color: var(--field); }
+.verdict.bad { background: var(--warn-soft); color: var(--warn); }
+.verdict.info { background: var(--sunk); color: var(--ink); }
+.verdict b { font-weight: 600; }
+.err { background: var(--warn-soft); color: var(--warn); border-radius: var(--r); padding: 10px 12px; }
+
+.search { width: 100%; border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 9px 12px; }
+.picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 6px; max-height: 300px; overflow-y: auto;
+  margin-top: 8px; padding: 2px; }
+.pick { display: grid; justify-items: center; gap: 2px; padding: 6px 4px; border: 1px solid transparent; border-radius: 8px;
+  background: var(--sunk); cursor: pointer; font-size: .72rem; line-height: 1.2; text-align: center; overflow-wrap: anywhere; }
+.pick:hover { border-color: var(--field); }
+.pick img, .pick .ph { width: 36px; height: 36px; }
+.order .li { grid-template-columns: 30px 1fr auto; }
+.step { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.step button { border: 0; background: var(--sunk); width: 30px; height: 30px; cursor: pointer; font-size: 1rem; }
+.step input { width: 3.2em; border: 0; background: none; text-align: center; height: 30px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 6px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--field); color: var(--surface); }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.field-in { display: grid; gap: 2px; font-size: .82rem; color: var(--muted); }
+.field-in input, .field-in select { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 8px; width: 7.5em; color: var(--ink); }
+
+.visit { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.visit:last-child { border-bottom: 0; }
+.visit .when { font-family: var(--display); }
+.visit .when .small { display: block; color: var(--muted); font-family: var(--body); }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.act { display: inline-flex; align-items: center; gap: 4px; background: var(--sunk); border-radius: 6px; padding: 2px 8px 2px 3px; font-size: .82rem; }
+.act img, .act .ph { width: 22px; height: 22px; }
+.act .verb { color: var(--muted); }
+.act.plant { background: var(--field-soft); }
+.act.harvest, .act.collect { background: var(--gold-soft); }
+.act.extra { background: var(--orange-soft); color: var(--orange); box-shadow: inset 0 0 0 1px var(--orange); }
+.act.extra .verb { color: var(--orange); opacity: .8; }
+.legend { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 2px; }
+.tag.q { background: var(--field-soft); color: var(--field); }
+.tag.x { background: var(--orange-soft); color: var(--orange); }
+.li.extra .name, .li.extra .val .num { color: var(--orange); }
+
+.tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dashed var(--line); }
+.tree > ul { padding-left: 0; border-left: 0; }
+.tree li { padding: 2px 0; }
+.node { display: inline-flex; align-items: center; gap: 6px; }
+.node img, .node .ph { width: 24px; height: 24px; }
+.node .q { font-family: var(--mono); color: var(--gold); }
+.node .w { color: var(--muted); font-size: .78rem; }
+
+.tablebox { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-weight: 500; color: var(--muted); font-size: .78rem; }
+td.n, th.n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.mach { display: grid; grid-template-columns: 1fr auto auto auto; gap: 6px 12px; align-items: center; }
+.mach input[type=number] { width: 4.2em; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 3px 6px; color: var(--ink); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+.btn.primary { background: var(--field); color: var(--surface); border-color: var(--field); }
+.tag { display: inline-block; font-size: .7rem; padding: 0 6px; border-radius: 4px; background: var(--gold-soft); color: var(--gold); vertical-align: middle; }
+details > summary { cursor: pointer; font-family: var(--display); }
+footer { margin-top: 28px; font-size: .78rem; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .bar > i { transition: width .3s ease; } }
+</style>
+
+<header class="top">
+  <div class="topin">
+    <div class="brand"><h1>Hay Day Planner</h1><div class="seg" id="lang" role="group" aria-label="ภาษา / Language"><button data-l="th">TH</button><button data-l="en">EN</button></div></div>
+    <div class="farm" id="farmline"></div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" id="tab-money" aria-selected="true">ทำเงิน</button>
+      <button role="tab" id="tab-quest" aria-selected="false">Quest</button>
+      <button role="tab" id="tab-farm" aria-selected="false">ฟาร์มของฉัน</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="pane-money"></section>
+  <section id="pane-quest" hidden></section>
+  <section id="pane-farm" hidden></section>
+  <footer id="foot"></footer>
+</main>
+
+<script>
+/*__ENGINE__*/
+</script>
+<script>
+const DATA = /*__DATA__*/null;
+HD.init(DATA);
+const t = HD.t;
+const EN = {"เต็ม (master แล้ว): ค่าของเวลาเครื่องเพิ่ม 1 ชม.": "full (mastered): value of 1 more machine hour", "เวลาลด 15%, ประมาณ)": "-15% time, estimate)", "ช่อง ": "space in ", "ที่ ": "on ", "แปลงปลูก": "field", "รังผึ้ง": "beehive", "สัตว์ที่ให้ ": "animal for ", "ต้น ": "tree of ", "ช่อง Roadside shop": "roadside shop slot", "แปลง": "fields", "รอบ": "visit", "ชิ้น": "pcs", "ชุด": "batches", "ชุด (": "batches (", "ชิ้น)": "pcs)", "ตัว": "animals", "ต้น": "trees", "ฟาร์มไม่มี ": "farm has no ", "แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)": "fix it in My farm, or add it to stock on hand)", "ทางผลิต (ของจากเหมือง/ตกปลา: ใส่ในของที่มีอยู่)": "way to make it (mine/fishing item: add it to stock on hand)", "ติดที่รอบ ": "stuck at visit ", "เริ่มไม่ได้ ": "cannot start ", "ไม่เสร็จภายใน 2000 รอบ": "not finished within 2000 visits", "ทำเงิน": "Money", "ฟาร์มของฉัน": "My farm", "นาที": "min", "ชม.": "h", "ต้นไม้": "tree", "สัตว์": "animal", "เครื่อง": "machine", "ภายนอก": "external", "ปลูก": "Plant", "เริ่ม": "Start", "ให้อาหาร": "Feed", "เก็บ": "Collect", "รอเก็บ": "Collect later", "แปลง · เข้าเกมทุก ": "fields · check in every ", "เข้าเกมทุก": "Check in every", "อื่นๆ": "other", "เหรียญต่อชั่วโมงตามความถี่ที่เข้าเกม": "Coins per hour by check-in interval", "คำนวณไม่ได้: ": "Cannot calculate: ", "ลองตรวจตั้งค่าฟาร์ม": "Check your My farm settings.", "ปลูก ": "Plant ", "รอบนี้ ": "this visit ", "จาก ": "of ", "สัตว์ (ให้อาหาร / เก็บ)": "Animals (feed / collect)", "ต้นไม้ (เก็บ)": "Trees (harvest)", "โต ": "grows in ", "ขาย": "sell", "ใช้ทำต่อ": "ingredient", "เฉลี่ย ": "avg ", "รอบนี้ไม่ต้อง": "skip this visit", "สินค้า": "Product", "หน่วย": "Unit", "เหรียญ / ชม.": "coins / hr", "เหรียญต่อการเข้า 1 ครั้ง": "coins per check-in", "เหรียญ / วัน": "coins / day", "เหรียญ/ชม. ถ้าเข้าเกมถี่ขึ้น (สีทอง = ที่เลือกอยู่)": "Coins/hr if you check in more often (gold = selected)", "ทำอะไรแต่ละรอบที่เข้าเกม ": "What to do each check-in ", "วนชุดละ ": "cycle of ", "รอบ (": "visits (", "รอบที่": "Visit", "เสร็จรอบ ": "Done visit ", "รอบ ": "visit ", "ไม่ทำก็ได้ (น้อยกว่าครึ่งชิ้นต่อชุด): ": "Optional (less than half a unit per cycle): ", "ตารางทุกรอบ": "All visits table", "จบรอบ ": "After visit ", "แล้วกลับไปเริ่มรอบ 1 ใหม่ ผลรวมทั้งชุดใกล้เคียงค่าเฉลี่ยของแผน": "start again at visit 1. Totals over the cycle match the plan averages.", "ขายอะไร ": "What to sell ", "เหรียญ/ชม.": "coins/hr", "ชิ้น/รอบ · ": "pcs/visit · ", "เหรียญ": "coins", "อัปเกรดอะไรคุ้มสุด ": "Best upgrades ", "ไม่มีคอขวด": "No bottleneck", "ค่าจาก shadow price ของ LP: ได้เพิ่มเท่าไหร่ถ้ามีของนั้นเพิ่ม 1 หน่วย": "From the LP shadow prices: coins/hr gained from one more unit of that resource.", "ใช้กำลังผลิตไปเท่าไหร่": "Capacity used", "ต่อรอบ)": "per visit)", "ต้องการอะไร ": "needs ", "ตัวอย่าง": "example", "เพิ่มลงรายการไหน": "Add to which list", "ของที่ quest ขอ": "Quest items", "ของที่มีอยู่แล้ว": "Stock on hand", "ค้นหาสินค้า (": "Search products (", "ชิ้นที่ปลดล็อกที่ L": "unlocked at L", "ของที่มีอยู่แล้ว (หักออกก่อนผลิต)": "Stock on hand (used before producing)", "รางวัล (เหรียญ)": "Reward (coins)", "รางวัล XP": "Reward XP", "ต้นไม้ตอนเริ่ม": "Trees at start", "พร้อมเก็บ": "ready to harvest", "เพิ่งเก็บไป": "just harvested", "ล้างรายการ": "Clear", "โหลดตัวอย่าง": "Load example", "ลด": "Decrease", "จำนวน ": "Quantity ", "เพิ่ม": "Increase", "แตะสินค้าด้านบนเพื่อเพิ่ม": "Tap a product above to add it", "สลับเป็น ": "Switch to ", "แล้วแตะสินค้า": "then tap a product", "ต้น (": "trees (", "ผล)": "fruit)", "ทำ": "Make", "ลดจาก ": "down from ", "เพราะ quest ใช้": "(quest uses the rest)", "รอบ แล้วส่ง quest": "visits, then hand in", "ส่ง quest แล้ว → กลับรอบ 1": "Quest handed in → back to visit 1", "จากตอนเริ่ม": "from start", "ทำเงิน (นอกเหนือ quest)": "money (outside the quest)", "รอบนี้: เก็บของทั้งหมด แล้วส่ง quest": "This visit: collect everything and hand in the quest", "รอบนี้ไม่มีอะไรต้องทำ": "Nothing to do this visit", "ผลลัพธ์": "Result", "เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม": "Pick what the quest needs. The planner shows what to plant and make at each check-in, and whether it pays.", "วางแผนไม่ได้:": "Cannot plan:", "ทำ quest นี้เสียรายได้ประมาณ ": "This quest costs about ", "เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)": "coins in lost sales (enter the reward to see if it pays)", "คุ้ม": "Worth it", "รางวัล ": "reward ", "เสียรายได้ ": "lost sales ", "เหรียญ (กำไร +": "coins (profit +", "ไม่คุ้มด้วยเหรียญ": "Not worth it in coins", "เหรียญ ทำถ้าอยากได้ XP": "coins. Do it for the XP", "หรือต้องทำ quest ต่อ": "or to progress the quest line", "ยังไม่ปลดล็อกที่ L": "Not unlocked at L", "เสร็จ ถ้าเข้าทุก ": "Ready if you check in every ", "รอบที่ ": "visit ", "ถ้าเข้าเกมบ่อยมาก (ทุก 5 นาที)": "If you check in very often (every 5 min)", "ระยะ chain ที่ยาวที่สุด": "Longest chain", "ระหว่างทำ quest ": "While doing the quest ", "ช่วง ": "over ", "เหรียญ/ชม. ที่ยังได้ (ปกติ ": "coins/hr still earned (normally ", "ถ้าเอาของ quest ไปขายแทน": "if you sold the quest items instead", "ฟาร์มผลิตไม่ทันใน ": "The farm cannot keep up in ", "จึงยืดช่วงเป็น ": "so the window is stretched to ", "กำลังผลิตที่เหลือ เอาไปขาย": "Spare capacity goes to selling", "สรุป": "Summary", "ต่อ 1 order ก่อนหักของที่มี": "per order, before stock on hand", "ของทั้งหมดที่ต้องใช้ (BOM)": "Everything needed (BOM)", "ที่ไหน": "Where", "ต้องใช้": "Needed", "จากคลัง": "From stock", "เหลือ": "Spare", "ฟาร์ม": "Farm", "จำนวนแปลง": "Fields", "ชิ้นต่อช่อง": "Items per slot", "ขายหมดใน (นาที)": "Sells out in (min)", "ต้นไม้ต่อชนิด (ค่าเริ่ม)": "Trees per type (default)", "สัตว์ (จำนวนตัว)": "Animals (count)", "ต้นไม้แยกชนิด": "Trees by type", "กลับเป็นค่าที่บันทึกไว้ในไฟล์": "Reset to saved profile", "บันทึกในเครื่องนี้อัตโนมัติ": "Saved on this device automatically.", "เครื่องจักร ": "Machines ", "จำนวน · slot · master": "count · slots · mastered", "จำนวน": "Count", "จำนวน 0 = ยังไม่มีเครื่องนี้": "Count 0 = you do not own this machine.", "ข้อมูล ": "Data: ", "สินค้า · ": "products · ", "สร้าง ": "built ", "สมมติ: ต้นไม้ให้ ": "Assumptions: trees give ", "ผลต่อการเก็บ · เมล็ดฟรี (ปลูก 1 ได้สุทธิ 1) · barn/silo คิดแค่ของที่เก็บต่อรอบ · ไม่รวมของจากเหมือง/ตกปลา": "fruit per harvest · seeds are free (plant 1, net +1) · barn/silo only counts what one visit brings in · mine and fishing items not included", "เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell": "Personal fan-made tool, not official · icon art © Supercell", "ภาษา": "Language"};
+const BY = HD.by;
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("hdp:" + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("hdp:" + k, JSON.stringify(v)); } catch {} },
+};
+const clone = o => JSON.parse(JSON.stringify(o));
+let farm = Object.assign(clone(DATA.farm), store.get("farm", {}));
+let checkin = store.get("checkin", farm.checkin_minutes);
+let lang = store.get("lang", "th");
+
+// ---------- formatting ----------
+const fmt = (v, d = 0) => (v == null || !isFinite(v) ? "–" : v.toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d }));
+const fmtQty = v => (Math.abs(v - Math.round(v)) < 0.05 ? fmt(v) : fmt(v, 1));
+function fmtMin(m) {
+  if (m < 60) return `${fmt(m)} ${t("นาที")}`;
+  const h = m / 60;
+  return Number.isInteger(h) ? `${h} ${t("ชม.")}` : `${fmt(h, 1)} ${t("ชม.")}`;
+}
+const fmtH = h => (h < 1 ? `${fmt(h * 60)} ${t("นาที")}` : `${fmt(h, 1)} ${t("ชม.")}`);
+const icon = (p, cls = "") => {
+  const it = BY[p];
+  return it && it.ic ? `<img src="${it.ic}" alt="" class="${cls}" loading="lazy">` : `<span class="ph ${cls}">${esc((p || "?").slice(0, 2))}</span>`;
+};
+const KIND_TH_ = () => ({ field: t("แปลง"), tree: t("ต้นไม้"), animal: t("สัตว์"), machine: t("เครื่อง"), external: t("ภายนอก") });
+const ACT_TH_ = () => ({ plant: t("ปลูก"), start: t("เริ่ม"), feed: t("ให้อาหาร"), harvest: t("เก็บ"), collect: t("รอเก็บ") });
+
+function farmLine() {
+  $("#farmline").textContent = `Level ${farm.level} · ${farm.fields} ${t("แปลง · เข้าเกมทุก ")}${fmtMin(checkin)}`;
+}
+
+// ---------- tabs ----------
+const TABS = ["money", "quest", "farm"];
+function showTab(t) {
+  for (const x of TABS) { $("#tab-" + x).setAttribute("aria-selected", x === t); $("#pane-" + x).hidden = x !== t; }
+  store.set("tab", t);
+  if (t === "money") renderMoney(); else if (t === "quest") renderQuest(); else renderFarm();
+}
+TABS.forEach(t => $("#tab-" + t).addEventListener("click", () => showTab(t)));
+
+// ---------- check-in chips (shared) ----------
+const PRESETS = [30, 60, 120, 240, 360, 480];
+function checkinChips(id) {
+  const custom = !PRESETS.includes(checkin);
+  return `<div class="chips" id="${id}">
+    <span class="small muted">${t("เข้าเกมทุก")}</span>
+    ${PRESETS.map(m => `<button class="chip" data-m="${m}" aria-pressed="${m === checkin}">${fmtMin(m)}</button>`).join("")}
+    <label class="chip" aria-pressed="${custom}"><input type="number" min="5" step="5" id="${id}-in" value="${custom ? checkin : ""}" placeholder="${t("อื่นๆ")}"> ${t("นาที")}</label>
+  </div>`;
+}
+function wireChips(id, after) {
+  $("#" + id).querySelectorAll("button[data-m]").forEach(b => b.addEventListener("click", () => setCheckin(+b.dataset.m, after)));
+  $("#" + id + "-in").addEventListener("change", e => { const v = +e.target.value; if (v >= 5) setCheckin(v, after); });
+}
+function setCheckin(m, after) { checkin = m; store.set("checkin", m); farmLine(); after(); }
+
+// ---------- Mode 1 ----------
+const sweepCache = {};
+function sweep() {
+  const key = JSON.stringify(farm);
+  if (!sweepCache[key]) sweepCache[key] = [30, 60, 120, 180, 240, 360, 480].map(I => ({ I, r: HD.solve(farm, I).revenue }));
+  return sweepCache[key];
+}
+function chart(points, cur) {
+  const W = 340, H = 150, pl = 8, pr = 8, pt = 22, pb = 22;
+  const max = Math.max(...points.map(p => p.r), cur.r) * 1.08;
+  const bw = (W - pl - pr) / points.length;
+  const bars = points.map((p, k) => {
+    const h = (H - pt - pb) * p.r / max, x = pl + k * bw + 4, y = H - pb - h, on = p.I === cur.I;
+    return `<rect x="${x}" y="${y}" width="${bw - 8}" height="${h}" rx="3" fill="${on ? "var(--gold)" : "var(--field-soft)"}"/>
+      <text x="${x + (bw - 8) / 2}" y="${y - 5}" text-anchor="middle" class="${on ? "lbl" : ""}">${fmt(p.r)}</text>
+      <text x="${x + (bw - 8) / 2}" y="${H - 6}" text-anchor="middle">${p.I < 60 ? p.I + "m" : p.I / 60 + "h"}</text>`;
+  }).join("");
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${t("เหรียญต่อชั่วโมงตามความถี่ที่เข้าเกม")}">${bars}</svg>`;
+}
+function renderMoney() {
+  const pane = $("#pane-money");
+  let sol;
+  try { sol = HD.solve(farm, checkin); }
+  catch (e) { pane.innerHTML = `<div class="grid"><div class="err">${t("คำนวณไม่ได้: ")}${esc(e.message)} ${t("ลองตรวจตั้งค่าฟาร์ม")}</div></div>`; return; }
+  const { rows, use } = HD.plan(sol);
+  const bn = HD.bottlenecks(sol);
+  const pts = sweep(); const cur = { I: checkin, r: sol.revenue };
+  const series = pts.some(p => p.I === checkin) ? pts : [...pts, cur].sort((a, b) => a.I - b.I);
+
+  const sells = rows.filter(r => r.sold > 1e-4).sort((a, b) => b.coins - a.coins);
+  const rot = HD.rotation(sol), K = rot.K;
+  const saved = store.get("visit", { I: checkin, v: 0 });
+  const vi = saved.I === checkin && saved.v < K ? saved.v : 0;
+  const GROUP_ORDER = u => (u.kind === "field" ? "0" : u.kind === "machine" ? "1" + u.w : u.kind === "animal" ? "2" : "3");
+  const groups = {};
+  rot.units.filter(u => u.n > 0).forEach(u => { const g = u.kind === "machine" ? "m:" + u.w : u.kind; (groups[g] = groups[g] || { key: GROUP_ORDER(u), us: [] }).us.push(u); });
+  const skipped = rot.units.filter(u => u.n === 0);
+  const groupTitle = (g, us) => {
+    const now = us.reduce((a, u) => a + u.counts[vi], 0);
+    if (g === "field") return `${t("ปลูก ")}<span class="small muted">${t("รอบนี้ ")}${now} ${t("จาก ")}${farm.fields} ${t("แปลง")}</span>`;
+    if (g === "animal") return t("สัตว์ (ให้อาหาร / เก็บ)");
+    if (g === "tree") return t("ต้นไม้ (เก็บ)");
+    const m = us[0].w;
+    return `${esc(m)}${(farm.mastered || []).includes(m) ? ' <span class="tag">master</span>' : ""} <span class="small muted">${t("รอบนี้ ")}${now} ${t("จาก ")}${us[0].cap} slot</span>`;
+  };
+  const rotLi = u => {
+    const c = u.counts[vi];
+    const note = u.kind === "field" ? `${t("โต ")}${fmtMin(BY[u.p].t)}` : u.kind === "machine" ? (u.sold ? t("ขาย") : t("ใช้ทำต่อ")) : "";
+    return `<div class="li${c ? "" : " dim"}">${icon(u.p)}<div class="name">${esc(u.p)}<span class="small">${note ? note + " · " : ""}${t("เฉลี่ย ")}${fmt(u.avg, 1)}/${t("รอบ")}</span></div>
+      <div class="val">${c ? `<span class="num">${c}</span> <span class="small muted">${u.unit}</span>` : `<span class="small muted">${t("รอบนี้ไม่ต้อง")}</span>`}</div></div>`;
+  };
+  const gsorted = Object.entries(groups).sort((a, b) => a[1].key.localeCompare(b[1].key));
+  const rotTable = `<div class="tablebox"><table class="rot"><thead><tr><th>${t("สินค้า")}</th>${Array.from({ length: K }, (_, v) => `<th class="n${v === vi ? " cur" : ""}">${v + 1}</th>`).join("")}<th>${t("หน่วย")}</th></tr></thead><tbody>
+    ${gsorted.map(([g, o]) => o.us.map(u => `<tr><td>${esc(u.p)}</td>${u.counts.map((c, v) => `<td class="n${v === vi ? " cur" : ""}">${c || ""}</td>`).join("")}<td class="small muted">${u.unit}</td></tr>`).join("")).join("")}</tbody></table></div>`;
+  const maxBn = Math.max(1, ...bn.map(b => b.per));
+
+  pane.innerHTML = `
+  <div class="grid">
+    <div class="card">
+      ${checkinChips("ci-money")}
+      <div class="hero" style="margin-top:12px">
+        <div class="stat"><div class="v gold num">${fmt(sol.revenue)}</div><div class="l">${t("เหรียญ / ชม.")}</div></div>
+        <div class="stat"><div class="v num">${fmt(sol.revenue * checkin / 60)}</div><div class="l">${t("เหรียญต่อการเข้า 1 ครั้ง")}</div></div>
+        <div class="stat"><div class="v num">${fmt(sol.xp)}</div><div class="l">XP / ${t("ชม.")}</div></div>
+        <div class="stat"><div class="v num">${fmt(sol.revenue * 24)}</div><div class="l">${t("เหรียญ / วัน")}</div></div>
+      </div>
+      <div style="margin-top:12px">${chart(series, cur)}</div>
+      <p class="small muted" style="margin:4px 0 0">${t("เหรียญ/ชม. ถ้าเข้าเกมถี่ขึ้น (สีทอง = ที่เลือกอยู่)")}</p>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="card">
+      <h2>${t("ทำอะไรแต่ละรอบที่เข้าเกม ")}<span class="small muted">${t("วนชุดละ ")}${K} ${t("รอบ (")}${fmtH(K * checkin / 60)})</span></h2>
+      <div class="chips" id="visit-chips"><span class="small muted">${t("รอบที่")}</span>
+        ${Array.from({ length: K }, (_, v) => `<button class="chip" data-v="${v}" aria-pressed="${v === vi}">${v + 1}</button>`).join("")}</div>
+      <div class="row" style="margin:10px 0 4px"><button class="btn primary" id="visit-next">${t("เสร็จรอบ ")}${vi + 1} → ${t("รอบ ")}${(vi + 1) % K + 1}</button></div>
+      ${gsorted.map(([g, o]) => `<div class="group-h">${groupTitle(g, o.us)}</div><div class="list">${o.us.sort((a, b) => b.avg - a.avg).map(rotLi).join("")}</div>`).join("")}
+      ${skipped.length ? `<p class="small muted" style="margin:10px 0 0">${t("ไม่ทำก็ได้ (น้อยกว่าครึ่งชิ้นต่อชุด): ")}${skipped.map(u => esc(u.p)).join(", ")}</p>` : ""}
+      <details style="margin-top:12px"><summary>${t("ตารางทุกรอบ")}</summary><div style="margin-top:8px">${rotTable}</div></details>
+      <p class="small muted" style="margin:10px 0 0">${t("จบรอบ ")}${K} ${t("แล้วกลับไปเริ่มรอบ 1 ใหม่ ผลรวมทั้งชุดใกล้เคียงค่าเฉลี่ยของแผน")}</p>
+    </div>
+    <div class="grid" style="margin-top:0">
+      <div class="card">
+        <h2>${t("ขายอะไร ")}<span class="small muted">${t("เหรียญ/ชม.")}</span></h2>
+        <div class="list">${sells.map(r => `<div class="li">${icon(r.p)}<div class="name">${esc(r.p)}<span class="small">${fmt(r.sold * checkin / 60, 1)} ${t("ชิ้น/รอบ · ")}${fmt(BY[r.p].p)} ${t("เหรียญ")}</span></div>
+          <div class="val num">${fmt(r.coins)}</div></div>`).join("")}</div>
+      </div>
+      <div class="card">
+        <h2>${t("อัปเกรดอะไรคุ้มสุด ")}<span class="small muted">+${t("เหรียญ/ชม.")}</span></h2>
+        <div class="list">${bn.slice(0, 10).map(b => `<div><div class="row" style="justify-content:space-between"><span>${esc(b.what)}</span><span class="num">+${fmt(b.per, 1)}</span></div>
+          <div class="bar gold"><i style="width:${100 * b.per / maxBn}%"></i></div></div>`).join("") || `<p class="muted small">${t("ไม่มีคอขวด")}</p>`}</div>
+        <p class="small muted" style="margin:10px 0 0">${t("ค่าจาก shadow price ของ LP: ได้เพิ่มเท่าไหร่ถ้ามีของนั้นเพิ่ม 1 หน่วย")}</p>
+      </div>
+      <div class="card">
+        <h2>${t("ใช้กำลังผลิตไปเท่าไหร่")}</h2>
+        <div class="list">${use.map(u => `<div><div class="row small" style="justify-content:space-between"><span>${esc({ fields: t("จำนวนแปลง"), shop: "Roadside shop", silo: `Silo (${t("ต่อรอบ)")}`, barn: `Barn (${t("ต่อรอบ)")}` }[u.name] || u.name)}</span><span class="num">${fmt(u.used * 100)}%</span></div>
+          <div class="bar ${u.used > 0.995 ? "full" : ""}"><i style="width:${Math.min(100, u.used * 100)}%"></i></div></div>`).join("")}</div>
+      </div>
+    </div>
+  </div>`;
+  wireChips("ci-money", renderMoney);
+  const go = v => { store.set("visit", { I: checkin, v }); renderMoney(); };
+  $("#visit-chips").querySelectorAll("button[data-v]").forEach(b => b.addEventListener("click", () => go(+b.dataset.v)));
+  $("#visit-next").addEventListener("click", () => go((vi + 1) % K));
+}
+
+// ---------- Mode 2 ----------
+const EXAMPLE = { items: { "Bread": 3, "Butter": 2, "Carrot Pie": 2, "Sweater": 1, "Bacon": 4 }, have: { "Wheat": 6 }, reward: 1500, xp: 120 };
+let Q = store.get("quest", null) || { ...clone(EXAMPLE), example: true, trees: "ready", target: "items", search: "" };
+
+function saveQ() { Q.example = false; store.set("quest", Q); }
+function renderQuest() {
+  const pane = $("#pane-quest");
+  const unl = HD.unlocked(farm.level, true, []);
+  pane.innerHTML = `
+  <div class="grid two">
+    <div class="card">
+      <h2>Quest ${t("ต้องการอะไร ")}${Q.example ? `<span class="tag">${t("ตัวอย่าง")}</span>` : ""}</h2>
+      <div class="row" style="margin-bottom:8px">
+        <div class="seg" role="group" aria-label="${t("เพิ่มลงรายการไหน")}">
+          <button data-t="items" aria-pressed="${Q.target === "items"}">${t("ของที่ quest ขอ")}</button>
+          <button data-t="have" aria-pressed="${Q.target === "have"}">${t("ของที่มีอยู่แล้ว")}</button>
+        </div>
+      </div>
+      <input class="search" id="q-search" type="search" placeholder="${t("ค้นหาสินค้า (")}${unl.length} ${t("ชิ้นที่ปลดล็อกที่ L")}${farm.level})" value="${esc(Q.search)}">
+      <div class="picker" id="q-picker"></div>
+      <div class="group-h" style="margin-top:14px">${t("ของที่ quest ขอ")}</div>
+      <div class="list order" id="q-items"></div>
+      <div class="group-h">${t("ของที่มีอยู่แล้ว (หักออกก่อนผลิต)")}</div>
+      <div class="list order" id="q-have"></div>
+      <div class="row" style="margin-top:12px">
+        <label class="field-in">${t("รางวัล (เหรียญ)")}<input type="number" id="q-reward" min="0" value="${Q.reward || ""}"></label>
+        <label class="field-in">${t("รางวัล XP")}<input type="number" id="q-xp" min="0" value="${Q.xp || ""}"></label>
+        <label class="field-in">${t("ต้นไม้ตอนเริ่ม")}<select id="q-trees"><option value="ready" ${Q.trees !== "harvested" ? "selected" : ""}>${t("พร้อมเก็บ")}</option><option value="harvested" ${Q.trees === "harvested" ? "selected" : ""}>${t("เพิ่งเก็บไป")}</option></select></label>
+      </div>
+      <div class="row" style="margin-top:10px"><button class="btn" id="q-clear">${t("ล้างรายการ")}</button><button class="btn" id="q-example">${t("โหลดตัวอย่าง")}</button></div>
+    </div>
+    <div class="grid" style="margin-top:0" id="q-out"></div>
+  </div>`;
+  pane.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => { Q.target = b.dataset.t; store.set("quest", Q); renderQuest(); }));
+  const search = $("#q-search");
+  const drawPicker = () => {
+    const s = search.value.trim().toLowerCase();
+    const list = unl.filter(p => !s || p.toLowerCase().includes(s))
+      .sort((a, b) => (BY[a].k === "machine") - (BY[b].k === "machine") || (BY[a].lv ?? 0) - (BY[b].lv ?? 0)).reverse();
+    $("#q-picker").innerHTML = list.slice(0, 120).map(p => `<button class="pick" data-p="${esc(p)}">${icon(p)}${esc(p)}</button>`).join("");
+    $("#q-picker").querySelectorAll(".pick").forEach(b => b.addEventListener("click", () => {
+      const box = Q[Q.target]; box[b.dataset.p] = (box[b.dataset.p] || 0) + 1; saveQ(); drawLists(); compute();
+    }));
+  };
+  search.addEventListener("input", () => { Q.search = search.value; store.set("quest", Q); drawPicker(); });
+  const drawLists = () => {
+    for (const key of ["items", "have"]) {
+      const el = $("#q-" + key), box = Q[key];
+      el.innerHTML = Object.keys(box).length ? Object.entries(box).map(([p, q]) => `<div class="li">${icon(p)}<div class="name">${esc(p)}<span class="small">${KIND_TH_()[BY[p]?.k] || ""} · ${esc(BY[p]?.w || "")}</span></div>
+        <div class="step"><button data-d="-1" data-p="${esc(p)}" aria-label="${t("ลด")}">−</button><input type="number" min="0" value="${q}" data-p="${esc(p)}" aria-label="${t("จำนวน ")}${esc(p)}"><button data-d="1" data-p="${esc(p)}" aria-label="${t("เพิ่ม")}">+</button></div></div>`).join("")
+        : `<p class="small muted" style="margin:2px 0">${key === "items" ? t("แตะสินค้าด้านบนเพื่อเพิ่ม") : `${t("สลับเป็น ")}"${t("ของที่มีอยู่แล้ว")}" ${t("แล้วแตะสินค้า")}`}</p>`;
+      el.querySelectorAll("button[data-d]").forEach(b => b.addEventListener("click", () => {
+        const v = (box[b.dataset.p] || 0) + +b.dataset.d; if (v <= 0) delete box[b.dataset.p]; else box[b.dataset.p] = v; saveQ(); drawLists(); compute();
+      }));
+      el.querySelectorAll("input").forEach(i => i.addEventListener("change", () => {
+        const v = Math.max(0, Math.round(+i.value || 0)); if (!v) delete box[i.dataset.p]; else box[i.dataset.p] = v; saveQ(); drawLists(); compute();
+      }));
+    }
+  };
+  $("#q-reward").addEventListener("change", e => { Q.reward = +e.target.value || 0; saveQ(); compute(); });
+  $("#q-xp").addEventListener("change", e => { Q.xp = +e.target.value || 0; saveQ(); compute(); });
+  $("#q-trees").addEventListener("change", e => { Q.trees = e.target.value; saveQ(); compute(); });
+  $("#q-clear").addEventListener("click", () => { Q.items = {}; Q.have = {}; Q.reward = 0; Q.xp = 0; saveQ(); renderQuest(); });
+  $("#q-example").addEventListener("click", () => { Q = { ...clone(EXAMPLE), example: true, trees: "ready", target: "items", search: "" }; store.set("quest", Q); renderQuest(); });
+  drawPicker(); drawLists(); compute();
+}
+
+function foodWeb(items) {
+  const node = (p, mult, depth) => {
+    const it = BY[p];
+    const kids = depth < 8 ? it.in.map(([i, q]) => node(i, q * mult / it.y, depth + 1)).join("") : "";
+    return `<li><span class="node">${icon(p)}<span>${esc(p)}</span><span class="q">×${fmtQty(mult)}</span><span class="w">${esc(it.k === "field" ? t("แปลง") : it.w)} · ${fmtMin(HD.timeOf(farm, it))}</span></span>${kids ? `<ul>${kids}</ul>` : ""}</li>`;
+  };
+  return `<div class="tree"><ul>${Object.entries(items).map(([p, q]) => node(p, q, 0)).join("")}</ul></div>`;
+}
+
+function questVisitCard(r, vi) {
+  const N = r.visits.length, V = r.visits[vi], last = vi === N - 1;
+  const groups = {};
+  const add = (key, sortKey, title, row) => (groups[key] = groups[key] || { sortKey, title, rows: [] }).rows.push(row);
+  const keyOf = (kind, w) => kind === "field" ? ["field", "0", t("ปลูก")] : kind === "machine" ? ["m:" + w, "1" + w, esc(w)]
+    : kind === "animal" ? ["animal", "2", t("สัตว์ (ให้อาหาร / เก็บ)")] : ["tree", "3", t("ต้นไม้ (เก็บ)")];
+  // quest rows
+  const acts = {};
+  r.sim.log.filter(l => l.visit === V.visit).forEach(l => {
+    const k = l.act + "|" + l.p;
+    (acts[k] = acts[k] || { act: l.act, p: l.p, n: 0, units: 0 }); acts[k].n++; acts[k].units += l.units;
+  });
+  for (const a of Object.values(acts)) {
+    const it = BY[a.p], [key, sk, title] = keyOf(it.k, it.w);
+    const qty = a.act === "plant" ? [a.n, t("แปลง")] : a.act === "start" ? (it.y > 1 ? [a.n, `${t("ชุด (")}${a.units} ${t("ชิ้น)")}`] : [a.n, t("ชิ้น")])
+      : a.act === "harvest" ? [a.n, `${t("ต้น (")}${a.units} ${t("ผล)")}`] : [a.n, a.p === "Honeycomb" ? t("ชิ้น") : t("ตัว")];
+    add(key, sk, title, { quest: true, p: a.p, verb: ACT_TH_()[a.act], n: qty[0], unit: qty[1] });
+  }
+  // money rows (orange)
+  for (const u of V.money) {
+    if (!u.count) continue;
+    const [key, sk, title] = keyOf(u.kind, u.w);
+    const verb = u.p === "Honeycomb" ? t("เก็บ") : { field: t("ปลูก"), machine: t("ทำ"), animal: t("ให้อาหาร"), tree: t("เก็บ") }[u.kind];
+    add(key, sk, title, { quest: false, p: u.p, verb, n: u.count, unit: u.unit, note: u.count < u.base ? `${t("ลดจาก ")}${u.base} ${t("เพราะ quest ใช้")}` : "" });
+  }
+  const row = x => `<div class="li${x.quest ? "" : " extra"}">${icon(x.p)}<div class="name">${esc(x.p)}<span class="small">${x.quest ? '<span class="tag q">quest</span>' : `<span class="tag x">${t("ทำเงิน")}</span>`} ${x.verb}${x.note ? " · " + x.note : ""}</span></div>
+    <div class="val"><span class="num">${x.n}</span> <span class="small muted">${x.unit}</span></div></div>`;
+  const body = Object.values(groups).sort((a, b) => a.sortKey.localeCompare(b.sortKey))
+    .map(g => `<div class="group-h">${g.title}</div><div class="list">${g.rows.sort((a, b) => b.quest - a.quest || b.n - a.n).map(row).join("")}</div>`).join("");
+  return `<div class="card">
+    <h2>${t("ทำอะไรแต่ละรอบที่เข้าเกม ")}<span class="small muted">${N} ${t("รอบ แล้วส่ง quest")}</span></h2>
+    <div class="chips" id="qv-chips"><span class="small muted">${t("รอบที่")}</span>
+      ${r.visits.map((x, k) => `<button class="chip" data-v="${k}" aria-pressed="${k === vi}">${k + 1}</button>`).join("")}</div>
+    <div class="row" style="margin:10px 0 4px"><button class="btn primary" id="qv-next">${last ? t("ส่ง quest แล้ว → กลับรอบ 1") : `${t("เสร็จรอบ ")}${vi + 1} → ${t("รอบ ")}${vi + 2}`}</button>
+      <span class="small muted">+${fmtH(V.hour)} ${t("จากตอนเริ่ม")}</span></div>
+    <div class="legend small"><span class="tag q">quest</span><span class="tag x">${t("ทำเงิน (นอกเหนือ quest)")}</span></div>
+    ${last ? `<div class="verdict good" style="margin:8px 0">${t("รอบนี้: เก็บของทั้งหมด แล้วส่ง quest")}</div>` : ""}
+    ${body || `<p class="small muted">${t("รอบนี้ไม่มีอะไรต้องทำ")}</p>`}
+  </div>`;
+}
+
+function compute() {
+  const out = $("#q-out");
+  if (!out) return;
+  const items = Object.fromEntries(Object.entries(Q.items).filter(([, q]) => q > 0));
+  if (!Object.keys(items).length) { out.innerHTML = `<div class="card"><h2>${t("ผลลัพธ์")}</h2><p class="muted">${t("เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม")}</p></div>`; return; }
+  const m1 = store.get("visit", { I: checkin, v: 0 });
+  const qkey = JSON.stringify([items, Q.have, checkin, Q.trees, farm]);
+  let qs = store.get("qvisit", null);
+  if (!qs || qs.key !== qkey) { qs = { key: qkey, v: 0 }; store.set("qvisit", qs); }
+  let r;
+  try { r = HD.quest(farm, items, Q.have, checkin, { treesStart: Q.trees, cycleStart: m1.I === checkin ? m1.v : 0 }); }
+  catch (e) { out.innerHTML = `<div class="err">${t("คำนวณไม่ได้: ")}${esc(e.message)}</div>`; return; }
+
+  const verdict = (() => {
+    if (r.error) return `<div class="err"><b>${t("วางแผนไม่ได้:")}</b> ${esc(r.error)}</div>`;
+    const lost = r.cost ?? 0;
+    if (!Q.reward) return `<div class="verdict info">${t("ทำ quest นี้เสียรายได้ประมาณ ")}<b class="num">${fmt(lost)}</b> ${t("เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)")}</div>`;
+    return Q.reward >= lost
+      ? `<div class="verdict good"><b>${t("คุ้ม")}</b> · ${t("รางวัล ")}<span class="num">${fmt(Q.reward)}</span> &gt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ (กำไร +")}${fmt(Q.reward - lost)})</div>`
+      : `<div class="verdict bad"><b>${t("ไม่คุ้มด้วยเหรียญ")}</b> · ${t("รางวัล ")}<span class="num">${fmt(Q.reward)}</span> &lt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ ทำถ้าอยากได้ XP")}${Q.xp ? ` (+${fmt(Q.xp)} XP)` : ""} ${t("หรือต้องทำ quest ต่อ")}</div>`;
+  })();
+
+  const lockedNote = r.locked.length ? `<div class="err small">${t("ยังไม่ปลดล็อกที่ L")}${farm.level}: ${r.locked.map(esc).join(", ")}</div>` : "";
+  let timing = "", schedule = "", money = "";
+  if (!r.error) {
+    timing = `<div class="hero">
+      <div class="stat"><div class="v num">${fmtH(r.sim.doneH)}</div><div class="l">${t("เสร็จ ถ้าเข้าทุก ")}${fmtMin(checkin)} (${t("รอบที่ ")}${r.sim.visits})</div></div>
+      <div class="stat"><div class="v num">${fmtH(r.fast.doneH)}</div><div class="l">${t("ถ้าเข้าเกมบ่อยมาก (ทุก 5 นาที)")}</div></div>
+      <div class="stat"><div class="v num">${fmtH(r.crit)}</div><div class="l">${t("ระยะ chain ที่ยาวที่สุด")}</div></div></div>`;
+    schedule = questVisitCard(r, Math.min(qs.v, r.visits.length - 1));
+    if (r.money) {
+      const pl = HD.plan(r.money).rows;
+      const sells = pl.filter(x => x.sold > 1e-4).sort((a, b) => b.coins - a.coins).slice(0, 8);
+      money = `<div class="card"><h2>${t("ระหว่างทำ quest ")}<span class="small muted">${t("ช่วง ")}${fmtH(r.H)}</span></h2>
+        <div class="hero">
+          <div class="stat"><div class="v gold num">${fmt(r.money.revenue)}</div><div class="l">${t("เหรียญ/ชม. ที่ยังได้ (ปกติ ")}${fmt(r.base)})</div></div>
+          <div class="stat"><div class="v num">${fmt(r.value)}</div><div class="l">${t("ถ้าเอาของ quest ไปขายแทน")}</div></div></div>
+        ${r.H > r.sim.doneH + 1e-6 ? `<p class="small muted">${t("ฟาร์มผลิตไม่ทันใน ")}${fmtH(r.sim.doneH)} ${t("จึงยืดช่วงเป็น ")}${fmtH(r.H)}</p>` : ""}
+        <div class="group-h">${t("กำลังผลิตที่เหลือ เอาไปขาย")}</div>
+        <div class="list">${sells.map(x => `<div class="li">${icon(x.p)}<div class="name">${esc(x.p)}</div><div class="val num">${fmt(x.coins)} <span class="small muted">/${t("ชม.")}</span></div></div>`).join("")}</div></div>`;
+    }
+  }
+  const bomRows = r.order.map(p => `<tr><td>${esc(p)}</td><td>${esc(BY[p].k === "field" ? t("แปลง") : BY[p].w)}</td><td class="n">${fmtQty(r.need[p])}</td><td class="n">${fmtQty(r.fromStock[p])}</td><td class="n">${r.starts[p]}</td><td>${{ machine: t("ชุด"), field: t("แปลง"), animal: t("ตัว"), tree: t("ต้น") }[BY[p].k] || ""}</td><td class="n">${fmtQty(r.spare[p])}</td></tr>`).join("");
+
+  out.innerHTML = `
+    <div class="card"><h2>${t("สรุป")}</h2>${lockedNote}${verdict}${timing ? `<div style="margin-top:10px">${timing}</div>` : ""}</div>
+    ${schedule}
+    <div class="card"><h2>Food web <span class="small muted">${t("ต่อ 1 order ก่อนหักของที่มี")}</span></h2>${foodWeb(items)}</div>
+    <div class="card"><details><summary>${t("ของทั้งหมดที่ต้องใช้ (BOM)")}</summary><div class="tablebox" style="margin-top:8px"><table>
+      <thead><tr><th>${t("สินค้า")}</th><th>${t("ที่ไหน")}</th><th class="n">${t("ต้องใช้")}</th><th class="n">${t("จากคลัง")}</th><th class="n">${t("ทำ")}</th><th>${t("หน่วย")}</th><th class="n">${t("เหลือ")}</th></tr></thead>
+      <tbody>${bomRows}</tbody></table></div></details></div>
+    ${money}`;
+  if (!r.error) {
+    const N = r.visits.length, go = v => { qs.v = v; store.set("qvisit", qs); compute(); };
+    out.querySelectorAll("#qv-chips button[data-v]").forEach(b => b.addEventListener("click", () => go(+b.dataset.v)));
+    $("#qv-next").addEventListener("click", () => go((Math.min(qs.v, N - 1) + 1) % N));
+  }
+}
+
+// ---------- farm settings ----------
+function renderFarm() {
+  const pane = $("#pane-farm");
+  const unl = HD.unlocked(farm.level, true, []);
+  const machines = [...new Set(unl.filter(p => BY[p].k === "machine").map(p => BY[p].w))].sort();
+  const animals = unl.filter(p => BY[p].k === "animal" && p !== "Honeycomb");
+  const trees = unl.filter(p => BY[p].k === "tree");
+  const mc = m => (farm.machine_count || {})[m] ?? farm.machine_count_default;
+  const ms = m => (farm.machine_slots || {})[m] ?? farm.machine_slots_default;
+  const num = (id, label, v, step = 1) => `<label class="field-in">${label}<input type="number" id="${id}" min="0" step="${step}" value="${v}"></label>`;
+  pane.innerHTML = `
+  <div class="grid two">
+    <div class="card">
+      <h2>${t("ฟาร์ม")}</h2>
+      <div class="row">
+        ${num("f-level", "Level", farm.level)}${num("f-fields", t("จำนวนแปลง"), farm.fields)}
+        ${num("f-shop", t("ช่อง Roadside shop"), farm.shop_slots)}${num("f-stack", t("ชิ้นต่อช่อง"), farm.shop_stack)}
+        ${num("f-sell", t("ขายหมดใน (นาที)"), farm.shop_sell_minutes)}
+        ${num("f-barn", "Barn", farm.barn)}${num("f-silo", "Silo", farm.silo)}
+        ${num("f-bee", t("รังผึ้ง"), farm.beehives)}${num("f-tree", t("ต้นไม้ต่อชนิด (ค่าเริ่ม)"), farm.trees_default)}
+      </div>
+      <div class="group-h" style="margin-top:14px">${t("สัตว์ (จำนวนตัว)")}</div>
+      <div class="row">${animals.map(p => num("a-" + p, `${esc(BY[p].w)} → ${esc(p)}`, p === "Honeycomb" ? farm.beehives : (farm.animals || {})[p] ?? farm.animals_default)).join("")}</div>
+      <details style="margin-top:14px"><summary>${t("ต้นไม้แยกชนิด")}</summary><div class="row" style="margin-top:8px">
+        ${trees.map(p => num("t-" + p, esc(p), (farm.trees || {})[p] ?? farm.trees_default)).join("")}</div></details>
+      <div class="row" style="margin-top:14px"><button class="btn" id="f-reset">${t("กลับเป็นค่าที่บันทึกไว้ในไฟล์")}</button></div>
+      <p class="small muted">${t("บันทึกในเครื่องนี้อัตโนมัติ")}</p>
+    </div>
+    <div class="card">
+      <h2>${t("เครื่องจักร ")}<span class="small muted">${t("จำนวน · slot · master")}</span></h2>
+      <div class="mach">
+        <span class="small muted">${t("เครื่อง")}</span><span class="small muted">${t("จำนวน")}</span><span class="small muted">slot</span><span class="small muted">master</span>
+        ${machines.map(m => `<span>${esc(m)}</span>
+          <input type="number" min="0" data-mc="${esc(m)}" value="${mc(m)}" aria-label="${t("จำนวน ")}${esc(m)}">
+          <input type="number" min="0" data-ms="${esc(m)}" value="${ms(m)}" aria-label="slot ${esc(m)}">
+          <input type="checkbox" data-mm="${esc(m)}" ${(farm.mastered || []).includes(m) ? "checked" : ""} aria-label="master ${esc(m)}">`).join("")}
+      </div>
+      <p class="small muted">${t("จำนวน 0 = ยังไม่มีเครื่องนี้")}</p>
+    </div>
+  </div>`;
+  const bind = (id, key) => $("#" + id).addEventListener("change", e => { farm[key] = Math.max(0, +e.target.value || 0); saveFarm(); });
+  [["f-level", "level"], ["f-fields", "fields"], ["f-shop", "shop_slots"], ["f-stack", "shop_stack"], ["f-sell", "shop_sell_minutes"],
+   ["f-barn", "barn"], ["f-silo", "silo"], ["f-bee", "beehives"], ["f-tree", "trees_default"]].forEach(([i, k]) => bind(i, k));
+  $("#f-level").addEventListener("change", () => renderFarm());
+  animals.forEach(p => { if (p !== "Honeycomb") document.getElementById("a-" + p).addEventListener("change", e => { farm.animals = { ...farm.animals, [p]: +e.target.value || 0 }; saveFarm(); }); });
+  trees.forEach(p => document.getElementById("t-" + p).addEventListener("change", e => { farm.trees = { ...farm.trees, [p]: +e.target.value || 0 }; saveFarm(); }));
+  pane.querySelectorAll("[data-mc]").forEach(i => i.addEventListener("change", () => { farm.machine_count = { ...farm.machine_count, [i.dataset.mc]: +i.value || 0 }; saveFarm(); }));
+  pane.querySelectorAll("[data-ms]").forEach(i => i.addEventListener("change", () => { farm.machine_slots = { ...farm.machine_slots, [i.dataset.ms]: +i.value || 0 }; saveFarm(); }));
+  pane.querySelectorAll("[data-mm]").forEach(i => i.addEventListener("change", () => {
+    const s = new Set(farm.mastered || []); i.checked ? s.add(i.dataset.mm) : s.delete(i.dataset.mm); farm.mastered = [...s]; saveFarm();
+  }));
+  $("#f-reset").addEventListener("click", () => { farm = clone(DATA.farm); store.set("farm", {}); farmLine(); renderFarm(); });
+}
+function saveFarm() {
+  if (farm.animals && "Honeycomb" in farm.animals) delete farm.animals.Honeycomb;
+  store.set("farm", farm); farmLine();
+}
+
+function footer() {
+  $("#foot").innerHTML = `${t("ข้อมูล ")}${DATA.items.length} ${t("สินค้า · ")}${esc(DATA.sources)} · ${t("สร้าง ")}${esc(DATA.built)}<br>
+  ${t("สมมติ: ต้นไม้ให้ ")}${DATA.treeFruit} ${t("ผลต่อการเก็บ · เมล็ดฟรี (ปลูก 1 ได้สุทธิ 1) · barn/silo คิดแค่ของที่เก็บต่อรอบ · ไม่รวมของจากเหมือง/ตกปลา")}<br>
+  ${t("เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell")}`;
+}
+function applyLang() {
+  HD.setLang(lang, EN);
+  document.documentElement.lang = lang;
+  $("#lang").querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === lang));
+  $("#tab-money").textContent = t("ทำเงิน"); $("#tab-farm").textContent = t("ฟาร์มของฉัน");
+  footer(); farmLine();
+}
+$("#lang").querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+  lang = b.dataset.l; store.set("lang", lang); applyLang();
+  showTab(TABS.find(x => !$("#pane-" + x).hidden) || "money");
+}));
+applyLang();
+showTab(store.get("tab", "money"));
+</script>

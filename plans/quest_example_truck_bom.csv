@@ -1,0 +1,17 @@
+Product,Type,Where,Needed,From stock,Start units,Unit,Made,Spare after quest,Time each (min),Chain to finish (min),Sell value of spare
+Bacon,animal,Pig,4.0,0.0,4,feedings,4,0.0,240.0,240.0,0
+Pig Feed,machine,Feed Mill,4.0,0.0,2,batches,6,2.0,20.0,260.0,28
+Sweater,machine,Loom,1.0,0.0,1,batches,1,0.0,120.0,120.0,0
+Wool,animal,Sheep,2.0,0.0,2,feedings,2,0.0,360.0,480.0,0
+Sheep Feed,machine,Feed Mill,2.0,0.0,1,batches,3,1.0,30.0,510.0,14
+Carrot Pie,machine,Pie Oven,2.0,0.0,2,batches,2,0.0,51.0,51.0,0
+Egg,animal,Chicken,2.0,0.0,2,feedings,2,0.0,20.0,71.0,0
+Chicken Feed,machine,Feed Mill,2.0,0.0,1,batches,3,1.0,5.0,76.0,7
+Carrot,field,Field,10.0,0.0,10,fields to plant,10,0.0,10.0,270.0,0
+Butter,machine,Dairy,2.0,0.0,2,batches,2,0.0,25.0,25.0,0
+Milk,animal,Cow,4.0,0.0,4,feedings,4,0.0,60.0,85.0,0
+Cow Feed,machine,Feed Mill,4.0,0.0,2,batches,6,2.0,10.0,95.0,28
+Corn,field,Field,3.0,0.0,3,fields to plant,3,0.0,5.0,100.0,0
+Soybean,field,Field,7.0,0.0,7,fields to plant,7,0.0,20.0,530.0,0
+Bread,machine,Bakery,3.0,0.0,3,batches,3,0.0,5.0,5.0,0
+Wheat,field,Field,18.0,6.0,12,fields to plant,12,0.0,2.0,512.0,0

@@ -1,0 +1,31 @@
+Constraint,Name,Used %
+machine,BBQ Grill,100.0
+slots,BBQ Grill,63.6
+machine,Bakery,100.0
+slots,Bakery,32.9
+machine,Cake Oven,100.0
+slots,Cake Oven,14.2
+machine,Dairy,100.0
+slots,Dairy,41.6
+machine,Feed Mill,100.0
+slots,Feed Mill,76.3
+machine,Honey Extractor,
+slots,Honey Extractor,
+machine,Ice Cream Maker,100.0
+slots,Ice Cream Maker,12.5
+machine,Jam Maker,100.0
+slots,Jam Maker,4.2
+machine,Juice Press,100.0
+slots,Juice Press,10.0
+machine,Loom,100.0
+slots,Loom,22.7
+machine,Pie Oven,100.0
+slots,Pie Oven,9.8
+machine,Popcorn Pot,100.0
+slots,Popcorn Pot,50.0
+machine,Sewing Machine,40.0
+slots,Sewing Machine,6.7
+machine,Sugar Mill,100.0
+slots,Sugar Mill,43.2
+fields,fields,100.0
+shop,shop,27.6

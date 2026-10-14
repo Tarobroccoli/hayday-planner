@@ -1,0 +1,69 @@
+Product,field,hand,api
+Bread,Level,2.0,4.0
+Chicken feed,Level,3.0,2.0
+Wheat Bundle,Time normal (min),85.0,90.0
+Apple juice,Sell price,129.0,111.0
+Affogato,XP,52.0,56.0
+Raspberry jam,XP,29.0,30.0
+Grape jam,Time mastered (min),330.0,331.0
+Plum jam,Sell price,,385.0
+Plum jam,XP,,46.0
+Iron Bracelet,XP,78.0,79.0
+Honey peanuts,Sell price,540.0,468.0
+Sesame brittle,Sell price,,270.0
+Sesame brittle,XP,,32.0
+Onion soup,XP,36.0,39.0
+Mushroom soup,Sell price,,176.0
+Mushroom soup,XP,,21.0
+Hummus Wrap,Time normal (min),25.0,30.0
+Hummus Wrap,Time mastered (min),21.0,25.0
+Salsa,Sell price,,252.0
+Salsa,XP,,30.0
+Yogurt Smoothie,XP,60.0,42.0
+Fish Taco,XP,44.0,47.0
+Nachos,Sell price,430.0,432.0
+Peanut noodles,Sell price,669.0,597.0
+Hot chocolate,XP,32.0,38.0
+Big sushi roll,Sell price,550.0,648.0
+Plain Yogurt,Time normal (min),,120.0
+Strawberry Yogurt,Time normal (min),,40.0
+Tropical Yogurt,Time normal (min),,60.0
+Breakfast Bowl,Time normal (min),,50.0
+Tea Pot,Time normal (min),240.0,220.0
+Tea Pot,Time mastered (min),204.0,187.0
+Duck Feather,Sell price,,140.0
+Duck Feather,XP,,17.0
+Apple,Sell price,,39.0
+Apple,XP,,7.0
+Raspberry,Sell price,,46.0
+Raspberry,XP,,9.0
+Cherry,Time normal (min),1620.0,1680.0
+Cherry,Sell price,,68.0
+Cherry,XP,,13.0
+Blackberry,Sell price,,82.0
+Blackberry,XP,,16.0
+Cacao,Sell price,,86.0
+Cacao,XP,,16.0
+Coffee,NOT FOUND in API,,
+Olive,Sell price,,82.0
+Olive,XP,,17.0
+Lemon,Time normal (min),1740.0,1800.0
+Lemon,Sell price,,93.0
+Lemon,XP,,18.0
+Orange,Sell price,,97.0
+Orange,XP,,19.0
+Peach,Sell price,,100.0
+Peach,XP,,20.0
+Banana,Time normal (min),1620.0,1680.0
+Banana,Sell price,,104.0
+Banana,XP,,20.0
+Plum,Sell price,,82.0
+Plum,XP,,16.0
+Mango,Sell price,,100.0
+Mango,XP,,20.0
+Coconut,Sell price,,108.0
+Coconut,XP,,21.0
+Guava,Sell price,,111.0
+Guava,XP,,22.0
+Pomegranate,Sell price,,111.0
+Pomegranate,XP,,22.0

@@ -1,0 +1,48 @@
+Product,Type,Where,Made/hr,Sold/hr,Used as ingredient/hr,Coins/hr from sales,Per visit,Unit
+Egg,animal,Chicken,10.11,0.0,10.11,0.0,10.11,items collected
+Milk,animal,Cow,15.0,10.61,4.39,339.5,15.0,items collected
+Goat Milk,animal,Goat,0.64,0.64,0.0,40.8,0.64,items collected
+Honeycomb,animal,Honey Bee,1.0,1.0,0.0,68.0,1.0,items collected
+Lamb Chop,animal,Lamb,0.89,0.0,0.89,0.0,0.89,items collected
+Bacon,animal,Pig,3.75,2.57,1.18,128.7,3.75,items collected
+Wool,animal,Sheep,1.67,0.0,1.67,0.0,1.67,items collected
+Black Bean,field,Field,1.19,0.0,1.19,0.0,1.2,fields to plant
+Carrot,field,Field,2.93,0.0,2.93,0.0,2.9,fields to plant
+Corn,field,Field,14.45,0.0,14.45,0.0,14.5,fields to plant
+Cotton,field,Field,0.8,0.0,0.8,0.0,2.4,fields to plant
+Indigo,field,Field,0.87,0.0,0.87,0.0,1.7,fields to plant
+Soybean,field,Field,12.4,0.0,12.4,0.0,12.4,fields to plant
+Sugarcane,field,Field,17.77,14.24,3.53,199.4,17.8,fields to plant
+Wheat,field,Field,10.12,0.0,10.12,0.0,10.1,fields to plant
+Grilled Lamb Skewer,machine,BBQ Grill,0.45,0.45,0.0,40.2,0.45,items
+Pancake,machine,BBQ Grill,2.1,2.1,0.0,226.4,2.1,items
+Blackberry Muffin,machine,Bakery,0.28,0.28,0.0,63.6,0.28,items
+Blueberry Muffin,machine,Bakery,0.43,0.43,0.0,98.6,0.43,items
+Corn Bread,machine,Bakery,0.94,0.94,0.0,67.3,0.94,items
+Chocolate Cake,machine,Cake Oven,0.43,0.43,0.0,137.1,0.43,items
+Cream Cake,machine,Cake Oven,0.0,0.0,0.0,0.5,0.0,items
+Red Berry Cake,machine,Cake Oven,0.14,0.14,0.0,34.6,0.14,items
+Butter,machine,Dairy,0.43,0.0,0.43,0.0,0.43,items
+Cream,machine,Dairy,2.9,2.4,0.5,119.8,2.9,items
+Chicken Feed,machine,Feed Mill,10.11,0.0,10.11,0.0,3.37,batches
+Cow Feed,machine,Feed Mill,15.0,0.0,15.0,0.0,5.0,batches
+Goat Feed,machine,Feed Mill,0.64,0.0,0.64,0.0,0.21,batches
+Lamb Feed,machine,Feed Mill,0.89,0.0,0.89,0.0,0.3,batches
+Pig Feed,machine,Feed Mill,3.75,0.0,3.75,0.0,1.25,batches
+Sheep Feed,machine,Feed Mill,1.67,0.0,1.67,0.0,0.56,batches
+Vanilla Ice Cream,machine,Ice Cream Maker,0.5,0.5,0.0,86.0,0.5,items
+Blackberry Jam,machine,Jam Maker,0.12,0.12,0.0,48.5,0.12,items
+Cherry Juice,machine,Juice Press,0.4,0.4,0.0,86.4,0.4,items
+Blue Woolly Hat,machine,Loom,0.87,0.87,0.0,96.2,0.87,items
+Cotton Fabric,machine,Loom,0.27,0.0,0.27,0.0,0.27,items
+Bacon Pie,machine,Pie Oven,0.39,0.39,0.0,85.9,0.39,items
+Popcorn,machine,Popcorn Pot,2.0,2.0,0.0,64.0,2.0,items
+Wooly Chaps,machine,Sewing Machine,0.27,0.27,0.0,82.4,0.27,items
+Brown Sugar,machine,Sugar Mill,2.52,0.0,2.52,0.0,2.52,items
+White Sugar,machine,Sugar Mill,0.5,0.0,0.5,0.0,0.5,items
+Apple,tree,Apple Tree,1.88,1.88,0.0,73.1,1.88,items collected
+Blackberry,tree,Blackberry Bush,0.94,0.0,0.94,0.0,0.94,items collected
+Blueberries,tree,Blueberry Bush,0.86,0.0,0.86,0.0,0.86,items collected
+Cacao,tree,Cacao Tree,0.86,0.0,0.86,0.0,0.86,items collected
+Cherry,tree,Cherry Tree,1.07,0.0,1.07,0.0,1.07,items collected
+Raspberry,tree,Raspberry Bush,1.67,1.53,0.14,70.4,1.67,items collected

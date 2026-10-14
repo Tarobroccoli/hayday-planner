@@ -1,0 +1,49 @@
+Product,Type,Where,Made/hr,Sold/hr,Used as ingredient/hr,Coins/hr from sales,Per visit,Unit
+Egg,animal,Chicken,0.14,0.0,0.14,0.0,0.57,items collected
+Milk,animal,Cow,2.93,0.0,2.93,0.0,11.72,items collected
+Goat Milk,animal,Goat,1.0,0.39,0.61,24.7,4.0,items collected
+Honeycomb,animal,Honey Bee,0.25,0.25,0.0,17.0,1.0,items collected
+Bacon,animal,Pig,3.75,3.55,0.2,177.5,15.0,items collected
+Wool,animal,Sheep,1.25,0.0,1.25,0.0,5.0,items collected
+Carrot,field,Field,3.47,0.0,3.47,0.0,13.9,fields to plant
+Chili Pepper,field,Field,0.09,0.0,0.09,0.0,0.4,fields to plant
+Corn,field,Field,1.36,0.0,1.36,0.0,5.4,fields to plant
+Cotton,field,Field,3.0,0.0,3.0,0.0,12.0,fields to plant
+Indigo,field,Field,0.23,0.0,0.23,0.0,0.9,fields to plant
+Potato,field,Field,0.18,0.0,0.18,0.0,0.7,fields to plant
+Soybean,field,Field,3.62,0.0,3.62,0.0,14.5,fields to plant
+Sugarcane,field,Field,1.44,0.0,1.44,0.0,5.8,fields to plant
+Wheat,field,Field,2.37,0.0,2.37,0.0,9.5,fields to plant
+Baked Potato,machine,BBQ Grill,0.09,0.09,0.0,26.7,0.36,items
+Bread,machine,Bakery,0.15,0.0,0.15,0.0,0.6,items
+Cookie,machine,Bakery,0.02,0.0,0.02,0.0,0.08,items
+Blueberry Cheesecake,machine,Cake Oven,0.02,0.02,0.0,10.4,0.08,items
+Cheesecake,machine,Cake Oven,0.02,0.0,0.02,0.0,0.08,items
+Chocolate Cake,machine,Cake Oven,0.42,0.42,0.0,133.3,1.67,items
+Butter,machine,Dairy,0.52,0.0,0.52,0.0,2.07,items
+Cheese,machine,Dairy,0.11,0.0,0.11,0.0,0.44,items
+Cream,machine,Dairy,1.07,0.48,0.59,23.8,4.26,items
+Goat Cheese,machine,Dairy,0.31,0.31,0.0,49.7,1.23,items
+Chicken Feed,machine,Feed Mill,0.14,0.0,0.14,0.0,0.19,batches
+Cow Feed,machine,Feed Mill,2.93,0.0,2.93,0.0,3.91,batches
+Goat Feed,machine,Feed Mill,1.0,0.0,1.0,0.0,1.33,batches
+Pig Feed,machine,Feed Mill,3.75,0.0,3.75,0.0,5.0,batches
+Sheep Feed,machine,Feed Mill,1.25,0.0,1.25,0.0,1.67,batches
+Vanilla Ice Cream,machine,Ice Cream Maker,0.5,0.5,0.0,86.0,2.0,items
+Blackberry Jam,machine,Jam Maker,0.05,0.05,0.0,17.8,0.18,items
+Cherry Jam,machine,Jam Maker,0.09,0.09,0.0,30.2,0.36,items
+Cherry Juice,machine,Juice Press,0.4,0.4,0.0,86.4,1.6,items
+Cotton Fabric,machine,Loom,1.0,0.0,1.0,0.0,4.0,items
+Sweater,machine,Loom,0.25,0.2,0.05,30.2,1.0,items
+Carrot Pie,machine,Pie Oven,0.1,0.0,0.1,0.0,0.4,items
+Cotton Shirt,machine,Sewing Machine,0.15,0.15,0.0,35.1,0.58,items
+Violet Dress,machine,Sewing Machine,0.23,0.23,0.0,74.9,0.92,items
+Wooly Chaps,machine,Sewing Machine,0.25,0.25,0.0,77.2,1.0,items
+Brown Sugar,machine,Sugar Mill,0.44,0.0,0.44,0.0,1.75,items
+White Sugar,machine,Sugar Mill,0.5,0.0,0.5,0.0,2.0,items
+Apple,tree,Apple Tree,1.88,1.88,0.0,73.1,7.5,items collected
+Blackberry,tree,Blackberry Bush,0.94,0.8,0.14,65.6,3.75,items collected
+Blueberries,tree,Blueberry Bush,0.83,0.79,0.04,64.9,3.33,items collected
+Cacao,tree,Cacao Tree,0.83,0.0,0.83,0.0,3.33,items collected
+Cherry,tree,Cherry Tree,1.07,0.0,1.07,0.0,4.29,items collected
+Raspberry,tree,Raspberry Bush,1.5,1.27,0.23,58.5,6.0,items collected

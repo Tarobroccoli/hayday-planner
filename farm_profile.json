@@ -1,0 +1,38 @@
+{
+  "_about": "Farm profile for scripts/planner.py. Values from the user (2026-10-14) unless listed in _assumed.",
+  "_assumed": ["animals: max shelters unlocked at L39 per Fandom shelter pages (user said 'max for level 39')",
+               "beehives: 1 (beehive tree stage 1, unlocked at L39)",
+               "Honey Extractor: user gave 0 slots -> treated as not owned",
+               "Feed Mill '7x2' -> 2 feed mills with 7 slots each",
+               "checkin_minutes: user said 'not fixed, usually every 4 hours'"],
+
+  "level": 39,
+  "fields": 63,
+  "checkin_minutes": 240,
+
+  "shop_slots": 16,
+  "shop_stack": 10,
+  "shop_sell_minutes": 5,
+
+  "barn": 575,
+  "silo": 525,
+
+  "machine_count_default": 1,
+  "machine_count": {"Feed Mill": 2, "Honey Extractor": 0},
+  "machine_slots_default": 2,
+  "machine_slots": {
+    "Feed Mill": 7, "Bakery": 5, "Dairy": 8, "Sugar Mill": 7, "Popcorn Pot": 4, "BBQ Grill": 4,
+    "Pie Oven": 4, "Cake Oven": 4, "Juice Press": 4, "Ice Cream Maker": 4, "Jam Maker": 3,
+    "Honey Extractor": 0, "Loom": 5, "Sewing Machine": 4
+  },
+  "mastered": ["Dairy", "Sugar Mill", "BBQ Grill", "Pie Oven"],
+
+  "animals_default": 0,
+  "animals": {"Egg": 18, "Milk": 15, "Bacon": 15, "Wool": 10, "Goat Milk": 8, "Lamb Chop": 10},
+  "beehives": 1,
+  "trees_default": 10,
+  "trees": {},
+
+  "allow_external": false,
+  "exclude": []
+}

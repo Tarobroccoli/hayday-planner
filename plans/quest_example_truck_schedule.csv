@@ -1,0 +1,18 @@
+Visit,Hour,Action,Where,Product,Units
+1,0.0,plant,Field,Carrot,10
+1,0.0,plant,Field,Corn,3
+1,0.0,plant,Field,Soybean,7
+1,0.0,plant,Field,Wheat,12
+1,0.0,start,Bakery,Bread,2
+2,4.0,start,Bakery,Bread,1
+2,4.0,start,Feed Mill,Chicken Feed,3
+2,4.0,start,Feed Mill,Cow Feed,6
+2,4.0,start,Feed Mill,Pig Feed,6
+2,4.0,start,Feed Mill,Sheep Feed,3
+3,8.0,feed,Chicken,Egg,2
+3,8.0,feed,Cow,Milk,4
+3,8.0,feed,Pig,Bacon,4
+3,8.0,feed,Sheep,Wool,2
+4,12.0,start,Dairy,Butter,2
+4,12.0,start,Pie Oven,Carrot Pie,2
+5,16.0,start,Loom,Sweater,1

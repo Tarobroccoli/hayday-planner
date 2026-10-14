@@ -1,0 +1,79 @@
+1) recipe vs usage: 877 pairs agree-on-existence, 21 disagreements
+                         p                 i  Qty_recipe  Qty_usage      _merge
+44            banana bread            banana         3.0        NaN   left_only
+48         banana pancakes            banana         1.0        NaN   left_only
+52            banana split            banana         1.0        NaN   left_only
+85   black sesame smoothie            banana         1.0        NaN   left_only
+98               blt salad  roasted tomatoes         1.0        NaN   left_only
+106      blueberry chutney       brown sugar         1.0        NaN   left_only
+161            carrot cake       brown sugar         1.0        NaN   left_only
+212         chocolate cake       brown sugar         1.0        NaN   left_only
+238         cocoa smoothie            banana         2.0        NaN   left_only
+253                 cookie       brown sugar         1.0        NaN   left_only
+275            cream donut       brown sugar         1.0        NaN   left_only
+298              egg sushi       brown sugar         1.0        NaN   left_only
+324             feta salad  roasted tomatoes         1.0        NaN   left_only
+480      iced banana latte            banana         1.0        NaN   left_only
+562             mint fudge            butter         NaN        2.0  right_only
+563             mint fudge           cabbage         2.0        NaN   left_only
+639                pancake       brown sugar         1.0        NaN   left_only
+795       sesame ice cream       brown sugar         1.0        NaN   left_only
+897               tofu dog            tomato         4.0        2.0        both
+903           tomato sauce       brown sugar         1.0        NaN   left_only
+924      tropical smoothie            banana         1.0        NaN   left_only
+
+2) fandom_all (hand, 238 rows) vs API: 68 diffs
+field
+XP                     27
+Sell price             25
+Time normal (min)      10
+Time mastered (min)     3
+Level                   2
+NOT FOUND in API        1
+
+3) merged_clean rows with no Fandom page: 1
+    Product         Machine
+331  Coffee  Trees & Bushes
+
+   Fandom product pages not in merged_clean: 40
+                 Page title         Kind  Made in / from  Level
+6          Asparagus Quiche      Product        Pie Oven   49.0
+7            Asparagus Soup      Product    Soup Kitchen   51.0
+21                 Bean Dip      Product     Sauce Maker   54.0
+22               Bean Salad      Product       Salad Bar   58.0
+39     Blueberry Cheesecake      Product       Cake Oven   31.0
+40        Blueberry Chutney      Product       Jam Maker   70.0
+41         Blueberry Muffin      Product          Bakery   33.0
+66            Chamomile Tea      Product       Tea Stand  100.0
+162       Grilled Asparagus      Product       BBQ Grill   67.0
+164     Grilled Lamb Skewer      Product       BBQ Grill   25.0
+165         Grilled Mussels      Product       BBQ Grill   32.0
+193               Lamb Feed      Product       Feed Mill   25.0
+194               Lamb Soup      Product    Soup Kitchen   46.0
+195           Lamb Stir Fry      Product     Wok Kitchen   69.0
+230          Mussel Chowder      Product    Soup Kitchen   47.0
+231         Mussel Linguine      Product   Pasta Kitchen   73.0
+232           Mussel Nigiri      Product       Sushi Bar   56.0
+245            Orange Salad      Product       Salad Bar  117.0
+269  Pineapple Coconut Bars      Product          Bakery  120.0
+280        Pomegranate Cake      Product       Cake Oven  108.0
+281         Pomegranate Tea      Product       Tea Stand  107.0
+304               Rich Soap      Product      Bath Kiosk  121.0
+318            Soothing Pad      Product  Sewing Machine   45.0
+321         Spicy Bean Taco      Product    Taco Kitchen   77.0
+326         Steamed Mussels      Product       BBQ Grill   27.0
+374               Asparagus         Crop            Farm   49.0
+375              Black Bean         Crop            Farm   25.0
+376             Blueberries         Crop  Blueberry Bush   30.0
+377               Chamomile         Crop            Farm   45.0
+378                    Coal      Product            Mine   33.0
+379             Coffee Bean         Crop     Coffee Bush   42.0
+380             Fish Fillet  Animal good            Fish   27.0
+381                Gold Ore      Product            Mine   24.0
+382                Iron Ore      Product            Mine   34.0
+383               Lamb Chop  Animal good            Lamb   25.0
+384             Mussel Meat  Animal good   Closed Mussel   27.0
+385                    Oats         Crop            Farm  119.0
+386                 Peanuts  Animal good        Squirrel   62.0
+387            Platinum Ore      Product            Mine   24.0
+388              Silver Ore      Product            Mine   24.0

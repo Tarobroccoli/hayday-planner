@@ -1,0 +1,22 @@
+p,i,Qty_recipe,Qty_usage,_merge
+banana bread,banana,3.0,,left_only
+banana pancakes,banana,1.0,,left_only
+banana split,banana,1.0,,left_only
+black sesame smoothie,banana,1.0,,left_only
+blt salad,roasted tomatoes,1.0,,left_only
+blueberry chutney,brown sugar,1.0,,left_only
+carrot cake,brown sugar,1.0,,left_only
+chocolate cake,brown sugar,1.0,,left_only
+cocoa smoothie,banana,2.0,,left_only
+cookie,brown sugar,1.0,,left_only
+cream donut,brown sugar,1.0,,left_only
+egg sushi,brown sugar,1.0,,left_only
+feta salad,roasted tomatoes,1.0,,left_only
+iced banana latte,banana,1.0,,left_only
+mint fudge,butter,,2.0,right_only
+mint fudge,cabbage,2.0,,left_only
+pancake,brown sugar,1.0,,left_only
+sesame ice cream,brown sugar,1.0,,left_only
+tofu dog,tomato,4.0,2.0,both
+tomato sauce,brown sugar,1.0,,left_only
+tropical smoothie,banana,1.0,,left_only

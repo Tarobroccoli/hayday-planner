@@ -1,0 +1,38 @@
+Product,Type,Where,Made/hr,Sold/hr,Used as ingredient/hr,Coins/hr from sales,Per visit,Unit
+Egg,animal,Chicken,12.0,3.0,9.0,54.0,3.0,items collected
+Milk,animal,Cow,4.0,0.5,3.5,16.0,1.0,items collected
+Honeycomb,animal,Honey Bee,1.33,0.0,1.33,0.0,0.33,items collected
+Lamb Chop,animal,Lamb,2.0,0.0,2.0,0.0,0.5,items collected
+Bacon,animal,Pig,1.5,1.5,0.0,75.0,0.38,items collected
+Wool,animal,Sheep,1.0,0.0,1.0,0.0,0.25,items collected
+Black Bean,field,Field,2.67,0.0,2.67,0.0,0.7,fields to plant
+Carrot,field,Field,10.0,0.0,10.0,0.0,2.5,fields to plant
+Corn,field,Field,13.33,0.0,13.33,0.0,3.3,fields to plant
+Soybean,field,Field,4.83,0.0,4.83,0.0,2.4,fields to plant
+Sugarcane,field,Field,101.83,98.83,3.0,1383.7,50.9,fields to plant
+Wheat,field,Field,12.67,0.0,12.67,0.0,3.2,fields to plant
+Grilled Lamb Skewer,machine,BBQ Grill,1.0,1.0,0.0,90.0,0.25,items
+Pancake,machine,BBQ Grill,1.33,1.33,0.0,144.0,0.33,items
+Corn Bread,machine,Bakery,2.0,2.0,0.0,144.0,0.5,items
+Cream Cake,machine,Cake Oven,0.33,0.33,0.0,73.0,0.08,items
+Cream,machine,Dairy,3.0,2.17,0.83,108.3,0.75,items
+Chicken Feed,machine,Feed Mill,12.0,0.0,12.0,0.0,1.0,batches
+Cow Feed,machine,Feed Mill,4.0,0.0,4.0,0.0,0.33,batches
+Lamb Feed,machine,Feed Mill,2.0,0.0,2.0,0.0,0.17,batches
+Pig Feed,machine,Feed Mill,1.5,0.0,1.5,0.0,0.12,batches
+Sheep Feed,machine,Feed Mill,1.0,0.0,1.0,0.0,0.08,batches
+Honey,machine,Honey Extractor,0.67,0.67,0.0,102.7,0.17,items
+Vanilla Ice Cream,machine,Ice Cream Maker,0.5,0.5,0.0,86.0,0.12,items
+Cherry Jam,machine,Jam Maker,0.14,0.14,-0.0,47.7,0.04,items
+Carrot Juice,machine,Juice Press,2.0,2.0,0.0,92.0,0.5,items
+Sweater,machine,Loom,0.5,0.5,0.0,75.5,0.12,items
+Carrot Pie,machine,Pie Oven,1.0,1.0,0.0,82.0,0.25,items
+Popcorn,machine,Popcorn Pot,2.0,2.0,0.0,64.0,0.5,items
+Brown Sugar,machine,Sugar Mill,1.33,0.0,1.33,0.0,0.33,items
+White Sugar,machine,Sugar Mill,0.83,0.0,0.83,0.0,0.21,items
+Apple,tree,Apple Tree,0.75,0.75,0.0,29.2,0.19,items collected
+Blackberry,tree,Blackberry Bush,0.38,0.38,0.0,30.8,0.09,items collected
+Blueberries,tree,Blueberry Bush,0.34,0.34,0.0,28.1,0.09,items collected
+Cacao,tree,Cacao Tree,0.34,0.34,0.0,29.5,0.09,items collected
+Cherry,tree,Cherry Tree,0.43,0.0,0.43,0.0,0.11,items collected
+Raspberry,tree,Raspberry Bush,0.67,0.67,-0.0,30.7,0.17,items collected

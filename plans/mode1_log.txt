@@ -1,0 +1,147 @@
+
+=== check-in every 60 min: 2258 coins/hr, 554 XP/hr, 93 unlocked products ===
+          Product    Type           Where  Made/hr  Sold/hr  Used as ingredient/hr  Coins/hr from sales  Per visit            Unit
+             Milk  animal             Cow    15.00    10.61                   4.39                339.5      15.00 items collected
+          Pancake machine       BBQ Grill     2.10     2.10                   0.00                226.4       2.10           items
+        Sugarcane   field           Field    17.77    14.24                   3.53                199.4      17.80 fields to plant
+   Chocolate Cake machine       Cake Oven     0.43     0.43                   0.00                137.1       0.43           items
+            Bacon  animal             Pig     3.75     2.57                   1.18                128.7       3.75 items collected
+            Cream machine           Dairy     2.90     2.40                   0.50                119.8       2.90           items
+ Blueberry Muffin machine          Bakery     0.43     0.43                   0.00                 98.6       0.43           items
+  Blue Woolly Hat machine            Loom     0.87     0.87                   0.00                 96.2       0.87           items
+     Cherry Juice machine     Juice Press     0.40     0.40                   0.00                 86.4       0.40           items
+Vanilla Ice Cream machine Ice Cream Maker     0.50     0.50                   0.00                 86.0       0.50           items
+        Bacon Pie machine        Pie Oven     0.39     0.39                   0.00                 85.9       0.39           items
+      Wooly Chaps machine  Sewing Machine     0.27     0.27                   0.00                 82.4       0.27           items
+            Apple    tree      Apple Tree     1.88     1.88                   0.00                 73.1       1.88 items collected
+        Raspberry    tree  Raspberry Bush     1.67     1.53                   0.14                 70.4       1.67 items collected
+        Honeycomb  animal       Honey Bee     1.00     1.00                   0.00                 68.0       1.00 items collected
+bottlenecks:
+                                                                   Resource  Coins/hr gained  Used
+                                                 +1 animal making Honeycomb             68.0 100.0
+Sugar Mill full (already mastered): value of 1 more hour of Sugar Mill time             64.7 100.0
+          Dairy full (already mastered): value of 1 more hour of Dairy time             63.5 100.0
+                         master Feed Mill (-15% time; first-order estimate)             61.2 100.0
+  BBQ Grill full (already mastered): value of 1 more hour of BBQ Grill time             40.0 100.0
+                                                                   +1 field             14.0 100.0
+    Pie Oven full (already mastered): value of 1 more hour of Pie Oven time              8.4 100.0
+                                                      +1 tree of Blackberry              7.8 100.0
+
+=== check-in every 120 min: 1670 coins/hr, 389 XP/hr, 93 unlocked products ===
+          Product    Type           Where  Made/hr  Sold/hr  Used as ingredient/hr  Coins/hr from sales  Per visit            Unit
+          Pancake machine       BBQ Grill     2.00     2.00                   0.00                216.0       4.00           items
+            Bacon  animal             Pig     3.75     3.75                   0.00                187.5       7.50 items collected
+           Indigo   field           Field     7.01     6.01                   1.00                150.3      14.00 fields to plant
+   Chocolate Cake machine       Cake Oven     0.42     0.42                   0.00                133.3       0.83           items
+            Cream machine           Dairy     2.91     2.41                   0.50                120.3       5.81           items
+  Blue Woolly Hat machine            Loom     1.00     1.00                   0.00                111.0       2.00           items
+             Milk  animal             Cow     7.50     3.11                   4.39                 99.7      15.00 items collected
+     Cherry Juice machine     Juice Press     0.40     0.40                   0.00                 86.4       0.80           items
+Vanilla Ice Cream machine Ice Cream Maker     0.50     0.50                   0.00                 86.0       1.00           items
+            Apple    tree      Apple Tree     1.88     1.88                   0.00                 73.1       3.75 items collected
+        Raspberry    tree  Raspberry Bush     1.67     1.53                   0.14                 70.4       3.33 items collected
+      Blueberries    tree  Blueberry Bush     0.83     0.83                   0.01                 67.7       1.67 items collected
+        Goat Milk  animal            Goat     1.00     1.00                   0.00                 64.0       2.00 items collected
+   Blackberry Jam machine       Jam Maker     0.12     0.12                   0.00                 48.5       0.25           items
+       Blackberry    tree Blackberry Bush     0.94     0.56                   0.38                 46.1       1.88 items collected
+bottlenecks:
+                                                                   Resource  Coins/hr gained  Used
+          Dairy full (already mastered): value of 1 more hour of Dairy time             63.5 100.0
+                                                 +1 animal making Honeycomb             34.0 100.0
+Sugar Mill full (already mastered): value of 1 more hour of Sugar Mill time             24.7 100.0
+                                                                   +1 field             12.5 100.0
+                                                          +1 tree of Cherry              7.8 100.0
+                                                           +1 tree of Cacao              7.7 100.0
+                                                       +1 tree of Raspberry              7.7 100.0
+                                                      +1 tree of Blackberry              7.7 100.0
+
+=== check-in every 240 min: 1229 coins/hr, 311 XP/hr, 93 unlocked products ===
+          Product    Type           Where  Made/hr  Sold/hr  Used as ingredient/hr  Coins/hr from sales  Per visit            Unit
+            Bacon  animal             Pig     3.75     3.75                   0.00                187.5      15.00 items collected
+   Chocolate Cake machine       Cake Oven     0.42     0.42                   0.00                133.3       1.67           items
+     Baked Potato machine       BBQ Grill     0.30     0.30                   0.00                 88.9       1.19           items
+     Cherry Juice machine     Juice Press     0.40     0.40                   0.00                 86.4       1.60           items
+Vanilla Ice Cream machine Ice Cream Maker     0.50     0.50                   0.00                 86.0       2.00           items
+      Wooly Chaps machine  Sewing Machine     0.25     0.25                   0.00                 77.2       1.00           items
+     Violet Dress machine  Sewing Machine     0.23     0.23                   0.00                 74.9       0.92           items
+            Apple    tree      Apple Tree     1.88     1.88                   0.00                 73.1       7.50 items collected
+       Blackberry    tree Blackberry Bush     0.94     0.80                   0.14                 65.6       3.75 items collected
+      Blueberries    tree  Blueberry Bush     0.83     0.79                   0.04                 64.9       3.33 items collected
+        Raspberry    tree  Raspberry Bush     1.50     1.27                   0.23                 58.5       6.00 items collected
+        Goat Milk  animal            Goat     1.00     0.60                   0.40                 38.4       4.00 items collected
+          Sweater machine            Loom     0.25     0.25                   0.00                 37.8       1.00           items
+     Cotton Shirt machine  Sewing Machine     0.15     0.15                   0.00                 35.1       0.58           items
+      Goat Cheese machine           Dairy     0.20     0.20                   0.00                 32.4       0.80           items
+bottlenecks:
+                                                         Resource  Coins/hr gained  Used
+Dairy full (already mastered): value of 1 more hour of Dairy time             21.5 100.0
+                                       +1 animal making Honeycomb             17.0 100.0
+                                                         +1 field              9.3 100.0
+                                                 +1 tree of Cacao              7.9 100.0
+                                            +1 tree of Blackberry              7.7 100.0
+                                                +1 tree of Cherry              7.5 100.0
+                                                 +1 tree of Apple              7.3 100.0
+                                             +1 tree of Raspberry              6.9 100.0
+
+=== check-in every 360 min: 1016 coins/hr, 229 XP/hr, 93 unlocked products ===
+         Product    Type           Where  Made/hr  Sold/hr  Used as ingredient/hr  Coins/hr from sales  Per visit            Unit
+  Chocolate Cake machine       Cake Oven     0.42     0.42                   0.00                133.3        2.5           items
+           Bacon  animal             Pig     2.50     2.50                   0.00                125.0       15.0 items collected
+          Tomato   field           Field     3.94     2.61                   1.33                112.3       23.7 fields to plant
+    Cherry Juice machine     Juice Press     0.40     0.40                   0.00                 86.4        2.4           items
+Roasted Tomatoes machine       BBQ Grill     0.67     0.67                   0.00                 78.7        4.0           items
+       Raspberry    tree  Raspberry Bush     1.67     1.67                   0.00                 76.7       10.0 items collected
+         Sweater machine            Loom     0.50     0.50                   0.00                 75.5        3.0           items
+     Blueberries    tree  Blueberry Bush     0.83     0.83                   0.00                 68.3        5.0 items collected
+           Apple    tree      Apple Tree     1.67     1.67                   0.00                 65.0       10.0 items collected
+     Goat Cheese machine           Dairy     0.33     0.33                   0.00                 54.0        2.0           items
+      Blackberry    tree Blackberry Bush     0.83     0.63                   0.20                 51.9        5.0 items collected
+           Cream machine           Dairy     0.58     0.58                   0.00                 29.2        3.5           items
+  Blackberry Jam machine       Jam Maker     0.07     0.07                   0.00                 25.9        0.4           items
+      Cherry Jam machine       Jam Maker     0.07     0.07                   0.00                 22.3        0.4           items
+       Honeycomb  animal       Honey Bee     0.17     0.17                  -0.00                 11.3        1.0 items collected
+bottlenecks:
+                  Resource  Coins/hr gained  Used
++1 animal making Honeycomb             11.3 100.0
+          +1 tree of Cacao              7.7 100.0
+      +1 tree of Raspberry              7.7 100.0
+                  +1 field              7.2 100.0
+         +1 tree of Cherry              7.0 100.0
+     +1 tree of Blackberry              6.8 100.0
+    +1 tree of Blueberries              6.8 100.0
+          +1 tree of Apple              6.5 100.0
+
+=== check-in every 480 min: 882 coins/hr, 189 XP/hr, 93 unlocked products ===
+         Product    Type           Where  Made/hr  Sold/hr  Used as ingredient/hr  Coins/hr from sales  Per visit            Unit
+      Strawberry   field           Field     4.21     4.21                   0.00                210.4      33.70 fields to plant
+    Cherry Juice machine     Juice Press     0.40     0.40                   0.00                 86.4       3.20           items
+     Goat Cheese machine           Dairy     0.50     0.50                   0.00                 81.0       4.00           items
+         Sweater machine            Loom     0.50     0.50                   0.00                 75.5       4.00           items
+           Apple    tree      Apple Tree     1.88     1.88                   0.00                 73.1      15.00 items collected
+           Cacao    tree      Cacao Tree     0.75     0.75                   0.00                 64.5       6.00 items collected
+     Blueberries    tree  Blueberry Bush     0.75     0.75                   0.00                 61.5       6.00 items collected
+Roasted Tomatoes machine       BBQ Grill     0.50     0.50                   0.00                 59.0       4.00           items
+       Raspberry    tree  Raspberry Bush     1.25     1.25                   0.00                 57.5      10.00 items collected
+      Blackberry    tree Blackberry Bush     0.94     0.68                   0.25                 56.0       7.50 items collected
+  Blackberry Jam machine       Jam Maker     0.08     0.08                   0.00                 32.9       0.68           items
+      Cherry Jam machine       Jam Maker     0.05     0.05                   0.00                 15.3       0.37           items
+       Honeycomb  animal       Honey Bee     0.12     0.12                   0.00                  8.5       1.00 items collected
+       Goat Milk  animal            Goat     1.00     0.00                   1.00                  0.0       8.00 items collected
+            Wool  animal           Sheep     1.00     0.00                   1.00                  0.0       8.00 items collected
+bottlenecks:
+                  Resource  Coins/hr gained  Used
++1 animal making Honeycomb              8.5 100.0
+     +1 tree of Blackberry              7.7 100.0
+          +1 tree of Apple              7.3 100.0
+         +1 tree of Cherry              6.6 100.0
+          +1 tree of Cacao              6.4 100.0
+                  +1 field              6.2 100.0
+    +1 tree of Blueberries              6.2 100.0
+      +1 tree of Raspberry              5.8 100.0
+
+ Check-in (min)  Coins/hr  XP/hr  Products sold                                                                           Top sellers                                                              Main bottleneck
+             60      2258    554             22                   Milk 340, Pancake 226, Sugarcane 199, Chocolate Cake 137, Bacon 129                                        +1 animal making Honeycomb (+68.0/hr)
+            120      1670    389             19                     Pancake 216, Bacon 188, Indigo 150, Chocolate Cake 133, Cream 120 Dairy full (already mastered): value of 1 more hour of Dairy time (+63.5/hr)
+            240      1229    311             20 Bacon 188, Chocolate Cake 133, Baked Potato 89, Cherry Juice 86, Vanilla Ice Cream 86 Dairy full (already mastered): value of 1 more hour of Dairy time (+21.5/hr)
+            360      1016    229             15       Chocolate Cake 133, Bacon 125, Tomato 112, Cherry Juice 86, Roasted Tomatoes 79                                        +1 animal making Honeycomb (+11.3/hr)
+            480       882    189             13                 Strawberry 210, Cherry Juice 86, Goat Cheese 81, Sweater 76, Apple 73                                         +1 animal making Honeycomb (+8.5/hr)

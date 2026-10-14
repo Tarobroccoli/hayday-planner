@@ -32,6 +32,7 @@
   "beehives": 1,
   "trees_default": 10,
   "trees": {},
+  "external_rate": {},
 
   "allow_external": false,
   "exclude": []

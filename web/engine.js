@@ -20,6 +20,7 @@ const HD = (() => {
   const machineSlots = (farm, m) => (farm.machine_slots || {})[m] ?? farm.machine_slots_default;
   const animalsOf = (farm, p) => (p === "Honeycomb" ? farm.beehives : (farm.animals || {})[p] ?? farm.animals_default);
   const treesOf = (farm, p) => (farm.trees || {})[p] ?? farm.trees_default;
+  const extRate = (farm, p) => (farm.external_rate || {})[p] || 0;   // units per visit from fishing, mussels, the mine...
 
   function unlocked(level, allowExternal, exclude) {
     const memo = {}, ex = new Set(exclude || []);
@@ -27,7 +28,8 @@ const HD = (() => {
       if (p in memo) return memo[p];
       memo[p] = false;
       const i = BY[p];
-      const good = !!i && lvOf(i) <= level && !ex.has(p) && (allowExternal || i.k !== "external")
+      const extOk = allowExternal === true || (allowExternal instanceof Set && allowExternal.has(p));
+      const good = !!i && lvOf(i) <= level && !ex.has(p) && (i.k !== "external" || extOk)
         && i.in.every(([q]) => ok(q));
       return (memo[p] = good);
     };
@@ -112,7 +114,8 @@ const HD = (() => {
     const I = checkin ?? farm.checkin_minutes;
     const R = reserve || {}, pos = v => Math.max(0, v);
     const cyc = T => (I > 0 ? Math.ceil(T / I - 1e-9) * I : T);
-    const items = unlocked(farm.level, farm.allow_external, farm.exclude);
+    const items = unlocked(farm.level, farm.allow_external ||
+      new Set(Object.keys(farm.external_rate || {}).filter(p => extRate(farm, p) > 0)), farm.exclude);
     const n = items.length, ix = Object.fromEntries(items.map((p, k) => [p, k])), nv = 2 * n;
     const rows = [], rhs = [], names = [];
     const row = () => new Float64Array(nv);
@@ -138,8 +141,9 @@ const HD = (() => {
       const k = it(p).k;
       if (k === "animal") { const r = row(); r[ix[p]] = cyc(it(p).t); rows.push(r); rhs.push(60 * pos(animalsOf(farm, p) - ((R.animals || {})[p] || 0))); names.push(["animal", p]); }
       else if (k === "tree") { const r = row(); r[ix[p]] = cyc(it(p).t) / TREE_FRUIT; rows.push(r); rhs.push(60 * pos(treesOf(farm, p) - ((R.trees || {})[p] || 0))); names.push(["tree", p]); }
+      else if (k === "external") { const r = row(); r[ix[p]] = 1; rows.push(r); rhs.push(pos(extRate(farm, p) - ((R.external || {})[p] || 0)) * 60 / I); names.push(["external", p]); }
     }
-    for (const [cap, kinds] of [["silo", ["field", "tree"]], ["barn", ["machine", "animal"]]]) {
+    for (const [cap, kinds] of [["silo", ["field", "tree"]], ["barn", ["machine", "animal", "external"]]]) {
       if (!farm[cap]) continue;
       const r = row(); for (const p of items) if (kinds.includes(it(p).k)) r[ix[p]] = I / 60;
       rows.push(r); rhs.push(farm[cap]); names.push(["storage", cap]);
@@ -171,6 +175,7 @@ const HD = (() => {
       else if (kind === "fields") { per = d * 60; what = `+1 ${L("แปลงปลูก")}`; }
       else if (kind === "animal") { per = d * 60; what = name === "Honeycomb" ? `+1 ${L("รังผึ้ง")}` : `+1 ${L("สัตว์ที่ให้ ")}${name}`; }
       else if (kind === "tree") { per = d * 60; what = `+1 ${L("ต้น ")}${name}`; }
+      else if (kind === "external") { per = d * 60 / I; what = `+1 ${name} ${L("ต่อรอบ")}`; }
       else { per = d * f.shop_stack * 60 / Math.max(I, f.shop_sell_minutes); what = `+1 ${L("ช่อง Roadside shop")}`; }
       out.push({ what, per, used: rhs ? lhs / rhs : null, type, name });
     });
@@ -213,6 +218,7 @@ const HD = (() => {
       else if (i.k === "machine") { avg = x * I / 60 / i.y; g = "m:" + i.w; unit = i.y > 1 ? `${L("ชุด (")}${i.y} ${L("ชิ้น)")}` : L("ชิ้น"); cap = machineSlots(f, i.w) * machineCount(f, i.w) - ((R.slots || {})[i.w] || 0); }
       else if (i.k === "animal") { avg = x * I / 60; g = "a:" + p; unit = p === "Honeycomb" ? L("ชิ้น") : L("ตัว"); cap = animalsOf(f, p) - ((R.animals || {})[p] || 0); }
       else if (i.k === "tree") { avg = x * I / 60 / i.y; g = "t:" + p; unit = L("ต้น"); cap = treesOf(f, p) - ((R.trees || {})[p] || 0); }
+      else if (i.k === "external") { avg = x * I / 60; g = "e:" + p; unit = L("ชิ้น"); cap = extRate(f, p) - ((R.external || {})[p] || 0); }
       else continue;
       units.push({ p, g, avg, unit, cap: Math.max(0, Math.floor(cap + 1e-9)), kind: i.k, w: i.k === "field" ? "Field" : i.w, sold: sol.s[k] > 1e-4 });
     }
@@ -290,7 +296,7 @@ const HD = (() => {
     const pri = order.filter(p => starts[p]).sort((a, b) => tail[b] - tail[a]);
     const stock = { ...have }, rem = { ...starts };
     const machines = {}, animals = {}, trees = {}, log = [];
-    let fields = [], lastFinish = 0;
+    let fields = [], lastFinish = 0, gathered = {};
     const snaps = [];
     const st = p => stock[p] || 0;
     const fail = (p, what) => { throw new Error(`${p}: ${L("ฟาร์มไม่มี ")}${what} (${L("แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)")}`); };
@@ -304,6 +310,7 @@ const HD = (() => {
       for (const p in animals) animals[p] = animals[p].filter(f => { if (f <= t + EPS) { stock[p] = st(p) + 1; return false; } return true; });
 
       let started = false;
+      gathered = {};
       for (const p of pri) {
         const i = BY[p];
         while (rem[p] > 0) {
@@ -336,13 +343,18 @@ const HD = (() => {
             const j = nx.findIndex(x => x <= t + EPS);
             if (j < 0) break;
             nx[j] = t + T[p]; f = t; stock[p] = st(p) + yieldOf(p); where = i.w; act = "harvest";
-          } else throw new Error(`${p}: ${L("เป็นของจากเหมืองหรือตกปลา ระบบวางแผนให้ไม่ได้ ใส่จำนวนที่มีไว้ใน ของที่มีอยู่แล้ว")}`);
+          } else {
+            const N = extRate(farm, p);
+            if (!N) throw new Error(`${p}: ${L("ยังขาดอีก ")}${rem[p]} ${L("ชิ้น ใส่เพิ่มใน ของที่มีอยู่แล้ว หรือใส่จำนวนที่ได้ต่อรอบใน ฟาร์มของฉัน")}`);
+            if ((gathered[p] || 0) >= N) break;
+            gathered[p] = (gathered[p] || 0) + 1; f = t; stock[p] = st(p) + 1; where = i.w; act = "gather";
+          }
           for (const [q, n] of ins) stock[q] = st(q) - n;
           rem[p]--; lastFinish = Math.max(lastFinish, f); started = true;
           log.push({ visit: v + 1, hour: t / 60, act, where, p, units: yieldOf(p), f });
         }
       }
-      const snap = { fields: fields.length, machineMin: {}, slots: {}, animals: {}, trees: {} };
+      const snap = { fields: fields.length, machineMin: {}, slots: {}, animals: {}, trees: {}, external: { ...gathered } };
       for (const [m, qs] of Object.entries(machines)) {
         snap.slots[m] = qs.reduce((a, q) => a + q.length, 0);
         snap.machineMin[m] = qs.reduce((a, q) => a + Math.min(I, Math.max(0, Math.max(t, ...q.map(e => e[0])) - t)), 0) / I * 60;
@@ -369,7 +381,7 @@ const HD = (() => {
       money.forEach(u => (groups[u.g] = groups[u.g] || []).push(u));
       for (const [g, us] of Object.entries(groups)) {
         const held = g === "field" ? snap.fields : g.startsWith("m:") ? (snap.slots[us[0].w] || 0)
-          : g.startsWith("a:") ? (snap.animals[us[0].p] || 0) : (snap.trees[us[0].p] || 0);
+          : g.startsWith("a:") ? (snap.animals[us[0].p] || 0) : g.startsWith("e:") ? (snap.external[us[0].p] || 0) : (snap.trees[us[0].p] || 0);
         const free = Math.max(0, us[0].cap - held), want = us.reduce((a, u) => a + u.base, 0);
         if (want <= free) continue;
         const share = us.map(u => u.base * free / want);

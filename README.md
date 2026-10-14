@@ -62,7 +62,8 @@ they win over every other source.
 ## Model assumptions
 
 Steady-state rates; trees give 3 fruit per harvest; seeds are free (a field nets +1 crop); barn/silo only
-checks what one visit brings in; mine, fishing and other tool-based items are left out.
+checks what one visit brings in; fishing, mussels and the mine are not simulated: in the web app you enter
+how many of each you collect per check-in (My farm), and 0 leaves them out.
 
 ## Sources and credits
 

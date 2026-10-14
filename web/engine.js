@@ -339,7 +339,7 @@ const HD = (() => {
           } else fail(p, t("ทางผลิต (ของจากเหมือง/ตกปลา: ใส่ในของที่มีอยู่)"));
           for (const [q, n] of ins) stock[q] = st(q) - n;
           rem[p]--; lastFinish = Math.max(lastFinish, f); started = true;
-          log.push({ visit: v + 1, hour: t / 60, act, where, p, units: yieldOf(p) });
+          log.push({ visit: v + 1, hour: t / 60, act, where, p, units: yieldOf(p), f });
         }
       }
       const snap = { fields: fields.length, machineMin: {}, slots: {}, animals: {}, trees: {} };

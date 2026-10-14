@@ -127,6 +127,11 @@ table.rot th.cur, table.rot td.cur { background: var(--gold-soft); color: var(--
 .legend { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 2px; }
 .tag.q { background: var(--field-soft); color: var(--field); }
 .tag.x { background: var(--orange-soft); color: var(--orange); }
+.tag.bad { background: var(--warn-soft); color: var(--warn); }
+.chip.qtab.off { opacity: .5; text-decoration: line-through; }
+.chip.qtab .small { color: inherit; opacity: .7; }
+.qedit { margin-top: 10px; padding: 10px 12px; background: var(--sunk); border-radius: var(--r); }
+.qedit .field-in input[type=text] { width: 10em; }
 .li.extra .name, .li.extra .val .num { color: var(--orange); }
 
 .tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dashed var(--line); }
@@ -178,7 +183,7 @@ footer { margin-top: 28px; font-size: .78rem; color: var(--muted); }
 const DATA = /*__DATA__*/null;
 HD.init(DATA);
 const t = HD.t;
-const EN = {"เต็ม (master แล้ว): ค่าของเวลาเครื่องเพิ่ม 1 ชม.": "full (mastered): value of 1 more machine hour", "เวลาลด 15%, ประมาณ)": "-15% time, estimate)", "ช่อง ": "space in ", "ที่ ": "on ", "แปลงปลูก": "field", "รังผึ้ง": "beehive", "สัตว์ที่ให้ ": "animal for ", "ต้น ": "tree of ", "ช่อง Roadside shop": "roadside shop slot", "แปลง": "fields", "รอบ": "visit", "ชิ้น": "pcs", "ชุด": "batches", "ชุด (": "batches (", "ชิ้น)": "pcs)", "ตัว": "animals", "ต้น": "trees", "ฟาร์มไม่มี ": "farm has no ", "แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)": "fix it in My farm, or add it to stock on hand)", "ทางผลิต (ของจากเหมือง/ตกปลา: ใส่ในของที่มีอยู่)": "way to make it (mine/fishing item: add it to stock on hand)", "ติดที่รอบ ": "stuck at visit ", "เริ่มไม่ได้ ": "cannot start ", "ไม่เสร็จภายใน 2000 รอบ": "not finished within 2000 visits", "ทำเงิน": "Money", "ฟาร์มของฉัน": "My farm", "นาที": "min", "ชม.": "h", "ต้นไม้": "tree", "สัตว์": "animal", "เครื่อง": "machine", "ภายนอก": "external", "ปลูก": "Plant", "เริ่ม": "Start", "ให้อาหาร": "Feed", "เก็บ": "Collect", "รอเก็บ": "Collect later", "แปลง · เข้าเกมทุก ": "fields · check in every ", "เข้าเกมทุก": "Check in every", "อื่นๆ": "other", "เหรียญต่อชั่วโมงตามความถี่ที่เข้าเกม": "Coins per hour by check-in interval", "คำนวณไม่ได้: ": "Cannot calculate: ", "ลองตรวจตั้งค่าฟาร์ม": "Check your My farm settings.", "ปลูก ": "Plant ", "รอบนี้ ": "this visit ", "จาก ": "of ", "สัตว์ (ให้อาหาร / เก็บ)": "Animals (feed / collect)", "ต้นไม้ (เก็บ)": "Trees (harvest)", "โต ": "grows in ", "ขาย": "sell", "ใช้ทำต่อ": "ingredient", "เฉลี่ย ": "avg ", "รอบนี้ไม่ต้อง": "skip this visit", "สินค้า": "Product", "หน่วย": "Unit", "เหรียญ / ชม.": "coins / hr", "เหรียญต่อการเข้า 1 ครั้ง": "coins per check-in", "เหรียญ / วัน": "coins / day", "เหรียญ/ชม. ถ้าเข้าเกมถี่ขึ้น (สีทอง = ที่เลือกอยู่)": "Coins/hr if you check in more often (gold = selected)", "ทำอะไรแต่ละรอบที่เข้าเกม ": "What to do each check-in ", "วนชุดละ ": "cycle of ", "รอบ (": "visits (", "รอบที่": "Visit", "เสร็จรอบ ": "Done visit ", "รอบ ": "visit ", "ไม่ทำก็ได้ (น้อยกว่าครึ่งชิ้นต่อชุด): ": "Optional (less than half a unit per cycle): ", "ตารางทุกรอบ": "All visits table", "จบรอบ ": "After visit ", "แล้วกลับไปเริ่มรอบ 1 ใหม่ ผลรวมทั้งชุดใกล้เคียงค่าเฉลี่ยของแผน": "start again at visit 1. Totals over the cycle match the plan averages.", "ขายอะไร ": "What to sell ", "เหรียญ/ชม.": "coins/hr", "ชิ้น/รอบ · ": "pcs/visit · ", "เหรียญ": "coins", "อัปเกรดอะไรคุ้มสุด ": "Best upgrades ", "ไม่มีคอขวด": "No bottleneck", "ค่าจาก shadow price ของ LP: ได้เพิ่มเท่าไหร่ถ้ามีของนั้นเพิ่ม 1 หน่วย": "From the LP shadow prices: coins/hr gained from one more unit of that resource.", "ใช้กำลังผลิตไปเท่าไหร่": "Capacity used", "ต่อรอบ)": "per visit)", "ต้องการอะไร ": "needs ", "ตัวอย่าง": "example", "เพิ่มลงรายการไหน": "Add to which list", "ของที่ quest ขอ": "Quest items", "ของที่มีอยู่แล้ว": "Stock on hand", "ค้นหาสินค้า (": "Search products (", "ชิ้นที่ปลดล็อกที่ L": "unlocked at L", "ของที่มีอยู่แล้ว (หักออกก่อนผลิต)": "Stock on hand (used before producing)", "รางวัล (เหรียญ)": "Reward (coins)", "รางวัล XP": "Reward XP", "ต้นไม้ตอนเริ่ม": "Trees at start", "พร้อมเก็บ": "ready to harvest", "เพิ่งเก็บไป": "just harvested", "ล้างรายการ": "Clear", "โหลดตัวอย่าง": "Load example", "ลด": "Decrease", "จำนวน ": "Quantity ", "เพิ่ม": "Increase", "แตะสินค้าด้านบนเพื่อเพิ่ม": "Tap a product above to add it", "สลับเป็น ": "Switch to ", "แล้วแตะสินค้า": "then tap a product", "ต้น (": "trees (", "ผล)": "fruit)", "ทำ": "Make", "ลดจาก ": "down from ", "เพราะ quest ใช้": "(quest uses the rest)", "รอบ แล้วส่ง quest": "visits, then hand in", "ส่ง quest แล้ว → กลับรอบ 1": "Quest handed in → back to visit 1", "จากตอนเริ่ม": "from start", "ทำเงิน (นอกเหนือ quest)": "money (outside the quest)", "รอบนี้: เก็บของทั้งหมด แล้วส่ง quest": "This visit: collect everything and hand in the quest", "รอบนี้ไม่มีอะไรต้องทำ": "Nothing to do this visit", "ผลลัพธ์": "Result", "เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม": "Pick what the quest needs. The planner shows what to plant and make at each check-in, and whether it pays.", "วางแผนไม่ได้:": "Cannot plan:", "ทำ quest นี้เสียรายได้ประมาณ ": "This quest costs about ", "เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)": "coins in lost sales (enter the reward to see if it pays)", "คุ้ม": "Worth it", "รางวัล ": "reward ", "เสียรายได้ ": "lost sales ", "เหรียญ (กำไร +": "coins (profit +", "ไม่คุ้มด้วยเหรียญ": "Not worth it in coins", "เหรียญ ทำถ้าอยากได้ XP": "coins. Do it for the XP", "หรือต้องทำ quest ต่อ": "or to progress the quest line", "ยังไม่ปลดล็อกที่ L": "Not unlocked at L", "เสร็จ ถ้าเข้าทุก ": "Ready if you check in every ", "รอบที่ ": "visit ", "ถ้าเข้าเกมบ่อยมาก (ทุก 5 นาที)": "If you check in very often (every 5 min)", "ระยะ chain ที่ยาวที่สุด": "Longest chain", "ระหว่างทำ quest ": "While doing the quest ", "ช่วง ": "over ", "เหรียญ/ชม. ที่ยังได้ (ปกติ ": "coins/hr still earned (normally ", "ถ้าเอาของ quest ไปขายแทน": "if you sold the quest items instead", "ฟาร์มผลิตไม่ทันใน ": "The farm cannot keep up in ", "จึงยืดช่วงเป็น ": "so the window is stretched to ", "กำลังผลิตที่เหลือ เอาไปขาย": "Spare capacity goes to selling", "สรุป": "Summary", "ต่อ 1 order ก่อนหักของที่มี": "per order, before stock on hand", "ของทั้งหมดที่ต้องใช้ (BOM)": "Everything needed (BOM)", "ที่ไหน": "Where", "ต้องใช้": "Needed", "จากคลัง": "From stock", "เหลือ": "Spare", "ฟาร์ม": "Farm", "จำนวนแปลง": "Fields", "ชิ้นต่อช่อง": "Items per slot", "ขายหมดใน (นาที)": "Sells out in (min)", "ต้นไม้ต่อชนิด (ค่าเริ่ม)": "Trees per type (default)", "สัตว์ (จำนวนตัว)": "Animals (count)", "ต้นไม้แยกชนิด": "Trees by type", "กลับเป็นค่าที่บันทึกไว้ในไฟล์": "Reset to saved profile", "บันทึกในเครื่องนี้อัตโนมัติ": "Saved on this device automatically.", "เครื่องจักร ": "Machines ", "จำนวน · slot · master": "count · slots · mastered", "จำนวน": "Count", "จำนวน 0 = ยังไม่มีเครื่องนี้": "Count 0 = you do not own this machine.", "ข้อมูล ": "Data: ", "สินค้า · ": "products · ", "สร้าง ": "built ", "สมมติ: ต้นไม้ให้ ": "Assumptions: trees give ", "ผลต่อการเก็บ · เมล็ดฟรี (ปลูก 1 ได้สุทธิ 1) · barn/silo คิดแค่ของที่เก็บต่อรอบ · ไม่รวมของจากเหมือง/ตกปลา": "fruit per harvest · seeds are free (plant 1, net +1) · barn/silo only counts what one visit brings in · mine and fishing items not included", "เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell": "Personal fan-made tool, not official · icon art © Supercell", "ภาษา": "Language"};
+const EN = {"เต็ม (master แล้ว): ค่าของเวลาเครื่องเพิ่ม 1 ชม.": "full (mastered): value of 1 more machine hour", "เวลาลด 15%, ประมาณ)": "-15% time, estimate)", "ช่อง ": "space in ", "ที่ ": "on ", "แปลงปลูก": "field", "รังผึ้ง": "beehive", "สัตว์ที่ให้ ": "animal for ", "ต้น ": "tree of ", "ช่อง Roadside shop": "roadside shop slot", "แปลง": "fields", "รอบ": "visit", "ชิ้น": "pcs", "ชุด": "batches", "ชุด (": "batches (", "ชิ้น)": "pcs)", "ตัว": "animals", "ต้น": "trees", "ฟาร์มไม่มี ": "farm has no ", "แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)": "fix it in My farm, or add it to stock on hand)", "ทางผลิต (ของจากเหมือง/ตกปลา: ใส่ในของที่มีอยู่)": "way to make it (mine/fishing item: add it to stock on hand)", "ติดที่รอบ ": "stuck at visit ", "เริ่มไม่ได้ ": "cannot start ", "ไม่เสร็จภายใน 2000 รอบ": "not finished within 2000 visits", "ทำเงิน": "Money", "ฟาร์มของฉัน": "My farm", "นาที": "min", "ชม.": "h", "ต้นไม้": "tree", "สัตว์": "animal", "เครื่อง": "machine", "ภายนอก": "external", "ปลูก": "Plant", "เริ่ม": "Start", "ให้อาหาร": "Feed", "เก็บ": "Collect", "รอเก็บ": "Collect later", "แปลง · เข้าเกมทุก ": "fields · check in every ", "เข้าเกมทุก": "Check in every", "อื่นๆ": "other", "เหรียญต่อชั่วโมงตามความถี่ที่เข้าเกม": "Coins per hour by check-in interval", "คำนวณไม่ได้: ": "Cannot calculate: ", "ลองตรวจตั้งค่าฟาร์ม": "Check your My farm settings.", "ปลูก ": "Plant ", "รอบนี้ ": "this visit ", "จาก ": "of ", "สัตว์ (ให้อาหาร / เก็บ)": "Animals (feed / collect)", "ต้นไม้ (เก็บ)": "Trees (harvest)", "โต ": "grows in ", "ขาย": "sell", "ใช้ทำต่อ": "ingredient", "เฉลี่ย ": "avg ", "รอบนี้ไม่ต้อง": "skip this visit", "สินค้า": "Product", "หน่วย": "Unit", "เหรียญ / ชม.": "coins / hr", "เหรียญต่อการเข้า 1 ครั้ง": "coins per check-in", "เหรียญ / วัน": "coins / day", "เหรียญ/ชม. ถ้าเข้าเกมถี่ขึ้น (สีทอง = ที่เลือกอยู่)": "Coins/hr if you check in more often (gold = selected)", "ทำอะไรแต่ละรอบที่เข้าเกม ": "What to do each check-in ", "วนชุดละ ": "cycle of ", "รอบ (": "visits (", "รอบที่": "Visit", "เสร็จรอบ ": "Done visit ", "รอบ ": "visit ", "ไม่ทำก็ได้ (น้อยกว่าครึ่งชิ้นต่อชุด): ": "Optional (less than half a unit per cycle): ", "ตารางทุกรอบ": "All visits table", "จบรอบ ": "After visit ", "แล้วกลับไปเริ่มรอบ 1 ใหม่ ผลรวมทั้งชุดใกล้เคียงค่าเฉลี่ยของแผน": "start again at visit 1. Totals over the cycle match the plan averages.", "ขายอะไร ": "What to sell ", "เหรียญ/ชม.": "coins/hr", "ชิ้น/รอบ · ": "pcs/visit · ", "เหรียญ": "coins", "อัปเกรดอะไรคุ้มสุด ": "Best upgrades ", "ไม่มีคอขวด": "No bottleneck", "ค่าจาก shadow price ของ LP: ได้เพิ่มเท่าไหร่ถ้ามีของนั้นเพิ่ม 1 หน่วย": "From the LP shadow prices: coins/hr gained from one more unit of that resource.", "ใช้กำลังผลิตไปเท่าไหร่": "Capacity used", "ต่อรอบ)": "per visit)", "ต้องการอะไร ": "needs ", "ตัวอย่าง": "example", "เพิ่มลงรายการไหน": "Add to which list", "ของที่ quest ขอ": "Quest items", "ของที่มีอยู่แล้ว": "Stock on hand", "ค้นหาสินค้า (": "Search products (", "ชิ้นที่ปลดล็อกที่ L": "unlocked at L", "ของที่มีอยู่แล้ว (หักออกก่อนผลิต)": "Stock on hand (used before producing)", "รางวัล (เหรียญ)": "Reward (coins)", "รางวัล XP": "Reward XP", "ต้นไม้ตอนเริ่ม": "Trees at start", "พร้อมเก็บ": "ready to harvest", "เพิ่งเก็บไป": "just harvested", "ล้างรายการ": "Clear", "โหลดตัวอย่าง": "Load example", "ลด": "Decrease", "จำนวน ": "Quantity ", "เพิ่ม": "Increase", "แตะสินค้าด้านบนเพื่อเพิ่ม": "Tap a product above to add it", "สลับเป็น ": "Switch to ", "แล้วแตะสินค้า": "then tap a product", "ต้น (": "trees (", "ผล)": "fruit)", "ทำ": "Make", "ลดจาก ": "down from ", "เพราะ quest ใช้": "(quest uses the rest)", "รอบ แล้วส่ง quest": "visits, then hand in", "ส่ง quest แล้ว → กลับรอบ 1": "Quest handed in → back to visit 1", "จากตอนเริ่ม": "from start", "ทำเงิน (นอกเหนือ quest)": "money (outside the quest)", "รอบนี้: เก็บของทั้งหมด แล้วส่ง quest": "This visit: collect everything and hand in the quest", "รอบนี้ไม่มีอะไรต้องทำ": "Nothing to do this visit", "ผลลัพธ์": "Result", "เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม": "Pick what the quest needs. The planner shows what to plant and make at each check-in, and whether it pays.", "วางแผนไม่ได้:": "Cannot plan:", "ทำ quest นี้เสียรายได้ประมาณ ": "This quest costs about ", "เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)": "coins in lost sales (enter the reward to see if it pays)", "คุ้ม": "Worth it", "รางวัล ": "reward ", "เสียรายได้ ": "lost sales ", "เหรียญ (กำไร +": "coins (profit +", "ไม่คุ้มด้วยเหรียญ": "Not worth it in coins", "เหรียญ ทำถ้าอยากได้ XP": "coins. Do it for the XP", "หรือต้องทำ quest ต่อ": "or to progress the quest line", "ยังไม่ปลดล็อกที่ L": "Not unlocked at L", "เสร็จ ถ้าเข้าทุก ": "Ready if you check in every ", "รอบที่ ": "visit ", "ถ้าเข้าเกมบ่อยมาก (ทุก 5 นาที)": "If you check in very often (every 5 min)", "ระยะ chain ที่ยาวที่สุด": "Longest chain", "ระหว่างทำ quest ": "While doing the quest ", "ช่วง ": "over ", "เหรียญ/ชม. ที่ยังได้ (ปกติ ": "coins/hr still earned (normally ", "ถ้าเอาของ quest ไปขายแทน": "if you sold the quest items instead", "ฟาร์มผลิตไม่ทันใน ": "The farm cannot keep up in ", "จึงยืดช่วงเป็น ": "so the window is stretched to ", "กำลังผลิตที่เหลือ เอาไปขาย": "Spare capacity goes to selling", "สรุป": "Summary", "ต่อ 1 order ก่อนหักของที่มี": "per order, before stock on hand", "ของทั้งหมดที่ต้องใช้ (BOM)": "Everything needed (BOM)", "ที่ไหน": "Where", "ต้องใช้": "Needed", "จากคลัง": "From stock", "เหลือ": "Spare", "ฟาร์ม": "Farm", "จำนวนแปลง": "Fields", "ชิ้นต่อช่อง": "Items per slot", "ขายหมดใน (นาที)": "Sells out in (min)", "ต้นไม้ต่อชนิด (ค่าเริ่ม)": "Trees per type (default)", "สัตว์ (จำนวนตัว)": "Animals (count)", "ต้นไม้แยกชนิด": "Trees by type", "กลับเป็นค่าที่บันทึกไว้ในไฟล์": "Reset to saved profile", "บันทึกในเครื่องนี้อัตโนมัติ": "Saved on this device automatically.", "เครื่องจักร ": "Machines ", "จำนวน · slot · master": "count · slots · mastered", "จำนวน": "Count", "จำนวน 0 = ยังไม่มีเครื่องนี้": "Count 0 = you do not own this machine.", "ข้อมูล ": "Data: ", "สินค้า · ": "products · ", "สร้าง ": "built ", "สมมติ: ต้นไม้ให้ ": "Assumptions: trees give ", "ผลต่อการเก็บ · เมล็ดฟรี (ปลูก 1 ได้สุทธิ 1) · barn/silo คิดแค่ของที่เก็บต่อรอบ · ไม่รวมของจากเหมือง/ตกปลา": "fruit per harvest · seeds are free (plant 1, net +1) · barn/silo only counts what one visit brings in · mine and fishing items not included", "เครื่องมือแฟนเมดส่วนตัว ไม่ใช่ของทางการ · ภาพไอคอนเป็นลิขสิทธิ์ของ Supercell": "Personal fan-made tool, not official · icon art © Supercell", "ภาษา": "Language", "เพิ่ม quest": "Add quest", "ชื่อ quest": "Quest name", "รวมในแผน": "Include in plan", "ลบ quest นี้": "Delete this quest", "ของที่ quest นี้ขอ": "This quest's items", "ล้างทั้งหมด": "Clear all", "พร้อมส่งรอบที่ ": "ready at visit ", "ทำเดี่ยวๆ เสียรายได้ ": "alone costs ", "รวมทุก quest": "all quests combined", "ส่งได้: ": "Ready to hand in: ", "ไม่คุ้ม": "Not worth it", "ผลรวมรายได้ที่เสียของแต่ละ quest อาจมากกว่าตอนทำพร้อมกัน เพราะใช้แปลงและเครื่องร่วมกัน": "Each quest's cost on its own can add up to more than doing them together, because they share fields and machines."};
 const BY = HD.by;
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -343,39 +348,81 @@ function renderMoney() {
 }
 
 // ---------- Mode 2 ----------
-const EXAMPLE = { items: { "Bread": 3, "Butter": 2, "Carrot Pie": 2, "Sweater": 1, "Bacon": 4 }, have: { "Wheat": 6 }, reward: 1500, xp: 120 };
-let Q = store.get("quest", null) || { ...clone(EXAMPLE), example: true, trees: "ready", target: "items", search: "" };
+const EXAMPLE = () => ({
+  quests: [
+    { name: "Truck", items: { "Bread": 3, "Butter": 2, "Bacon": 4 }, reward: 900, xp: 70, on: true },
+    { name: "Boat", items: { "Carrot Pie": 2, "Sweater": 1 }, reward: 700, xp: 60, on: true },
+  ],
+  sel: 0, have: { "Wheat": 6 }, example: true, trees: "ready", target: "items", search: "",
+});
+function loadQ() {
+  const q = store.get("quest", null);
+  if (!q) return EXAMPLE();
+  if (!q.quests)   // saved before multi-quest: keep it as quest 1
+    return { quests: [{ name: "Quest 1", items: q.items || {}, reward: q.reward || 0, xp: q.xp || 0, on: true }],
+             sel: 0, have: q.have || {}, trees: q.trees || "ready", target: q.target || "items", search: q.search || "" };
+  return q;
+}
+let Q = loadQ();
+const curQ = () => Q.quests[Math.min(Q.sel, Q.quests.length - 1)];
+const activeQuests = () => Q.quests.filter(q => q.on && Object.values(q.items).some(v => v > 0));
+const newQuest = () => ({ name: `Quest ${Q.quests.length + 1}`, items: {}, reward: 0, xp: 0, on: true });
 
 function saveQ() { Q.example = false; store.set("quest", Q); }
 function renderQuest() {
   const pane = $("#pane-quest");
   const unl = HD.unlocked(farm.level, true, []);
+  const cq = curQ();
   pane.innerHTML = `
   <div class="grid two">
     <div class="card">
-      <h2>Quest ${t("ต้องการอะไร ")}${Q.example ? `<span class="tag">${t("ตัวอย่าง")}</span>` : ""}</h2>
-      <div class="row" style="margin-bottom:8px">
+      <h2>Quest ${Q.example ? `<span class="tag">${t("ตัวอย่าง")}</span>` : ""}</h2>
+      <div class="chips" id="q-tabs">
+        ${Q.quests.map((q, i) => `<button class="chip qtab${q.on ? "" : " off"}" data-i="${i}" aria-pressed="${q === cq}">${esc(q.name)} <span class="small">${Object.values(q.items).reduce((a, v) => a + v, 0)}</span></button>`).join("")}
+        <button class="chip" id="q-add">+ ${t("เพิ่ม quest")}</button>
+      </div>
+      <div class="qedit">
+        <div class="row">
+          <label class="field-in">${t("ชื่อ quest")}<input type="text" id="q-name" value="${esc(cq.name)}"></label>
+          <label class="field-in">${t("รางวัล (เหรียญ)")}<input type="number" id="q-reward" min="0" value="${cq.reward || ""}"></label>
+          <label class="field-in">${t("รางวัล XP")}<input type="number" id="q-xp" min="0" value="${cq.xp || ""}"></label>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <label class="row small" style="gap:6px"><input type="checkbox" id="q-on" ${cq.on ? "checked" : ""}>${t("รวมในแผน")}</label>
+          <button class="btn" id="q-del">${t("ลบ quest นี้")}</button>
+        </div>
+      </div>
+      <div class="row" style="margin:12px 0 8px">
         <div class="seg" role="group" aria-label="${t("เพิ่มลงรายการไหน")}">
-          <button data-t="items" aria-pressed="${Q.target === "items"}">${t("ของที่ quest ขอ")}</button>
+          <button data-t="items" aria-pressed="${Q.target === "items"}">${t("ของที่ quest นี้ขอ")}</button>
           <button data-t="have" aria-pressed="${Q.target === "have"}">${t("ของที่มีอยู่แล้ว")}</button>
         </div>
       </div>
       <input class="search" id="q-search" type="search" placeholder="${t("ค้นหาสินค้า (")}${unl.length} ${t("ชิ้นที่ปลดล็อกที่ L")}${farm.level})" value="${esc(Q.search)}">
       <div class="picker" id="q-picker"></div>
-      <div class="group-h" style="margin-top:14px">${t("ของที่ quest ขอ")}</div>
+      <div class="group-h" style="margin-top:14px">${t("ของที่ quest นี้ขอ")}: ${esc(cq.name)}</div>
       <div class="list order" id="q-items"></div>
       <div class="group-h">${t("ของที่มีอยู่แล้ว (หักออกก่อนผลิต)")}</div>
       <div class="list order" id="q-have"></div>
       <div class="row" style="margin-top:12px">
-        <label class="field-in">${t("รางวัล (เหรียญ)")}<input type="number" id="q-reward" min="0" value="${Q.reward || ""}"></label>
-        <label class="field-in">${t("รางวัล XP")}<input type="number" id="q-xp" min="0" value="${Q.xp || ""}"></label>
         <label class="field-in">${t("ต้นไม้ตอนเริ่ม")}<select id="q-trees"><option value="ready" ${Q.trees !== "harvested" ? "selected" : ""}>${t("พร้อมเก็บ")}</option><option value="harvested" ${Q.trees === "harvested" ? "selected" : ""}>${t("เพิ่งเก็บไป")}</option></select></label>
       </div>
-      <div class="row" style="margin-top:10px"><button class="btn" id="q-clear">${t("ล้างรายการ")}</button><button class="btn" id="q-example">${t("โหลดตัวอย่าง")}</button></div>
+      <div class="row" style="margin-top:10px"><button class="btn" id="q-clear">${t("ล้างทั้งหมด")}</button><button class="btn" id="q-example">${t("โหลดตัวอย่าง")}</button></div>
     </div>
     <div class="grid" style="margin-top:0" id="q-out"></div>
   </div>`;
   pane.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => { Q.target = b.dataset.t; store.set("quest", Q); renderQuest(); }));
+  pane.querySelectorAll("#q-tabs .qtab").forEach(b => b.addEventListener("click", () => { Q.sel = +b.dataset.i; Q.target = "items"; store.set("quest", Q); renderQuest(); }));
+  $("#q-add").addEventListener("click", () => { Q.quests.push(newQuest()); Q.sel = Q.quests.length - 1; Q.target = "items"; saveQ(); renderQuest(); });
+  $("#q-del").addEventListener("click", () => {
+    Q.quests.splice(Q.quests.indexOf(cq), 1);
+    if (!Q.quests.length) Q.quests.push(newQuest());
+    Q.sel = Math.min(Q.sel, Q.quests.length - 1); saveQ(); renderQuest();
+  });
+  $("#q-name").addEventListener("change", e => { cq.name = e.target.value.trim() || cq.name; saveQ(); renderQuest(); });
+  $("#q-reward").addEventListener("change", e => { cq.reward = +e.target.value || 0; saveQ(); compute(); });
+  $("#q-xp").addEventListener("change", e => { cq.xp = +e.target.value || 0; saveQ(); compute(); });
+  $("#q-on").addEventListener("change", e => { cq.on = e.target.checked; saveQ(); renderQuest(); });
   const search = $("#q-search");
   const drawPicker = () => {
     const s = search.value.trim().toLowerCase();
@@ -383,29 +430,27 @@ function renderQuest() {
       .sort((a, b) => (BY[a].k === "machine") - (BY[b].k === "machine") || (BY[a].lv ?? 0) - (BY[b].lv ?? 0)).reverse();
     $("#q-picker").innerHTML = list.slice(0, 120).map(p => `<button class="pick" data-p="${esc(p)}">${icon(p)}${esc(p)}</button>`).join("");
     $("#q-picker").querySelectorAll(".pick").forEach(b => b.addEventListener("click", () => {
-      const box = Q[Q.target]; box[b.dataset.p] = (box[b.dataset.p] || 0) + 1; saveQ(); drawLists(); compute();
+      const box = Q.target === "have" ? Q.have : cq.items; box[b.dataset.p] = (box[b.dataset.p] || 0) + 1; saveQ(); drawLists(); drawTabs(); compute();
     }));
   };
   search.addEventListener("input", () => { Q.search = search.value; store.set("quest", Q); drawPicker(); });
+  const drawTabs = () => pane.querySelectorAll("#q-tabs .qtab").forEach(b => {
+    b.querySelector(".small").textContent = Object.values(Q.quests[+b.dataset.i].items).reduce((a, v) => a + v, 0);
+  });
   const drawLists = () => {
-    for (const key of ["items", "have"]) {
-      const el = $("#q-" + key), box = Q[key];
+    for (const [key, box] of [["items", cq.items], ["have", Q.have]]) {
+      const el = $("#q-" + key);
       el.innerHTML = Object.keys(box).length ? Object.entries(box).map(([p, q]) => `<div class="li">${icon(p)}<div class="name">${esc(p)}<span class="small">${KIND_TH_()[BY[p]?.k] || ""} · ${esc(BY[p]?.w || "")}</span></div>
         <div class="step"><button data-d="-1" data-p="${esc(p)}" aria-label="${t("ลด")}">−</button><input type="number" min="0" value="${q}" data-p="${esc(p)}" aria-label="${t("จำนวน ")}${esc(p)}"><button data-d="1" data-p="${esc(p)}" aria-label="${t("เพิ่ม")}">+</button></div></div>`).join("")
         : `<p class="small muted" style="margin:2px 0">${key === "items" ? t("แตะสินค้าด้านบนเพื่อเพิ่ม") : `${t("สลับเป็น ")}"${t("ของที่มีอยู่แล้ว")}" ${t("แล้วแตะสินค้า")}`}</p>`;
-      el.querySelectorAll("button[data-d]").forEach(b => b.addEventListener("click", () => {
-        const v = (box[b.dataset.p] || 0) + +b.dataset.d; if (v <= 0) delete box[b.dataset.p]; else box[b.dataset.p] = v; saveQ(); drawLists(); compute();
-      }));
-      el.querySelectorAll("input").forEach(i => i.addEventListener("change", () => {
-        const v = Math.max(0, Math.round(+i.value || 0)); if (!v) delete box[i.dataset.p]; else box[i.dataset.p] = v; saveQ(); drawLists(); compute();
-      }));
+      const set = (p, v) => { if (v <= 0) delete box[p]; else box[p] = v; saveQ(); drawLists(); drawTabs(); compute(); };
+      el.querySelectorAll("button[data-d]").forEach(b => b.addEventListener("click", () => set(b.dataset.p, (box[b.dataset.p] || 0) + +b.dataset.d)));
+      el.querySelectorAll("input").forEach(i => i.addEventListener("change", () => set(i.dataset.p, Math.max(0, Math.round(+i.value || 0)))));
     }
   };
-  $("#q-reward").addEventListener("change", e => { Q.reward = +e.target.value || 0; saveQ(); compute(); });
-  $("#q-xp").addEventListener("change", e => { Q.xp = +e.target.value || 0; saveQ(); compute(); });
   $("#q-trees").addEventListener("change", e => { Q.trees = e.target.value; saveQ(); compute(); });
-  $("#q-clear").addEventListener("click", () => { Q.items = {}; Q.have = {}; Q.reward = 0; Q.xp = 0; saveQ(); renderQuest(); });
-  $("#q-example").addEventListener("click", () => { Q = { ...clone(EXAMPLE), example: true, trees: "ready", target: "items", search: "" }; store.set("quest", Q); renderQuest(); });
+  $("#q-clear").addEventListener("click", () => { Q.quests = [newQuest()]; Q.quests[0].name = "Quest 1"; Q.sel = 0; Q.have = {}; saveQ(); renderQuest(); });
+  $("#q-example").addEventListener("click", () => { Q = EXAMPLE(); store.set("quest", Q); renderQuest(); });
   drawPicker(); drawLists(); compute();
 }
 
@@ -418,13 +463,13 @@ function foodWeb(items) {
   return `<div class="tree"><ul>${Object.entries(items).map(([p, q]) => node(p, q, 0)).join("")}</ul></div>`;
 }
 
-function questVisitCard(r, vi) {
+function questVisitCard(r, vi, tags, perQ) {
   const N = r.visits.length, V = r.visits[vi], last = vi === N - 1;
   const groups = {};
   const add = (key, sortKey, title, row) => (groups[key] = groups[key] || { sortKey, title, rows: [] }).rows.push(row);
   const keyOf = (kind, w) => kind === "field" ? ["field", "0", t("ปลูก")] : kind === "machine" ? ["m:" + w, "1" + w, esc(w)]
     : kind === "animal" ? ["animal", "2", t("สัตว์ (ให้อาหาร / เก็บ)")] : ["tree", "3", t("ต้นไม้ (เก็บ)")];
-  // quest rows
+  // quest rows, tagged with the quest(s) that need them
   const acts = {};
   r.sim.log.filter(l => l.visit === V.visit).forEach(l => {
     const k = l.act + "|" + l.p;
@@ -434,7 +479,7 @@ function questVisitCard(r, vi) {
     const it = BY[a.p], [key, sk, title] = keyOf(it.k, it.w);
     const qty = a.act === "plant" ? [a.n, t("แปลง")] : a.act === "start" ? (it.y > 1 ? [a.n, `${t("ชุด (")}${a.units} ${t("ชิ้น)")}`] : [a.n, t("ชิ้น")])
       : a.act === "harvest" ? [a.n, `${t("ต้น (")}${a.units} ${t("ผล)")}`] : [a.n, a.p === "Honeycomb" ? t("ชิ้น") : t("ตัว")];
-    add(key, sk, title, { quest: true, p: a.p, verb: ACT_TH_()[a.act], n: qty[0], unit: qty[1] });
+    add(key, sk, title, { quest: true, p: a.p, verb: ACT_TH_()[a.act], n: qty[0], unit: qty[1], who: (tags[a.p] || []).join(" + ") || "quest" });
   }
   // money rows (orange)
   for (const u of V.money) {
@@ -443,10 +488,11 @@ function questVisitCard(r, vi) {
     const verb = u.p === "Honeycomb" ? t("เก็บ") : { field: t("ปลูก"), machine: t("ทำ"), animal: t("ให้อาหาร"), tree: t("เก็บ") }[u.kind];
     add(key, sk, title, { quest: false, p: u.p, verb, n: u.count, unit: u.unit, note: u.count < u.base ? `${t("ลดจาก ")}${u.base} ${t("เพราะ quest ใช้")}` : "" });
   }
-  const row = x => `<div class="li${x.quest ? "" : " extra"}">${icon(x.p)}<div class="name">${esc(x.p)}<span class="small">${x.quest ? '<span class="tag q">quest</span>' : `<span class="tag x">${t("ทำเงิน")}</span>`} ${x.verb}${x.note ? " · " + x.note : ""}</span></div>
+  const row = x => `<div class="li${x.quest ? "" : " extra"}">${icon(x.p)}<div class="name">${esc(x.p)}<span class="small">${x.quest ? `<span class="tag q">${esc(x.who)}</span>` : `<span class="tag x">${t("ทำเงิน")}</span>`} ${x.verb}${x.note ? " · " + x.note : ""}</span></div>
     <div class="val"><span class="num">${x.n}</span> <span class="small muted">${x.unit}</span></div></div>`;
   const body = Object.values(groups).sort((a, b) => a.sortKey.localeCompare(b.sortKey))
     .map(g => `<div class="group-h">${g.title}</div><div class="list">${g.rows.sort((a, b) => b.quest - a.quest || b.n - a.n).map(row).join("")}</div>`).join("");
+  const handIn = perQ.filter(x => x.ready === V.visit).map(x => esc(x.q.name));
   return `<div class="card">
     <h2>${t("ทำอะไรแต่ละรอบที่เข้าเกม ")}<span class="small muted">${N} ${t("รอบ แล้วส่ง quest")}</span></h2>
     <div class="chips" id="qv-chips"><span class="small muted">${t("รอบที่")}</span>
@@ -454,7 +500,7 @@ function questVisitCard(r, vi) {
     <div class="row" style="margin:10px 0 4px"><button class="btn primary" id="qv-next">${last ? t("ส่ง quest แล้ว → กลับรอบ 1") : `${t("เสร็จรอบ ")}${vi + 1} → ${t("รอบ ")}${vi + 2}`}</button>
       <span class="small muted">+${fmtH(V.hour)} ${t("จากตอนเริ่ม")}</span></div>
     <div class="legend small"><span class="tag q">quest</span><span class="tag x">${t("ทำเงิน (นอกเหนือ quest)")}</span></div>
-    ${last ? `<div class="verdict good" style="margin:8px 0">${t("รอบนี้: เก็บของทั้งหมด แล้วส่ง quest")}</div>` : ""}
+    ${handIn.length ? `<div class="verdict good" style="margin:8px 0">${t("ส่งได้: ")}${handIn.join(", ")}</div>` : ""}
     ${body || `<p class="small muted">${t("รอบนี้ไม่มีอะไรต้องทำ")}</p>`}
   </div>`;
 }
@@ -462,24 +508,51 @@ function questVisitCard(r, vi) {
 function compute() {
   const out = $("#q-out");
   if (!out) return;
-  const items = Object.fromEntries(Object.entries(Q.items).filter(([, q]) => q > 0));
-  if (!Object.keys(items).length) { out.innerHTML = `<div class="card"><h2>${t("ผลลัพธ์")}</h2><p class="muted">${t("เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม")}</p></div>`; return; }
+  const act = activeQuests();
+  if (!act.length) { out.innerHTML = `<div class="card"><h2>${t("ผลลัพธ์")}</h2><p class="muted">${t("เลือกของที่ quest ต้องการทางซ้าย ระบบจะบอกว่าต้องปลูกอะไร ทำอะไร แต่ละรอบ และคุ้มไหม")}</p></div>`; return; }
+  const items = {};
+  act.forEach(q => Object.entries(q.items).forEach(([p, v]) => { if (v > 0) items[p] = (items[p] || 0) + v; }));
   const m1 = store.get("visit", { I: checkin, v: 0 });
-  const qkey = JSON.stringify([items, Q.have, checkin, Q.trees, farm]);
+  const qkey = JSON.stringify([act.map(q => [q.name, q.items]), Q.have, checkin, Q.trees, farm]);
   let qs = store.get("qvisit", null);
   if (!qs || qs.key !== qkey) { qs = { key: qkey, v: 0 }; store.set("qvisit", qs); }
   let r;
   try { r = HD.quest(farm, items, Q.have, checkin, { treesStart: Q.trees, cycleStart: m1.I === checkin ? m1.v : 0 }); }
   catch (e) { out.innerHTML = `<div class="err">${t("คำนวณไม่ได้: ")}${esc(e.message)}</div>`; return; }
 
+  // which quest needs each product, when each quest can be handed in, and what it costs on its own
+  const tags = {};
+  act.forEach(q => { const b = HD.bom(q.items, {}); b.order.forEach(p => { if (b.starts[p] || q.items[p]) (tags[p] = tags[p] || []).push(q.name); }); });
+  const perQ = act.map(q => {
+    let alone = null;
+    try { alone = act.length > 1 ? HD.quest(farm, q.items, Q.have, checkin, { treesStart: Q.trees }) : r; } catch (e) { alone = { error: e.message }; }
+    let ready = null;
+    if (!r.error) {
+      const f = Math.max(-1, ...Object.keys(q.items).flatMap(p => r.sim.log.filter(l => l.p === p).map(l => l.f)));
+      ready = f < 0 ? 1 : Math.ceil(f / checkin - 1e-9) + 1;
+    }
+    return { q, ready, cost: alone && !alone.error ? alone.cost : null };
+  });
+  const reward = act.reduce((a, q) => a + (q.reward || 0), 0), xp = act.reduce((a, q) => a + (q.xp || 0), 0);
+
+  const verdictFor = (rw, lost, xpv) => {
+    if (lost == null) return `<span class="tag">–</span>`;
+    if (!rw) return `<span class="small muted">${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span></span>`;
+    return rw >= lost ? `<span class="tag q">${t("คุ้ม")} +${fmt(rw - lost)}</span>` : `<span class="tag bad">${t("ไม่คุ้ม")} ${fmt(rw - lost)}</span>`;
+  };
   const verdict = (() => {
     if (r.error) return `<div class="err"><b>${t("วางแผนไม่ได้:")}</b> ${esc(r.error)}</div>`;
     const lost = r.cost ?? 0;
-    if (!Q.reward) return `<div class="verdict info">${t("ทำ quest นี้เสียรายได้ประมาณ ")}<b class="num">${fmt(lost)}</b> ${t("เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)")}</div>`;
-    return Q.reward >= lost
-      ? `<div class="verdict good"><b>${t("คุ้ม")}</b> · ${t("รางวัล ")}<span class="num">${fmt(Q.reward)}</span> &gt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ (กำไร +")}${fmt(Q.reward - lost)})</div>`
-      : `<div class="verdict bad"><b>${t("ไม่คุ้มด้วยเหรียญ")}</b> · ${t("รางวัล ")}<span class="num">${fmt(Q.reward)}</span> &lt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ ทำถ้าอยากได้ XP")}${Q.xp ? ` (+${fmt(Q.xp)} XP)` : ""} ${t("หรือต้องทำ quest ต่อ")}</div>`;
+    if (!reward) return `<div class="verdict info">${t("ทำ quest นี้เสียรายได้ประมาณ ")}<b class="num">${fmt(lost)}</b> ${t("เหรียญ (ใส่รางวัลเพื่อดูว่าคุ้มไหม)")}</div>`;
+    return reward >= lost
+      ? `<div class="verdict good"><b>${t("คุ้ม")}</b> · ${t("รางวัล ")}<span class="num">${fmt(reward)}</span> &gt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ (กำไร +")}${fmt(reward - lost)})</div>`
+      : `<div class="verdict bad"><b>${t("ไม่คุ้มด้วยเหรียญ")}</b> · ${t("รางวัล ")}<span class="num">${fmt(reward)}</span> &lt; ${t("เสียรายได้ ")}<span class="num">${fmt(lost)}</span> ${t("เหรียญ ทำถ้าอยากได้ XP")}${xp ? ` (+${fmt(xp)} XP)` : ""} ${t("หรือต้องทำ quest ต่อ")}</div>`;
   })();
+  const questTable = act.length > 1 && !r.error ? `<div class="list" style="margin-top:12px">${perQ.map(x => `<div class="li qrow">
+      <span class="ph">${esc(x.q.name.slice(0, 2))}</span>
+      <div class="name">${esc(x.q.name)}<span class="small">${t("พร้อมส่งรอบที่ ")}${x.ready} (+${fmtH((x.ready - 1) * checkin / 60)}) · ${t("รางวัล ")}${fmt(x.q.reward || 0)} · ${t("ทำเดี่ยวๆ เสียรายได้ ")}${x.cost == null ? "–" : fmt(x.cost)}</span></div>
+      <div class="val">${verdictFor(x.q.reward, x.cost)}</div></div>`).join("")}</div>
+      <p class="small muted" style="margin:6px 0 0">${t("ผลรวมรายได้ที่เสียของแต่ละ quest อาจมากกว่าตอนทำพร้อมกัน เพราะใช้แปลงและเครื่องร่วมกัน")}</p>` : "";
 
   const lockedNote = r.locked.length ? `<div class="err small">${t("ยังไม่ปลดล็อกที่ L")}${farm.level}: ${r.locked.map(esc).join(", ")}</div>` : "";
   let timing = "", schedule = "", money = "";
@@ -488,7 +561,7 @@ function compute() {
       <div class="stat"><div class="v num">${fmtH(r.sim.doneH)}</div><div class="l">${t("เสร็จ ถ้าเข้าทุก ")}${fmtMin(checkin)} (${t("รอบที่ ")}${r.sim.visits})</div></div>
       <div class="stat"><div class="v num">${fmtH(r.fast.doneH)}</div><div class="l">${t("ถ้าเข้าเกมบ่อยมาก (ทุก 5 นาที)")}</div></div>
       <div class="stat"><div class="v num">${fmtH(r.crit)}</div><div class="l">${t("ระยะ chain ที่ยาวที่สุด")}</div></div></div>`;
-    schedule = questVisitCard(r, Math.min(qs.v, r.visits.length - 1));
+    schedule = questVisitCard(r, Math.min(qs.v, r.visits.length - 1), tags, perQ);
     if (r.money) {
       const pl = HD.plan(r.money).rows;
       const sells = pl.filter(x => x.sold > 1e-4).sort((a, b) => b.coins - a.coins).slice(0, 8);
@@ -504,9 +577,9 @@ function compute() {
   const bomRows = r.order.map(p => `<tr><td>${esc(p)}</td><td>${esc(BY[p].k === "field" ? t("แปลง") : BY[p].w)}</td><td class="n">${fmtQty(r.need[p])}</td><td class="n">${fmtQty(r.fromStock[p])}</td><td class="n">${r.starts[p]}</td><td>${{ machine: t("ชุด"), field: t("แปลง"), animal: t("ตัว"), tree: t("ต้น") }[BY[p].k] || ""}</td><td class="n">${fmtQty(r.spare[p])}</td></tr>`).join("");
 
   out.innerHTML = `
-    <div class="card"><h2>${t("สรุป")}</h2>${lockedNote}${verdict}${timing ? `<div style="margin-top:10px">${timing}</div>` : ""}</div>
+    <div class="card"><h2>${t("สรุป")}${act.length > 1 ? ` <span class="small muted">${t("รวมทุก quest")} (${act.length})</span>` : ""}</h2>${lockedNote}${verdict}${questTable}${timing ? `<div style="margin-top:10px">${timing}</div>` : ""}</div>
     ${schedule}
-    <div class="card"><h2>Food web <span class="small muted">${t("ต่อ 1 order ก่อนหักของที่มี")}</span></h2>${foodWeb(items)}</div>
+    <div class="card"><h2>Food web <span class="small muted">${t("ต่อ 1 order ก่อนหักของที่มี")}</span></h2>${act.map(q => `${act.length > 1 ? `<h3 style="margin:8px 0 2px">${esc(q.name)}</h3>` : ""}${foodWeb(q.items)}`).join("")}</div>
     <div class="card"><details><summary>${t("ของทั้งหมดที่ต้องใช้ (BOM)")}</summary><div class="tablebox" style="margin-top:8px"><table>
       <thead><tr><th>${t("สินค้า")}</th><th>${t("ที่ไหน")}</th><th class="n">${t("ต้องใช้")}</th><th class="n">${t("จากคลัง")}</th><th class="n">${t("ทำ")}</th><th>${t("หน่วย")}</th><th class="n">${t("เหลือ")}</th></tr></thead>
       <tbody>${bomRows}</tbody></table></div></details></div>

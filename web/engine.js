@@ -4,7 +4,7 @@ const HD = (() => {
   let ITEMS = [], BY = {}, TREE_FRUIT = 3;
   const EPS = 1e-9;
   let LANG = "th", DICT = {};
-  const t = s => (LANG === "en" && DICT[s]) || s;   // UI text: Thai phrase is the key
+  const L = s => (LANG === "en" && DICT[s]) || s;   // UI text: Thai phrase is the key (not "t": t is time in simulate)
   const setLang = (l, dict) => { LANG = l; DICT = dict || DICT; };
 
   function init(data) {
@@ -164,14 +164,14 @@ const HD = (() => {
       if (d <= 1e-6 || kind === "flow") return;
       let per, what, type = kind;
       if (kind === "machine") {
-        if (mastered.has(name)) { per = d * 60; what = `${name} ${t("เต็ม (master แล้ว): ค่าของเวลาเครื่องเพิ่ม 1 ชม.")}`; }
-        else { per = d * lhs * 0.15; what = `Master ${name} (${t("เวลาลด 15%, ประมาณ)")}`; }
-      } else if (kind === "storage") { per = d; what = `+1 ${t("ช่อง ")}${name === "silo" ? "Silo" : "Barn"}`; }
-      else if (kind === "slots") { per = d * 60 / I; what = `+1 slot ${t("ที่ ")}${name}`; }
-      else if (kind === "fields") { per = d * 60; what = `+1 ${t("แปลงปลูก")}`; }
-      else if (kind === "animal") { per = d * 60; what = name === "Honeycomb" ? `+1 ${t("รังผึ้ง")}` : `+1 ${t("สัตว์ที่ให้ ")}${name}`; }
-      else if (kind === "tree") { per = d * 60; what = `+1 ${t("ต้น ")}${name}`; }
-      else { per = d * f.shop_stack * 60 / Math.max(I, f.shop_sell_minutes); what = `+1 ${t("ช่อง Roadside shop")}`; }
+        if (mastered.has(name)) { per = d * 60; what = `${name} ${L("เต็ม (master แล้ว): ค่าของเวลาเครื่องเพิ่ม 1 ชม.")}`; }
+        else { per = d * lhs * 0.15; what = `Master ${name} (${L("เวลาลด 15%, ประมาณ)")}`; }
+      } else if (kind === "storage") { per = d; what = `+1 ${L("ช่อง ")}${name === "silo" ? "Silo" : "Barn"}`; }
+      else if (kind === "slots") { per = d * 60 / I; what = `+1 slot ${L("ที่ ")}${name}`; }
+      else if (kind === "fields") { per = d * 60; what = `+1 ${L("แปลงปลูก")}`; }
+      else if (kind === "animal") { per = d * 60; what = name === "Honeycomb" ? `+1 ${L("รังผึ้ง")}` : `+1 ${L("สัตว์ที่ให้ ")}${name}`; }
+      else if (kind === "tree") { per = d * 60; what = `+1 ${L("ต้น ")}${name}`; }
+      else { per = d * f.shop_stack * 60 / Math.max(I, f.shop_sell_minutes); what = `+1 ${L("ช่อง Roadside shop")}`; }
       out.push({ what, per, used: rhs ? lhs / rhs : null, type, name });
     });
     return out.sort((a, b) => b.per - a.per);
@@ -183,9 +183,9 @@ const HD = (() => {
       const k = sol.ix[p], i = BY[p], x = sol.x[k], s = sol.s[k];
       if (x < 1e-6 && s < 1e-6) continue;
       let perVisit, unit;
-      if (i.k === "field") { perVisit = x * sol.cyc(i.t) / 60; unit = t("แปลง"); }
-      else if (i.k === "machine") { perVisit = x * sol.I / 60 / i.y; unit = i.y > 1 ? t("ชุด") : t("ชิ้น"); }
-      else { perVisit = x * sol.I / 60; unit = t("ชิ้น"); }
+      if (i.k === "field") { perVisit = x * sol.cyc(i.t) / 60; unit = L("แปลง"); }
+      else if (i.k === "machine") { perVisit = x * sol.I / 60 / i.y; unit = i.y > 1 ? L("ชุด") : L("ชิ้น"); }
+      else { perVisit = x * sol.I / 60; unit = L("ชิ้น"); }
       rows.push({ p, k: i.k, w: i.k === "field" ? "Field" : i.w, made: x, sold: s, used: x - s,
                   coins: s * (i.p || 0), perVisit, unit });
     }
@@ -209,10 +209,10 @@ const HD = (() => {
       const k = sol.ix[p], i = BY[p], x = sol.x[k];
       if (x < 1e-6) continue;
       let avg, g, unit, cap;
-      if (i.k === "field") { avg = x * I / 60; g = "field"; unit = t("แปลง"); cap = f.fields - (R.fields || 0); }
-      else if (i.k === "machine") { avg = x * I / 60 / i.y; g = "m:" + i.w; unit = i.y > 1 ? `${t("ชุด (")}${i.y} ${t("ชิ้น)")}` : t("ชิ้น"); cap = machineSlots(f, i.w) * machineCount(f, i.w) - ((R.slots || {})[i.w] || 0); }
-      else if (i.k === "animal") { avg = x * I / 60; g = "a:" + p; unit = p === "Honeycomb" ? t("ชิ้น") : t("ตัว"); cap = animalsOf(f, p) - ((R.animals || {})[p] || 0); }
-      else if (i.k === "tree") { avg = x * I / 60 / i.y; g = "t:" + p; unit = t("ต้น"); cap = treesOf(f, p) - ((R.trees || {})[p] || 0); }
+      if (i.k === "field") { avg = x * I / 60; g = "field"; unit = L("แปลง"); cap = f.fields - (R.fields || 0); }
+      else if (i.k === "machine") { avg = x * I / 60 / i.y; g = "m:" + i.w; unit = i.y > 1 ? `${L("ชุด (")}${i.y} ${L("ชิ้น)")}` : L("ชิ้น"); cap = machineSlots(f, i.w) * machineCount(f, i.w) - ((R.slots || {})[i.w] || 0); }
+      else if (i.k === "animal") { avg = x * I / 60; g = "a:" + p; unit = p === "Honeycomb" ? L("ชิ้น") : L("ตัว"); cap = animalsOf(f, p) - ((R.animals || {})[p] || 0); }
+      else if (i.k === "tree") { avg = x * I / 60 / i.y; g = "t:" + p; unit = L("ต้น"); cap = treesOf(f, p) - ((R.trees || {})[p] || 0); }
       else continue;
       units.push({ p, g, avg, unit, cap: Math.max(0, Math.floor(cap + 1e-9)), kind: i.k, w: i.k === "field" ? "Field" : i.w, sold: sol.s[k] > 1e-4 });
     }
@@ -293,7 +293,7 @@ const HD = (() => {
     let fields = [], lastFinish = 0;
     const snaps = [];
     const st = p => stock[p] || 0;
-    const fail = (p, what) => { throw new Error(`${p}: ${t("ฟาร์มไม่มี ")}${what} (${t("แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)")}`); };
+    const fail = (p, what) => { throw new Error(`${p}: ${L("ฟาร์มไม่มี ")}${what} (${L("แก้ในตั้งค่าฟาร์ม หรือใส่ในของที่มีอยู่)")}`); };
 
     for (let v = 0; v < maxVisits; v++) {
       const t = v * I;
@@ -320,23 +320,23 @@ const HD = (() => {
             const q = free.reduce((a, b) => (endOf(b) < endOf(a) ? b : a));
             f = endOf(q) + T[p]; q.push([f, p]); where = i.w; act = "start";
           } else if (i.k === "field") {
-            if (!farm.fields) fail(p, t("แปลงปลูก"));
+            if (!farm.fields) fail(p, L("แปลงปลูก"));
             if (fields.length >= farm.fields) break;
             f = t + T[p]; fields.push([f, p]); where = "Field"; act = "plant";
           } else if (i.k === "animal") {
             const N = animalsOf(farm, p);
-            if (!N) fail(p, `${t("สัตว์ที่ให้ ")}${p}`);
+            if (!N) fail(p, `${L("สัตว์ที่ให้ ")}${p}`);
             const a = animals[p] || (animals[p] = []);
             if (a.length >= N) break;
             f = t + T[p]; a.push(f); where = i.w; act = ins.length ? "feed" : "collect";
           } else if (i.k === "tree") {
             const N = treesOf(farm, p);
-            if (!N) fail(p, `${t("ต้น ")}${p}`);
+            if (!N) fail(p, `${L("ต้น ")}${p}`);
             const nx = trees[p] || (trees[p] = Array(N).fill(treesReady ? 0 : T[p]));
             const j = nx.findIndex(x => x <= t + EPS);
             if (j < 0) break;
             nx[j] = t + T[p]; f = t; stock[p] = st(p) + yieldOf(p); where = i.w; act = "harvest";
-          } else fail(p, t("ทางผลิต (ของจากเหมือง/ตกปลา: ใส่ในของที่มีอยู่)"));
+          } else throw new Error(`${p}: ${L("เป็นของจากเหมืองหรือตกปลา ระบบวางแผนให้ไม่ได้ ใส่จำนวนที่มีไว้ใน ของที่มีอยู่แล้ว")}`);
           for (const [q, n] of ins) stock[q] = st(q) - n;
           rem[p]--; lastFinish = Math.max(lastFinish, f); started = true;
           log.push({ visit: v + 1, hour: t / 60, act, where, p, units: yieldOf(p), f });
@@ -354,9 +354,9 @@ const HD = (() => {
         || Object.values(animals).some(a => a.length);
       if (!Object.values(rem).some(Boolean) && !busy) return { visits: v + 1, doneH: t / 60, readyH: lastFinish / 60, log, snaps };
       const treesPending = pri.some(p => rem[p] && BY[p].k === "tree");
-      if (!busy && !started && !treesPending) throw new Error(`${t("ติดที่รอบ ")}${v + 1}: ${t("เริ่มไม่ได้ ")}${pri.filter(p => rem[p]).join(", ")}`);
+      if (!busy && !started && !treesPending) throw new Error(`${L("ติดที่รอบ ")}${v + 1}: ${L("เริ่มไม่ได้ ")}${pri.filter(p => rem[p]).join(", ")}`);
     }
-    throw new Error(t("ไม่เสร็จภายใน 2000 รอบ"));
+    throw new Error(L("ไม่เสร็จภายใน 2000 รอบ"));
   }
 
   /* Quest visits ride on the Mode 1 rotation: visit v of the quest = Mode 1 visit (start + v) mod K, with the
@@ -415,7 +415,7 @@ const HD = (() => {
     return out;
   }
 
-  return { init, t, setLang, unlocked, solve, bottlenecks, plan, rotation, quest, bom, simulate, simplex,
+  return { init, t: L, setLang, unlocked, solve, bottlenecks, plan, rotation, quest, bom, simulate, simplex,
            get items() { return ITEMS; }, get by() { return BY; }, timeOf, isMastered };
 })();
 if (typeof module !== "undefined") module.exports = HD;
